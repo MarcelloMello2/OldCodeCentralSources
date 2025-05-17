@@ -1,0 +1,9 @@
+Color
+RowSize
+AutoSize
+DrawingStyle
+ShowHint
+Picture
+PopupMenu
+HelpKeyword
+Hint

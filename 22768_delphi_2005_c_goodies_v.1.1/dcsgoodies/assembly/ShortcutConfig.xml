@@ -1,0 +1,5 @@
+<Configuration>
+  <Shortcut Name="ViewDocShortcut" Value="24767" />
+  <Shortcut Name="DocInsightShortcut" Value="49343" />
+  <Shortcut Name="KeycodeAnalyzerShortcut" Value="0" />
+</Configuration>

@@ -1,0 +1,209 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1256">
+<title>New Page 0</title>
+<!--mstheme--><link rel="stylesheet" type="text/css" href="_themes/cpitheme/cpit1011-1256.css"><meta name="Microsoft Theme" content="cpitheme 1011, default">
+</head>
+
+<body>
+
+<p style="text-align: center"><font size="7">CPI Breakpoints Expert</font></p>
+<font size="2">CPI BPE identifies breakpoints by unique IDs and append a BP comment at 
+	the end of line code of each BP.&nbsp; The comment has this form: //{$BP 
+	D2J9F9F4I64C3J9H1J7B1;tag;Hint} as shown in figure below<br>
+	</font>
+	<b><img border="0" src="_images/NextVe1.gif"><br>
+	</b><font size="2">CPI adds only three fields in $BP comment which are 
+	ID;tag;hint</font><b><br>
+	&nbsp;</b><table border="0" width="96%" id="table1">
+		<tr>
+			<td valign="top"><u><b><font size="4">List-view</font></b></u><p>
+			<font size="2">List view lists loaded PBs with all defined fields by BDS and CPI.</font></p>
+			<p dir="ltr"><font size="2">Fields order can be customized from setup page.&nbsp; 
+			Each column in view has its own color. From setup page, you can 
+			customize these colors.&nbsp; Colors are used to simplify reading 
+			data in columns.</font></td>
+			<td width="550"><img border="0" src="_images/NextVe5.jpg"></td>
+		</tr>
+		<tr>
+			<td valign="top"><u><b><font size="4">Tree-view</font></b></u><p dir="ltr">
+			<font size="2">Tree view lists loaded PBs with all defined fields by BDS and CPI in 
+			a tree structure. </font> </p>
+			<p dir="ltr"><font size="2">BPs are grouped in different levels.&nbsp; The first 
+			level is their files and second level in their groups.&nbsp; BPs 
+			with no groups are listed in &quot;Unclassified&quot; node</font></p>
+			<p dir="ltr"><font size="2">BP properties are grouped in three nodes:&nbsp; 
+			</font> </p>
+			<ol dir="ltr">
+				<li dir="ltr">
+				<p dir="ltr"><b><font size="2">Text Node</font></b><font size="2"><br>
+				Contains all string properties</font></p></li>
+				<li dir="ltr">
+				<p dir="ltr"><b><font size="2">Numerical Node</font></b><font size="2"><br>
+				Contains all numerical properties</font></p></li>
+				<li dir="ltr">
+				<p dir="ltr"><b><font size="2">Actions Node</font></b><font size="2"><br>
+				Contains all Boolean properties</font></p></li>
+			</ol>
+			<p><font size="2">Some important properties are displayed with same level of BP as 
+			shown on right figure.</font></p></td>
+			<td width="550"><b><img border="0" src="_images/NextVe8.jpg"></b></td>
+		</tr>
+		<tr>
+			<td valign="top"><u><b><font size="4">Text-view</font></b></u><p dir="ltr">
+			<font size="2">Text view lists loaded PBs the way they are stored in project *.dsk 
+			file.</font></p>
+			<p dir="ltr"><font size="2">The view provides an editor to view full selected BP.
+			</font>
+			</p>
+			<p>&nbsp;</td>
+			<td width="550"><img border="0" src="_images/NextVe15.jpg"></td>
+		</tr>
+		<tr>
+			<td valign="top"><u><b><font size="4">Stack-view</font></b></u><p dir="ltr">
+			<font size="2">Stack view lists loaded PBs with all fields.&nbsp; Fields of a BP are 
+			viewed when expanding wanted BP.&nbsp; A BP with a '+' indicates a 
+			collapsed BP and a BP with a '-' indicates an expanded BP.</font></p>
+			<p dir="ltr"><font size="2">Multiple expansions is possible. BPs&nbsp; fields or 
+			properties can be edited in this view.</font></p>
+			<p>&nbsp;</td>
+			<td width="550"><img border="0" src="_images/NextVe4.jpg"></td>
+		</tr>
+		<tr>
+			<td valign="top">&nbsp;</td>
+			<td width="550">&nbsp;</td>
+		</tr>
+		<tr>
+			<td valign="top"><u><font size="4"><b>Synchronize</b></font><b><font size="4">-view</font></b></u><p dir="ltr" style="text-align: justify">
+			<font size="2">Synchronize view is used to compare imported or loaded BPs to the 
+			ones already exist in active project group. The view has two sections 
+			left and right.&nbsp; Left view shows loaded BPs and right view 
+			shows installed BPs. </font></p>
+			<p dir="ltr" style="text-align: justify">
+			<font size="2">Selecting a BP in any 
+			view, result in selecting the same BP in the other view if it 
+			exists.</font></p>
+			<p dir="ltr" style="text-align: justify"><u><font size="2">Color Legends:</font></u><b><font size="2" color="#FF0000"><br>
+			Red&nbsp;</font></b><font size="2">Uninstalled BP</font><font size="2" color="#009A01"><br>
+			<b>Dark green</b> </font><font size="2">&nbsp;Installed and enabled BP</font><font size="2" color="#B3FFB3"><br>
+			</font><b><font size="2" color="#00FFCC">Light green&nbsp;</font></b><font size="2" color="#B3FFB3">
+			</font><font size="2">Installed and disabled BP</font></p>
+			<p dir="ltr" style="text-align: justify">
+			&nbsp;</p></td>
+			<td width="550"><img border="0" src="_images/NextVe10.jpg"></td>
+		</tr>
+		<tr>
+			<td valign="top"><u><b><font size="4">Edit-view</font></b></u><p>
+			Edit view is used for editing BPs and viewing search results.&nbsp; 
+			All search results are appended to this view.</p>
+			<p>Loaded BPs can be loaded in this view directly.</p>
+			<p>&nbsp;</td>
+			<td width="550"><img border="0" src="_images/NextVe9r.jpg"></td>
+		</tr>
+		<tr>
+			<td valign="top"><u><font size="4"><b>Search</b></font><b><font size="4">-view</font></b></u><p dir="ltr" style="text-align: justify">
+			<font size="2">Search view is used for search and replace operations.&nbsp; The 
+			search has two types.&nbsp; Simple search and complex search.</font></p>
+			<p dir="ltr" style="text-align: justify"><font size="2">In simple search, BPE 
+			searches for a keyword in selected fields for search.&nbsp; In 
+			complex search, BPE searches for different keywords in different 
+			fields. </font> </p>
+			<p dir="ltr" style="text-align: justify">I<font size="2">n replace operation, BPE 
+			can replaces different fields for all BPs in search view.</font></td>
+			<td width="550"><img border="0" src="_images/NextVe1.jpg"></td>
+		</tr>
+		<tr>
+			<td valign="top">&nbsp;</td>
+			<td width="550">&nbsp;</td>
+		</tr>
+		<tr>
+			<td valign="top"><u><font size="4"><b>Setup</b></font><b><font size="4">-view</font></b></u><p dir="ltr" style="text-align: justify">
+			<font size="2">Setup view is used to customize some of BPE operations.&nbsp; View has 
+			four sheets: First, is &quot;General&quot; sheet which is used to set fields 
+			required for listing.&nbsp;&nbsp; Second, &quot;flags&quot; sheet is used to 
+			control flags.&nbsp; Third, &quot;colors&quot; sheet used to set colors of BPE 
+			views.&nbsp; Forth, is &quot;Fields&quot; sheet, which is used to set needed 
+			fields to included in BP-folding block.</font></p>
+			<p>&nbsp;</td>
+			<td width="550">
+	<img border="0" src="_images/NextVe16.jpg"></td>
+		</tr>
+		<tr>
+			<td valign="top">&nbsp;</td>
+			<td width="550">&nbsp;</td>
+		</tr>
+	</table>
+	<p>CPI BPE enables users to do the followings<b><font SIZE="2"><ol>
+		<li><img border="0" src="icons/NextVer1.gif"> Breakpoint Loading
+			<img border="0" src="_images/gif/new_roll.gif" width="29" height="13"><ol>
+			</font></b><font SIZE="2">
+			<li>Direct BP loading from active project by OTAPI<br>&nbsp;</li>
+		</ol></font></li>
+			<b><font SIZE="2">
+		<li><img border="0" src="icons/NextVe4.gif"> Breakpoints Exporting 
+		<img border="0" src="_images/gif/new_roll.gif" width="29" height="13"><ol>
+			</font></b><font SIZE="2">
+			<li>Exports breakpoints to INI files</li>
+			<li>Export breakpoints to BIN files</li>
+			<li>Export breakpoints to TXT files</li>
+			<li>Export breakpoints to DSK&nbsp; file<br>&nbsp;</li>
+		</ol>
+		<li><b><img border="0" src="icons/NextVe5.gif"> Breakpoints Importing 
+		<img border="0" src="_images/gif/new_roll.gif" width="29" height="13"></b><ol>
+			<li>Import breakpoints from INI files</li>
+			<li>breakpoints from BIN files</li>
+			<li>breakpoints from TXT files</li>
+			<li>breakpoints from DSK&nbsp; file<br>&nbsp;</li>
+		</ol></li>
+		<li><b><img border="0" src="icons/NextVe6.gif"> Breakpoints Installing 
+		<img border="0" src="_images/gif/new_roll.gif" width="29" height="13"></b><ol>
+			<li>Installs imported break points to active project by two 
+				methods<ol>
+				<li>file-Line Method depends on line position</li>
+				<li>file-ID Method independent of line position<br>&nbsp;</li>
+			</ol></li>
+		</ol></li>
+		<li><b><img border="0" src="icons/NextVe7.gif"> Breakpoint Searching 
+		<img border="0" src="_images/gif/new_roll.gif" width="29" height="13"></b><ol>
+			<li>Simple Search for BPs </li>
+			<li>Complex search for BPs<br>
+&nbsp;</li>
+		</ol></li>
+		<li>
+		<p dir="ltr"><b><img border="0" src="icons/NextVe8.gif"> Breakpoint Replacing 
+		<img border="0" src="_images/gif/new_roll.gif" width="29" height="13"></b><ol>
+			<li>Replace any field insid BPs<br>
+&nbsp;</li>
+		</ol></li>
+		<li>
+		<p dir="ltr"><b>&nbsp;Breakpoint Scanning 
+		<img border="0" src="_images/gif/new_roll.gif" width="29" height="13"></b><ol>
+		<li>Scans source code for BPs</li>
+		<li>Scans source code for BPs collectively <br>
+&nbsp;</li>
+	</ol></li>
+		<li>
+		<p dir="ltr"><b>Breakpoint Re-Categorizing 
+		<img border="0" src="_images/gif/new_roll.gif" width="29" height="13"></b><ol>
+			<li>Rearrange BP groups</li>
+			<li>Send selected BPs to a group</li>
+			<li>Send selected BPs to a Enable group</li>
+			<li>Send selected BPs to a Disable group<br>
+&nbsp;</li>
+		</ol></li>
+		<li><b>Breakpoint General 
+		<img border="0" src="_images/gif/new_roll.gif" width="29" height="13"></b><ol>
+			<li>Loading source lines</li>
+			<li>Appending/Loading/Removing break points hints</li>
+			<li>Appending/Loading breakpoints IDs</li>
+			<li>Removing hints from source lines</li>
+		</ol></li></font>
+	</ol>
+		
+</body>
+
+</html>

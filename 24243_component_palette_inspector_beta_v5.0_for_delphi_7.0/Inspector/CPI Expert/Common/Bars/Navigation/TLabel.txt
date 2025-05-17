@@ -1,0 +1,9 @@
+Align
+AutoSize
+Caption
+Color
+Font
+HelpKeyword
+Hint
+OnClick
+ShowHint

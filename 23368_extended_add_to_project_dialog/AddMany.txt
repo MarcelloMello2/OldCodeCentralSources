@@ -1,0 +1,61 @@
+AddMany V4.1
+
+When a project has many files the IDE Project Manager dialogs
+may be quite cumbersome. AddMany introduces multiselection dialogs
+that make adding and opening units very fast and easy.
+
+
+Installation
+
+To install AddMany copy AddMany.dll (from the merged
+directory) to a directory in your PC and add the complete path
+to the IDE 'Known IDE Assemblies' registry key. AddMany.reg
+gives a sample.
+
+
+Usage
+
+AddMany adds 3 items named after the 'Add to Project...' item
+in the 'Project' menu.
+- 'Add Many to Project...'
+  Open a directory selection dialog, the selected directory is
+  used as a search starting point for *.pas files (for Delphi
+  projects) or *.cs files (for C# projects). The found files
+  are shown in a multiselection tree. Clicking Ok adds the
+  selected files* to the active project.
+- 'Add Project Files to Project...'
+  Open file open dialog that asks for a Delphi project whose
+  files are then shown in a multiselection tree. Clicking Ok
+  adds the selected files* to the active project.
+- 'Open Project Files...'
+  Open a multiselection dialog with all the units of the
+  active project. Clicking Ok opens the selected unit.
+
+
+Configuration
+
+AddMany configuration is kept in file AddMany.xml that has to be
+in the same directory of AddMany.dll The default for it is
+
+<?xml version="1.0"?>
+<TOptions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OpenFilesShortcut>Control Alt A</OpenFilesShortcut>
+</TOptions>
+
+OpenFilesShortcut
+  Keyboard shortcut for 'Open Project Files...'.
+
+
+DILMerge was generated and tested using Borland Developer Studio
+V10.0.2166.28377 (Delhi 2006 Update 1) under Windows 2000 SP4,
+.NET 1.1 SP1
+This application uses Coder's Lab multi-selection TreeView. It can
+be downlaoded at www.coders-lab.net
+The XML custom serializers were genrated using XSGen.
+XSGen can be dowloaded at http://cc.borland.com/Item.aspx?id=23579
+The final executable (AddMany.dll in the merged directory) was
+obtained by assembly merging using DILMerge.
+DILMerge can be dowloaded at http://cc.borland.com/Item.aspx?id=23227
+
+
+

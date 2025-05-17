@@ -1,0 +1,5 @@
+Enabled
+Interval
+Name
+OnTimer
+Tag

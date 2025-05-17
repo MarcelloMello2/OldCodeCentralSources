@@ -1,0 +1,63 @@
+Regionalize V4.0
+
+Regionalize makes very easy to add and remove 'regions' around blocks
+of selected code.
+
+
+Installation
+
+To install Regionalize copy Regionalize.dll and Regionalize.xml (from
+the merged directory) to a directory in your PC and add the complete path
+to the IDE 'Known IDE Assemblies' registry key. Regionalize.reg
+gives a sample.
+
+
+Usage
+
+Regionalize adds a item named 'Regionalize' at the end of the IDE Edit menu.
+This item has two subitems.
+- 'Make Region of Selection'
+  Add a region around selected text.
+- 'Remove Region around Selection'
+  Remove a region around selected text.
+
+To add a region
+1 - If you want a titled region ({$region 'title'}) add a comment before
+    the first line of the block of text you want to be regionalized using
+    double slash or { }. Otherwise goto (!) step 2.
+2 - Select the block of text you want to be regionalized (including the
+    title comment if any).
+3 - Select 'Make Region of Selection' or use the shortcut.
+If the first line (when there is no title comment) or the second line
+(when there is a title comment) of the selection already contains a
+region directive the command is ignored.
+If the selection is a comment enclosed with { } or (* *) the first
+line is used as title and the comment open and close tokens are kept
+on the same lines of the open and close region directives.
+
+To remove a region
+1 - Select the region you want to be unregionalized.
+2 - Select 'Remove Region around Selection' or use the shortcut.
+If the first line of the selection or the last line of the selection do
+not contain the region directives the command is ignored.
+
+
+Configuration
+
+Regionalize configuration is kept in file Regionalize.xml that has to be
+in the same directory of Regionalize.dll The default for it is
+
+<?xml version="1.0"?>
+<TOptions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ItemAddShortcut>Control Alt R</ItemAddShortcut>
+  <ItemRemoveShortcut>None</ItemRemoveShortcut>
+</TOptions>
+
+ItemAddShortcut
+  Keyboard shortcut for 'Make Region of Selection'.
+ItemRemoveShortcut
+  Keyboard shortcut for 'Remove Region around Selection'.
+
+
+This application was generated and tested using CodeGear™ RAD Studio
+2007 Version 11.0.2804.9245 under Windows XP SP2, .NET 2.0

@@ -1,0 +1,9 @@
+Align
+AutoSnap
+Color
+HelpKeyword
+Hint
+MinSize
+OnMoved
+OnPaint
+ResizeStyle

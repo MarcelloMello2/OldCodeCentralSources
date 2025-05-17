@@ -1,0 +1,415 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./CustomForms_files/filelist.xml">
+<title>Handy way to inherit forms within a project</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ARodygin</o:Author>
+  <o:LastAuthor>ARodygin</o:LastAuthor>
+  <o:Revision>8</o:Revision>
+  <o:TotalTime>88</o:TotalTime>
+  <o:Created>2001-08-22T16:44:00Z</o:Created>
+  <o:LastSaved>2001-08-23T10:37:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>784</o:Words>
+  <o:Characters>4469</o:Characters>
+  <o:Company>MIRANTIS</o:Company>
+  <o:Lines>37</o:Lines>
+  <o:Paragraphs>8</o:Paragraphs>
+  <o:CharactersWithSpaces>5488</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1 -369098753 63 0 4129023 0;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1 -369098753 63 0 4129023 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	font-style:italic;}
+h3
+	{mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	font-style:italic;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;
+	font-style:italic;}
+code
+	{mso-ascii-font-family:"Arial Unicode MS";
+	mso-fareast-font-family:"Arial Unicode MS";
+	mso-hansi-font-family:"Arial Unicode MS";
+	mso-bidi-font-family:"Arial Unicode MS";}
+pre
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Arial Unicode MS";}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+
+<body lang=EN-US style="tab-interval: 36.0pt">
+
+<div class=Section1>
+
+<h1 style="TEXT-ALIGN: justify">A handy way to inherit forms in a project.</h1>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;</p>
+
+<p class=MsoBodyTextIndent>Abstract: This article shows how to create custom
+forms in a project without Object Repository and OpenTools API.</p><![if !supportEmptyParas]><![endif]>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;</p>
+<P class=MsoNormal style="TEXT-ALIGN: justify">
+<TABLE align=left border=1 cellPadding=1 cellSpacing=1>
+  
+  <TR>
+    <TD><SPAN style="COLOR: navy">Update:&nbsp;25&nbsp;Oct</SPAN><SPAN 
+      style="COLOR: navy">   2001 </SPAN></TD>
+    <TD>
+      <P><SPAN 
+      style="COLOR: navy"> step 2 modified, step 3 enhanced, step 
+      <EM><STRONG>That’s it! </STRONG></EM>enhanced, sample code added </SPAN></P></TD></TR>
+  
+  <TR>
+    <TD><SPAN style="COLOR: navy">  Update: 14 </SPAN><SPAN style="COLOR: navy">  Sep 2001 </SPAN></TD>
+    <TD>
+      <P><SPAN style="COLOR: navy"> step 2 enhanced </SPAN></P></TD></TR>
+  <TR>
+    <TD><SPAN 
+      style="COLOR: navy; FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">Release: 
+      23 Aug 2001</SPAN></TD>
+    <TD></TD></TR></TABLE>&nbsp;<o:p></o:p></P>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">     
+                 
+          
+             
+            
+              
+         
+           
+            &nbsp;</p>
+<P class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;</P>
+<P class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;</P>
+<P class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;</P>
+<P class=MsoNormal style="TEXT-ALIGN: justify">I was always saying that Delphi 
+is a great tool and now I decided to proof it. It is known that there is an 
+Object Repository in Delphi where developer can register projects, forms etc. so 
+that it can be reused either by copying or inheriting. This feature is 
+particular useful with forms because in a typical application there are a lot of 
+forms that should have similar properties and it would be nice to have those 
+properties editable with Object Inspector during design-time. The problem is 
+that Object Repository is rather inconvenient way to share forms and people 
+usually do not use it for different (mostly mental) reasons. So do I.</P>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">Another opportunity to have
+custom forms is writing a wizard that implements a number of well-known OTA
+interfaces. Not a hard but also inconvenient way and people usually do not use
+it for rather technical reasons. So do I.</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">Still the need to have custom form
+that can be inherited so that later changes in the ancestor form would be automatically
+applied to all descendants persists. Here I describe a simple solution
+that can be easy applied among the developers within the same project.</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify"><b><i>Step 1.<o:p></o:p></i></b></p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">Create a new design-runtime
+package and add dsnide50.dcp (in Delphi 5) or designide60.dcp (in Delphi 6) to
+the ‘requires’ section of the package. Name package FormTest.dpk and save it.</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify"><b><i>Step 2.<o:p></o:p></i></b></p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">Add new form to FormTest package,
+name it TestForm and save unit as Form.pas. Add any published properties to the
+declaration of TTestForm. I did so:</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;</p>
+
+<div align=center>
+
+<table border=0 cellspacing=0 cellpadding=0 bgcolor=silver style="BACKGROUND:
+ silver; BORDER-COLLAPSE: collapse; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt">
+ <tr>
+  <td width=660 valign=top style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0cm; WIDTH: 495.25pt" 
+   ><pre>&nbsp;</pre><pre><code><b>unit</b> <FONT color=red>Form</FONT> ;<o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>interface</b><o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>uses</b><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span>Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,<o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span>StdCtrls;<o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>type</b><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span>TTestForm = <b>class</b>(TForm)<o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span><b>private</b><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>FTestCaption: TCaption;<o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span><b>public</b><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><i><span
+  style="COLOR: #003399">{ Public declarations }</span></i><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span><b>published</b><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><b>property</b> TestCaption: TCaption <b>read</b> FTestCaption <b>write</b> FTestCaption;<o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span><b>end</b>;<o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>implementation</b><o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><i><span
+  style="COLOR: #003399">{$R *.DFM}</span></i><o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>end</b>.<o:p></o:p></code></pre>
+  <p class=MsoNormal style="TEXT-ALIGN: justify" 
+     >&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;</p>
+<P class=MsoNormal style="TEXT-ALIGN: justify"> </P>
+<P class=MsoNormal style="TEXT-ALIGN: justify">Here you should be aware of some additional 
+work you will have to do when you declare published properties that are 
+objects itself and therefore have to be created prior to loading dfm resources. 
+To overcome this problem you have to override the constructor CreateNew as 
+follow:</P>
+<P class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="TEXT-ALIGN: justify">
+<TABLE bgColor=silver border=0 cellPadding=0 cellSpacing=0 
+style="BORDER-BOTTOM: medium none; BORDER-COLLAPSE: collapse; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-border-alt: solid windowtext .5pt" align=center>
+  
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0cm; WIDTH: 495.25pt" 
+    vAlign=top width=660><PRE><CODE><B></B></CODE>&nbsp;</PRE><PRE><CODE><B>constructor</B> TTestForm.CreateNew(AOwner: TComponent; Dummy: Integer);<o:p></o:p></CODE></PRE><PRE><CODE><B>begin</B><o:p></o:p></CODE></PRE><PRE><CODE><SPAN style="mso-spacerun: yes">&nbsp; </SPAN><STRONG>inherited</STRONG>;</CODE></PRE><PRE><FONT face="Courier New">  <FONT color=blue>// Create your objects here.</FONT></FONT></PRE><PRE><CODE></CODE><CODE></CODE><CODE><B>end</B>;</CODE></PRE><PRE><CODE></CODE>&nbsp;</PRE></TD></TR></TABLE></P>
+<P class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="TEXT-ALIGN: justify"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">And 
+do not forget to destroy your objects in the destructor! (one more procedure to 
+override).</SPAN></P>
+<P class=MsoNormal style="TEXT-ALIGN: justify"><SPAN 
+style="FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 12pt; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"></SPAN>&nbsp;</P>
+
+<h2 style="TEXT-ALIGN: justify">Step 3</h2>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">Add blank unit to FormTest
+package, declare and implement a registration procedure for previously added
+form:</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;</p>
+
+<div align=center>
+
+<table border=0 cellspacing=0 cellpadding=0 bgcolor=silver style="BACKGROUND:
+ silver; BORDER-COLLAPSE: collapse; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt">
+ <tr>
+  <td width=660 valign=top style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0cm; WIDTH: 495.25pt" 
+   ><pre>&nbsp;</pre><pre><code><b>unit</b> Install;<o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>interface</b><o:p></o:p></code></pre><pre><code><b>uses</b><o:p></o:p></code></pre><pre><code>Classes, DsgnIntf, <FONT color=red>Form</FONT>  ;<o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>procedure</b> Register;<o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>implementation</b><o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>procedure</b> Register;<o:p></o:p></code></pre><pre><code><b>begin</b><o:p></o:p></code></pre><pre><code>RegisterCustomModule(TTestForm, TCustomModule);<o:p></o:p></code></pre><pre><code><b>end</b>;<o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>end</b>.<o:p></o:p></code></pre>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">Save it as Install.pas.</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">You can add 
+any number of custom forms to the project including these that descend from the 
+existing custom forms. In the last case just declare them as the ancestor 
+(instead of TForm or TCustomForm) and repeat the process of adding new 
+properties/methods, overriding constructors/destructors (if necessary) and the registration.</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;</p>
+
+<h2 style="TEXT-ALIGN: justify">Step 4</h2>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">Save, compile and install
+FormTest package into Delphi IDE. Now you may close all or may not.</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;</p>
+
+<h2 style="TEXT-ALIGN: justify">Step 5</h2>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">Create a new 
+default project that comes up with one form- Form1. In Unit1.pas edit the uses 
+clause so that it would include <FONT color=red>Form</FONT>     
+              
+   (the unit with the form in the package). Change TForm1
+ancestor to TTestForm (the type of the form in the package). I did so:</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;</p>
+
+<div align=center>
+
+<table border=0 cellspacing=0 cellpadding=0 bgcolor=silver style="BACKGROUND:
+ silver; BORDER-COLLAPSE: collapse; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt">
+ <tr>
+  <td width=660 valign=top style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0cm; WIDTH: 495.25pt" 
+   ><pre>&nbsp;</pre><pre><code><b>unit</b> Unit1;<o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>interface</b><o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>uses</b><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span>Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs, <FONT color=red>Form</FONT>        ;<o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>type</b><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span>TForm1 = <b>class</b>(TTestForm)<o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span><b>private</b><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><i><span
+  style="COLOR: #003399">{ Private declarations }</span></i><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span><b>public</b><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><i><span
+  style="COLOR: #003399">{ Public declarations }</span></i><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span><b>end</b>;<o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>var</b><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span>Form1: TForm1;<o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>implementation</b><o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><i><span
+  style="COLOR: #003399">{$R *.DFM}</span></i><o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>end</b>.<o:p></o:p></code></pre><pre><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></pre></td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">Now switch to form view. Either
+right click Form1 and<span style="mso-spacerun: yes">&nbsp; </span>select ‘View as
+text’ or just press Alt+F12 and switch to the text representation of the form
+then switch back to form view. This will trigger Delphi to process form’s new
+ancestor (TTestForm) and now you can see that TTestForm’s published properties
+appeared in Object Inspector.</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">So far so good: TTestForm
+declares published properties that are common to all descendants. What it does
+not do for us is declaration of published controls so that they might be
+accessible with Object Inspector. We should fix it somehow.</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></p>
+
+<h3>Step 6</h3>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">Add any 
+desired controls to current form (Form1)
+in the project that we have just created and save it as TestFormDesc. I did so:</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></p>
+
+<div align=center>
+
+<table border=0 cellspacing=0 cellpadding=0 style="BORDER-BOTTOM:
+ medium none; BORDER-COLLAPSE: collapse; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-border-alt: solid windowtext .5pt" bgColor=silver>
+ <tr>
+  <td width=660 valign=top style="BORDER-BOTTOM: windowtext 0.5pt
+  solid; BORDER-LEFT: windowtext 0.5pt solid; BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; PADDING-TOP: 0cm; WIDTH: 495.25pt" 
+   ><pre><code><b></b></code>&nbsp;</pre><PRE><CODE><B>unit</B> TestFormDesc;<o:p></o:p></CODE></PRE><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>interface</b><o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>uses</b><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span>Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs, <FONT color=red>Form</FONT>        ,<o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span>StdCtrls;<o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>type</b><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span>TDescForm = <b>class</b>(TTestForm)<o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>TestButton: TButton;<o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><b>procedure</b> TestButtonClick(Sender: TObject);<o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span><b>private</b><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><i><span
+  style="COLOR: #003399">{ Private declarations }</span></i><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span><b>public</b><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><i><span
+  style="COLOR: #003399">{ Public declarations }</span></i><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span><b>end</b>;<o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>var</b><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span>DescForm: TDescForm;<o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>implementation</b><o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><i><span
+  style="COLOR: #003399">{$R *.DFM}</span></i><o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>procedure</b> TDescForm.TestButtonClick(Sender: TObject);<o:p></o:p></code></pre><pre><code><b>begin</b><o:p></o:p></code></pre><pre><code><span style="mso-spacerun: yes">&nbsp; </span>ShowMessage(<span
+  style="COLOR: #9933cc">'In '</span> + self.Name);<o:p></o:p></code></pre><pre><code><b>end</b>;<o:p></o:p></code></pre><pre><code><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></code></pre><pre><code><b>end</b>.</code><![if !supportEmptyParas]><![endif]></pre>
+  <p class=MsoNormal style="TEXT-ALIGN: justify"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">You can see that there is a button
+(TestButton) on the form and when you click it a message will be displayed
+saying which form handled this event.</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></p>
+
+<h3>Step 7</h3>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">     Go to New…
+menu item and in the tabbed dialog find the page with current project
+name (it’s still Project1 as we didn’t save it yet). You should see
+there previously saved form (TDescForm), inherit from this form and new form (TDescForm2) will
+appear. It will contain both new published properties and controls.</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify"><b><i>That’s it!</i></b></p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">Now you have 
+single ancestor form (TDescForm) with published properties and controls that can 
+be inherited by anywhere in the project. This way a look and behavior common to 
+all form can be introduced just once and therefore will be easy to maintain. 
+Note that you do not have to include the package with the
+base form (TTestForm) into the project, it just have to be
+accessible during design-time and therefore you can have there as many base forms as you wish.
+But you are going to use the form from other packages it is better
+to split the package with the form/forms into two: design time package with the
+registration and run time package with the forms. Design time package should have
+run time package in the 'requires' section.</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;</p>
+
+<h3>Further investigation</h3>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">If you take a look at what
+TCustomModule is you may want to implement your own custom module that has a special
+functionality. No problems there- Delphi is a great tool that lets you do
+nearly all that is possible to imagine.</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">&nbsp;</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">Alexander Rodigin</p>
+
+<p class=MsoNormal style="TEXT-ALIGN: justify">rodigin@yahoo.com </p>
+
+</div>
+
+</body>
+
+</html>

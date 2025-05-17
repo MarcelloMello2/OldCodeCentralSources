@@ -1,0 +1,24 @@
+$(Delphi)Demos\Db\TextData\textpkg.dpk
+$(Delphi)Demos\Midas\InternetExpress\InetXCenter\INetXCenterComponents.dpk
+$(Delphi)Demos\Midas\InternetExpress\InetXCustom\dclinetxcustom.dpk
+$(Delphi)Demos\Midas\InternetExpress\InetXCustom\inetxcustom.dpk
+$(Delphi)Demos\PropEdit\pielib.dpk
+$(Delphi)Demos\ShellControls\dclshlctrls.dpk
+$(Delphi)Demos\ShellControls\vclshlctrls.dpk
+$(Delphi)Demos\ToolsAPI\ActionServices\ActionSv.dpk
+$(Delphi)Demos\ToolsAPI\Editor Keybinding\dclsmpedit70.dpk
+$(Delphi)Demos\ToolsAPI\INTAServices\myaddicon.dpk
+$(Delphi)Demos\ToolsAPI\PackageDemo\PackApi.dpk
+$(Delphi)Demos\ToolsAPI\XPAppWiz\XPAppWiz.dpk
+$(Delphi)Demos\WebSnap\ActionField\DclActionField.dpk
+$(Delphi)Demos\WebSnap\DispHandlers\DclDispHandlers.dpk
+$(Delphi)Demos\WebSnap\ImgBtnProducer\DclImgBtnProducer.dpk
+$(Delphi)Demos\WebSnap\ProducerTemplates\DclDemoTemplate.dpk
+$(Delphi)Demos\WebSnap\ScriptObject\DclSampleScriptObject.dpk
+$(Delphi)Demos\WebSnap\TestSvrInfo\DclSvrInfoComponents.dpk
+$(Delphi)Demos\WebSnap\Util\TemplateRes.dpk
+$(Delphi)Demos\WebSnap\XMLBuilder\DclXMLBuilder.dpk
+$(Delphi)Demos\WebSnap\XMLBuilder\XMLBuilder.dpk
+$(Delphi)Lib\dclusr.dpk
+$(Delphi)Source\Decision Cube\dcldss.dpk
+$(Delphi)Source\Decision Cube\dss.dpk

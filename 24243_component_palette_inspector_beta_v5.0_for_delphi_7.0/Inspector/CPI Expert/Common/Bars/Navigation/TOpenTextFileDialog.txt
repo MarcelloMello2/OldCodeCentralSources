@@ -1,0 +1,9 @@
+DefaultExt
+Filter
+FilterIndex
+HelpContext
+InitialDir
+OnClose
+OnSelectionChange
+Options
+OptionsEx

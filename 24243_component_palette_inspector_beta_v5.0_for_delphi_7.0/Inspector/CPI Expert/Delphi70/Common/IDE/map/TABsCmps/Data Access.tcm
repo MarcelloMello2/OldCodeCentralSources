@@ -1,0 +1,6 @@
+TClientDataSet
+TDataSetProvider
+TDataSource
+TXMLTransform
+TXMLTransformClient
+TXMLTransformProvider

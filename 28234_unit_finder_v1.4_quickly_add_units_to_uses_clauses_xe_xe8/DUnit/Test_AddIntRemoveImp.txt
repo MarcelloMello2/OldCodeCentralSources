@@ -1,0 +1,214 @@
+=================================================================
+Middle Delete
+=================================================================
+unit Test;
+interface
+uses One, Two, Three, Four;
+implementation
+uses Seven, Six, Five;
+end.
+==================================
+Six
+==================================
+unit Test;
+interface
+uses One, Two, Three, Four, Six;
+implementation
+uses Seven, Five;
+end.
+
+
+=================================================================
+End Delete
+=================================================================
+unit Test;
+interface
+uses One, Two, Three, Four;
+implementation
+uses Seven, Six, Five;
+end.
+==================================
+Five
+==================================
+unit Test;
+interface
+uses One, Two, Three, Four, Five;
+implementation
+uses Seven, Six;
+end.
+
+
+=================================================================
+End Delete with Comments
+=================================================================
+unit Test;
+interface
+uses One, Two, Three, Four;
+implementation
+uses Seven, Six, {Six,} Five;
+end.
+==================================
+Five
+==================================
+unit Test;
+interface
+uses One, Two, Three, Four, Five;
+implementation
+uses Seven, Six {Six,} ;
+end.
+
+
+=================================================================
+End Delete with Multi-Line
+=================================================================
+unit Test;
+
+interface
+
+uses 
+  One, 
+  Two, 
+  Three;
+
+implementation
+uses 
+  One,
+  Four;
+
+end.
+==================================
+Four
+==================================
+unit Test;
+
+interface
+
+uses 
+  One, 
+  Two, 
+  Three,
+  Four;
+
+implementation
+uses 
+  One;
+
+end.
+
+
+
+=================================================================
+End Delete with Multi-Line and Comments
+=================================================================
+unit Test;
+
+interface
+
+uses
+  A, B, C;
+
+implementation
+
+uses
+  One, Two, Three, // This will be hard
+  Four;
+
+end.
+==================================
+Four
+==================================
+unit Test;
+
+interface
+
+uses
+  A, B, C, Four;
+
+implementation
+
+uses
+  One, Two, Three // This will be hard
+  ;
+
+end.
+
+
+
+=================================================================
+Start Delete with Multi-Line and Comments
+=================================================================
+unit Test;
+
+interface
+implementation
+uses
+  One, // This will be hard
+  Two,
+  Three,
+  Four;
+end.
+==================================
+One
+==================================
+unit Test;
+
+interface
+
+uses
+  One;
+implementation
+uses
+   // This will be hard
+  Two,
+  Three,
+  Four;
+end.
+
+
+
+=================================================================
+One Unit Only
+=================================================================
+unit Test;
+
+interface
+implementation
+uses 
+  One;
+end.
+==================================
+One
+==================================
+unit Test;
+
+interface
+
+uses
+  One;
+implementation
+
+end.
+
+
+=================================================================
+One Unit Only Comments Lost
+=================================================================
+unit Test;
+
+interface
+implementation
+uses // Wow Comments are a pain
+  One {,Two};
+end.
+==================================
+One
+==================================
+unit Test;
+
+interface
+
+uses
+  One;
+implementation
+
+end.

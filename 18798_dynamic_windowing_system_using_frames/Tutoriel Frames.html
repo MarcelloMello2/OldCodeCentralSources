@@ -1,0 +1,285 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 641  (Win32)">
+	<META NAME="CREATED" CONTENT="20020902;14575200">
+	<META NAME="CHANGED" CONTENT="20020920;10482273">
+	<STYLE>
+	<!--
+		@page { size: 21cm 29.7cm; margin: 2cm }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US">
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=3><B>SYSTEME
+DE FENETRAGE DYNAMIQUE A BASE DE FRAMES</B></FONT></FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>par
+Didier Largange</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><I><U>Niveau
+requis</U> : moyen, avec quelques des bases de programmation objet
+pour aller plus loin.<BR><U>Outils</U> : Delphi 5 ou sup&eacute;rieur</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>INTRODUCTION</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>Si
+vous estimez vous &ecirc;tre suffisament battu avec des fenetres MDI,
+des TPanel et des TPageControl pour parvenir &agrave; r&eacute;aliser
+des interfaces d'application modernes et sophistiqu&eacute;es : ce
+tutoriel est pour vous.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>TFrame</B>
+(cadre) est une merveille de composant int&eacute;gr&eacute; par
+Borland dans la version 5 de Delphi, je crois qu'avec du recul qu'il
+valait la mise &agrave; jour &agrave; lui seul. L'int&eacute;r&ecirc;t
+qui lui &agrave; &eacute;t&eacute; port&eacute; est essentiellement
+sur sa capacit&eacute; &agrave; servir de conteneur pour des groupes
+fonctionnels de composants interagissant entre eux comme dans une
+fenetre. Le <I>must</I> &eacute;tant la possibilit&eacute; de
+<SPAN STYLE="text-decoration: none">capitaliser ces &ldquo;modules&rdquo;
+en les pla&ccedil;ant dans votre palette de composants.<BR>Cela &eacute;tant
+dit, les cadres ne sont pas limit&eacute;s &agrave; de &ldquo;petits&rdquo;
+groupes de composants, il peuvent tr&egrave;s bien servir en tant que
+portions de fen&ecirc;tres, et &ecirc;tres int&eacute;gr&eacute;s &ldquo;en
+live&rdquo; dans votre application et non &agrave; l'&eacute;tat
+&ldquo;fig&eacute;&rdquo; par la palette de composants. <BR>Une fois
+termin&eacute; ce tutoriel, vous devriez &ecirc;tre &agrave; m&ecirc;me
+de r&eacute;aliser en quelques lignes de code une interface style
+Outlook, flexible, maintenable et &eacute;volutive.</SPAN></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; text-decoration: none"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>CREATION
+DU PROJET </B></FONT></FONT>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium; text-decoration: none">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=2>- menu Fichier + Nouvelle
+application<BR>- nommez la fiche principale &ldquo;Fprincipale&rdquo;<BR>-
+menu Fichier + enregistrer sous ... Principale.pas<BR>- menu Fichier
++ enregistrer le projet sous ... Tuto_frame.dpr</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>CR&Eacute;ATION
+DU MOD&Egrave;LE DE FRAME</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><SPAN STYLE="text-decoration: none">-
+</SPAN>menu Fichier + Nouveau cadre</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><IMG SRC="ecran1.png" NAME="Graphic1" ALIGN=LEFT WIDTH=195 HEIGHT=115 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><SPAN STYLE="text-decoration: none">-
+</SPAN>ins&eacute;rez le code suivant :</FONT></FONT></P>
+<P STYLE="margin-left: 2.01cm; margin-bottom: 0cm"><FONT FACE="OCR A Extended, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><B>interface<BR>procedure</B>
+Afficher; virtual;</FONT></FONT></P>
+<P STYLE="margin-left: 2.01cm; margin-bottom: 0cm"><FONT FACE="OCR A Extended, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><B>implementation<BR>procedure</B>
+TfrmModele.Afficher;<BR><B>begin<BR></B>// rien<BR><B>end</B>;</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><SPAN STYLE="text-decoration: none">-
+</SPAN>modifiez la propri&eacute;t&eacute; <B>Name</B> du frame en
+&ldquo;FrmModele&rdquo;<BR><SPAN STYLE="text-decoration: none">-
+</SPAN>ajouter un panel avec pour propri&eacute;t&eacute;s : <B>Align</B>
+:= alTop, <B>Name</B> := PanelTitre, <B>Color</B> := clGray</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><IMG SRC="ecran2.png" NAME="Graphic2" ALIGN=LEFT WIDTH=434 HEIGHT=207 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><SPAN STYLE="text-decoration: none">-
+</SPAN>menu enregistrer sous ... FrModele.pas</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>AJOUT
+D'UN NOUVEAU FRAME A L'APPLICATION</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><SPAN STYLE="text-decoration: none">-
+</SPAN>menu Fichier + Nouveau + onglet tuto_frame + s&eacute;lectionnez
+FrmModele (h&eacute;riter) + OK<BR><SPAN STYLE="text-decoration: none">-
+</SPAN>modifiez la propri&eacute;t&eacute; <B>PanelTitre.Caption</B>
+en &ldquo;Ecran n&deg;1&rdquo;<BR><SPAN STYLE="text-decoration: none">-
+</SPAN>modifiez la propri&eacute;t&eacute; <B>Name</B> du frame en
+&ldquo;FrmEcran1&rdquo;<BR><SPAN STYLE="text-decoration: none">-
+</SPAN>pr&eacute;cisez les op&eacute;rations &agrave; effectuer &agrave;
+l'affichage en surchargeant (<B>override</B>) la m&eacute;thode
+Afficher:</FONT></FONT></P>
+<P STYLE="margin-left: 2.01cm; margin-bottom: 0cm"><FONT FACE="OCR A Extended, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><B>interface<BR>...<BR>public<BR>procedure
+</B>Afficher<B>; override;<BR>...</B></FONT></FONT></P>
+<P STYLE="margin-left: 2.01cm; margin-bottom: 0cm"><FONT FACE="OCR A Extended, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><B>implementation<BR>procedure</B>
+TfrmEcran1.Afficher;<BR><B>begin<BR>inherited</B>;<BR>Memo1.Lines.Add('Vous
+voici dans l''&eacute;cran d''application n&deg;1');<BR><B>end</B>;</FONT></FONT></P>
+<P STYLE="margin-left: 2.01cm; margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><SPAN STYLE="text-decoration: none">-
+</SPAN>enregistrez l'unit&eacute; sous &ldquo;FrEcran1.pas&rdquo;</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-style: normal"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>CR&Eacute;ATION
+DE LA FEN&Ecirc;TRE PRINCIPALE</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><SPAN STYLE="text-decoration: none">-
+</SPAN>Cr&eacute;ez une interface selon votre go&ucirc;t en reservant
+simplement un panel &ldquo;PanelFrame&rdquo; pour servir de zone
+d'affichage de vos &eacute;crans</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><IMG SRC="ecran3.png" NAME="Graphic3" ALIGN=LEFT WIDTH=518 HEIGHT=342 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><SPAN STYLE="text-decoration: none">-
+</SPAN>D&eacute;clarez dans la section private une variable
+select_frame de type TFrmModele qui pointera sur le frame affich&eacute;<BR><SPAN STYLE="text-decoration: none">-
+</SPAN>ajoutez FrEcran1 &agrave; la clause <B>uses</B> de la section
+impl&eacute;mentation<BR><SPAN STYLE="text-decoration: none">- </SPAN>Nommez
+&ldquo;MenuClick&rdquo; l'&eacute;v&ecirc;nement OnClick d'appel de
+l'&eacute;cran n&deg;1<BR><SPAN STYLE="text-decoration: none">-
+</SPAN>Ci-dessous le code dont voici l'explication : <BR>Dans
+MenuClick(...) on commence par detruire le Frame actif s'il y en a
+un.<BR>Puis on cr&eacute;e <B>dynamiquement</B> le nouveau frame du
+type voulu, tout en l'affectant &agrave; <B>select_frame</B>. Cette
+affectation est possible puisqu'il y est de type <B>anc&ecirc;tre</B>
+de FrmEcran1. <BR>On n'oublie pas ensuite d'initialiser la propri&eacute;t&eacute;
+<B>Parent</B> &agrave; PanelFrame de fa&ccedil;on &agrave;
+positionner notre Frame dans la zone qui lui a &eacute;t&eacute;
+r&eacute;serv&eacute;e. <BR>Ensuite, l'appel &agrave; la m&eacute;thode
+virtuelle <B>Afficher</B> permet d'initialiser le contenu du
+frame.<BR>Enfin, &agrave; la destruction de la fen&ecirc;tre
+principale <B>OnDestroy</B>, FreeAndNil lib&egrave;re le dernier
+Frame affich&eacute;.</FONT></FONT></P>
+<P STYLE="margin-left: 2.01cm; margin-bottom: 0cm"><FONT SIZE=2 STYLE="font-size: 9pt"><FONT FACE="OCR A Extended, monospace"><B>interface<BR>uses
+</B>FrModele;<BR><BR><B>type<BR></B>TFPrincipal =
+<B>class</B>(TForm)<BR>...<BR><B>procedure</B> MenuClick(Sender:
+Tobject);<BR><B>procedure</B> FormDestroy(Sender:
+Tobject);</FONT></FONT><BR><FONT SIZE=2 STYLE="font-size: 9pt"><FONT FACE="OCR A Extended, monospace"><B>private<BR></B>select_frame
+: TFrmModele;<BR><B>public<BR>end</B>;<BR><BR><B>var<BR></B>FPrincipal:
+TFPrincipal;<BR><BR><B>implementation<BR>uses</B>
+FrEcran1;<BR><BR><B>procedure</B> TFPrincipal.MenuClick(Sender:
+Tobject);<BR><B>begin<BR></B>FreeAndNil(select_frame);<BR><B>if</B>
+Sender = Button1 <B>then</B> select_frame :=
+TfrmEcran1.Create(self)<BR><B>else</B> Exit;<BR>select_frame.Parent
+:= PanelFrame;<BR>select_frame.Afficher;<BR><B>end</B>;<BR><BR><B>procedure</B>
+TFPrincipal.FormDestroy(Sender:
+Tobject);<BR><B>begin<BR></B>FreeAndNil(select_frame);<BR><B>end</B>;</FONT></FONT></P>
+<P STYLE="margin-left: 2.01cm; margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>CREATION
+D'AUTRES ECRANS</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>R&eacute;p&eacute;tez
+la proc&eacute;dure AJOUTER UN FRAME &Agrave; L'APPLICATION</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>N</B>
+&eacute;tant le num&eacute;ro de l'&eacute;cran que vous souhaitez
+ajouter, placez-vous dans l'unit&eacute; Principal.pas<BR><SPAN STYLE="text-decoration: none">-
+</SPAN>menu Fichier + Utiliser l'unit&eacute; ... FrEcran<B>N<BR></B><SPAN STYLE="text-decoration: none">-
+</SPAN>ajoutez la ligne de code suivante dans l'&eacute;v&ecirc;nement
+<B>MenuClick(...)</B></FONT></FONT></P>
+<P STYLE="margin-left: 2.01cm; margin-bottom: 0cm"><FONT FACE="OCR A Extended, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><B>else</B>
+<B>if</B> Sender = Button<B>N</B> <B>then</B> select_frame :=
+TFrmEcran<B>N</B>.Create(self)</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; text-decoration: none"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>-
+n'oubliez pas de conncter l'evenement OnClick du Button<B>N</B> a
+MenuClick(...) !</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><SPAN STYLE="text-decoration: none">-
+</SPAN>et c'est tout !</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>LE
+RESULTAT</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><I>Sources
+ci-joint : </I></FONT></FONT>
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><I><B>frames1.zip
+	</B></I><SPAN STYLE="font-style: normal"><B>:</B><SPAN STYLE="font-weight: medium">
+	Codes s<FONT FACE="Arial, sans-serif">ources du tutoriel</FONT></SPAN></SPAN></FONT></FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><I><B>frame2.zip
+	: </B><SPAN STYLE="font-weight: medium"><FONT FACE="Arial, sans-serif">Version
+	am&eacute;lior&eacute;e incluant : <BR>- proc&eacute;dure permettant
+	la fermeture du frame en utilisant un message Windows envoy&eacute;
+	&agrave; la fen&ecirc;tre principale<BR>- gestion d'une grille dans
+	l'&eacute;cran 2<BR>- ajout d'un &eacute;cran 21, h&eacute;rit&eacute;
+	de l'&eacute;cran2 avec ajout de nouvelles fonctionnalit&eacute;s</FONT></SPAN></I></FONT></FONT></P>
+</UL>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><IMG SRC="ecran4.png" NAME="Graphic4" ALIGN=LEFT WIDTH=609 HEIGHT=326 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>GLOSSAIRE</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>H&eacute;ritage<BR></B><SPAN STYLE="font-weight: medium">Cr&eacute;ation
+d'un composant &agrave; partir d'un autre composant pr&eacute;-existant.
+Dans notre cas, l'inter&ecirc;t est de r&eacute;cup&eacute;rer
+automatiquement les personnalisations du composant anc&ecirc;tre,
+mais aussi de ne pas dupliquer inutilement du code.</SPAN></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>Exemple
+: la m&eacute;thode <SPAN STYLE="font-weight: medium">FrmEcran1.Afficher</SPAN>
+fait tout d'abord appel au code de FrmModele (inherited), puis
+ex&eacute;cute sont propre code. <BR>Gr&acirc;ce &agrave; ce
+m&eacute;canisme, il n'est pas n&eacute;cessaire de g&eacute;rer
+plusieurs variables au niveau de la fen&ecirc;tre principale, et le
+code <U>pour chaque nouvelle fenetre</U> est donc r&eacute;duit &agrave;
+<B>1 ligne</B> + 1 clause uses !!!</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>G&eacute;n&eacute;ration
+dynamique<BR></B>Le fait de ne pas laisser &agrave; Delphi le soin
+d'auto-cr&eacute;er les Frames en les pla&ccedil;ant par avance dans
+la fiche principale, mais de les cr&eacute;er nous m&ecirc;me quand
+il en est besoin. Nous &eacute;conomisons ainsi de la m&eacute;moire
+et du temps au d&eacute;marrage de l'application.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>CONCLUSION</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>Ce
+mode d'utilisation des frames tr&egrave;s puissant et souple
+d'utilisation. Il permet d'&eacute;conomiser beaucoup de lignes de
+code et d'acc&eacute;l&eacute;rer de beaucoup la g&eacute;n&eacute;ration
+<U>et la maintenance</U> des fen&ecirc;tres &ldquo;r&eacute;p&eacute;titives&rdquo;
+dans une application.<BR>En s'appuyant sur le polymorphisme,
+l'h&eacute;ritage, et la g&eacute;n&eacute;ration dynamique des
+Frames, il est possible d'affiner bien d'avantage cet embryon de
+gestionnaire de fen&ecirc;trage. </FONT></FONT>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>Voici
+quelques pistes :</FONT></FONT></P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>enrichir
+	le modele de base avec des composants qui seront pr&eacute;sents
+	dans toutes les frames h&eacute;rit&eacute;es. Notamment avec les
+	TimageList, c'est l&agrave; une fa&ccedil;on d'&eacute;conomiser des
+	ressources (voir le fichier .DFM d'un composant h&eacute;rit&eacute;).</FONT></FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>mise
+	&agrave; jour automatique du style de tous les &eacute;crans &agrave;
+	partir de la fen&ecirc;tre anc&ecirc;tre, &agrave; la conception
+	comme &agrave; l'ex&eacute;cution&nbsp;! Tr&egrave;s pratique pour
+	les options d'affichage ou de couleurs.</FONT></FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>cr&eacute;ation
+	d'un tableau ou du'une collection de TFrmModele pour stocker les
+	fen&ecirc;tres d&eacute;j&agrave; ouvertes et acc&eacute;l&eacute;rer
+	l'affichage dans </FONT></FONT>
+	</P>
+	<LI><P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>cr&eacute;ation
+	d'une ou plusieurs classes interm&eacute;diaires entre FrmModele et
+	FrmX pour d&eacute;cliner d'autres types d'&eacute;cran &agrave;
+	partir de la m&ecirc;me classe de base</FONT></FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>ajout
+	de TActionList, d'&eacute;v&ecirc;nements et de m&eacute;thodes dans
+	la classe anc&ecirc;tre pour regrouper des comportements : OnResize,
+	imprimer, exporter, ...</FONT></FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>et
+	caetera !</FONT></FONT></P>
+</UL>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>Consultez
+<B>frame2.zip</B> pour quelques exemples.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><SPAN STYLE="font-weight: medium"><FONT SIZE=2><FONT FACE="Arial, sans-serif">Ci-joints
+:</FONT></FONT></SPAN></P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>frame1.zip
+	: code source du tutoriel</FONT></FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>frame2.zip
+	: code source d'une version plus &eacute;volu&eacute;e</FONT></FONT></P>
+</UL>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">Ci-</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><I>Alors,
+bonne programmation, et j'esp&egrave;re que ce tutorial vous sera
+utile pour &eacute;pater encore davantage vos clients et gagner en
+productivit&eacute;. N'h&eacute;sitez pas &agrave; me faire par de
+vos remarques. </I></FONT></FONT>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><I>Didier
+Largange - LOGICANTILLES</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><A HREF="mailto:d.largange@logicantilles.com"><I><FONT SIZE=2><FONT FACE="Arial, sans-serif">d.largange@logicantilles.com</FONT></FONT></I></A></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+</BODY>
+</HTML>

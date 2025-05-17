@@ -1,0 +1,106 @@
+C:\CPI Expert\BDS2007\CPIV40\Package Files\CPIExpertPackageV40BDS2007.bpl
+c:\cpi expert\common\base package\CPIComponentsPackage.bpl
+$(BDS)bin\applet100.bpl
+$(BDS)bin\asmview100.bpl
+$(BDS)bin\codetemplates100.bpl
+$(BDS)bin\comcore100.bpl
+$(BDS)bin\comentcore100.bpl
+$(BDS)bin\coreide100.bpl
+$(BDS)bin\coreproide100.bpl
+$(BDS)bin\DataExplorer100.bpl
+$(BDS)bin\dbkdebugide100.bpl
+$(BDS)bin\dbkdebugproide100.bpl
+$(BDS)bin\dbx100.bpl
+$(BDS)bin\DbxCommonDriver100.bpl
+$(BDS)bin\dcl31w100.bpl
+$(BDS)bin\dclact100.bpl
+$(BDS)bin\dclado100.bpl
+$(BDS)bin\dclbde100.bpl
+$(BDS)bin\dcldb100.bpl
+$(BDS)bin\dcldbx4100.bpl
+$(BDS)bin\dcldbxcds4100.bpl
+$(BDS)bin\dclemacsedit100.bpl
+$(BDS)bin\dclib100.bpl
+$(BDS)bin\dclie100.bpl
+$(BDS)bin\dclindy100.bpl
+$(BDS)bin\dclIndyCore100.bpl
+$(BDS)bin\dclIndyProtocols100.bpl
+$(BDS)bin\dclintraweb_90_100.bpl
+$(BDS)bin\dclisp100.bpl
+$(BDS)bin\dclmcn100.bpl
+$(BDS)bin\dclmid100.bpl
+$(BDS)bin\dclmlwiz100.bpl
+$(BDS)bin\dclnet100.bpl
+$(BDS)bin\dcloffice2k100.bpl
+$(BDS)bin\dclofficexp100.bpl
+$(BDS)bin\dclsmp100.bpl
+$(BDS)bin\dclsmpedit100.bpl
+$(BDS)bin\dclsoap100.bpl
+$(BDS)bin\dclsockets100.bpl
+$(BDS)bin\dclstd100.bpl
+$(BDS)bin\dcltee7100.bpl
+$(BDS)bin\dclwbm100.bpl
+$(BDS)bin\dclwebsnap100.bpl
+$(BDS)bin\delphicoment100.bpl
+$(BDS)bin\delphicompro100.bpl
+$(BDS)bin\delphicoreide100.bpl
+$(BDS)bin\delphicoreproide100.bpl
+$(BDS)bin\delphide100.bpl
+$(BDS)bin\delphidotnetcore100.bpl
+$(BDS)bin\delphierrorinsite100.bpl
+$(BDS)bin\delphipro100.bpl
+$(BDS)bin\delphivclide100.bpl
+$(BDS)bin\deployindy100.bpl
+$(BDS)bin\designdgm100.bpl
+$(BDS)bin\designide100.bpl
+$(BDS)bin\dfm100.bpl
+$(BDS)bin\DotnetCoreAssemblies100.bpl
+$(BDS)bin\dotnetcoreide100.bpl
+$(BDS)bin\exceptiondiag100.bpl
+$(BDS)bin\fileexplorer100.bpl
+$(BDS)bin\historyide100.bpl
+$(BDS)bin\htmide100.bpl
+$(BDS)bin\htmldlgs100.bpl
+$(BDS)bin\htmlhelp2100.bpl
+$(BDS)bin\htmlide100.bpl
+$(BDS)bin\htmltidy100.bpl
+$(BDS)bin\IDECtrls100.bpl
+$(BDS)bin\idefilefilters100.bpl
+$(BDS)bin\indy100.bpl
+$(BDS)bin\IndyCore100.bpl
+$(BDS)bin\IndyProtocols100.bpl
+$(BDS)bin\IndySystem100.bpl
+$(BDS)bin\itecore100.bpl
+$(BDS)bin\itectrls100.bpl
+$(BDS)bin\iteide100.bpl
+$(BDS)bin\iteidew32100.bpl
+$(BDS)bin\mlcc100.bpl
+$(BDS)bin\plugview100.bpl
+$(BDS)bin\rc100.bpl
+$(BDS)bin\refactoride100.bpl
+$(BDS)bin\startpageide100.bpl
+$(BDS)bin\stride100.bpl
+$(BDS)bin\tgide100.bpl
+$(BDS)bin\tlbview100.bpl
+$(BDS)bin\tlib100.bpl
+$(BDS)bin\todoide100.bpl
+$(BDS)bin\unittestide100.bpl
+$(BDS)bin\vcldesigner100.bpl
+$(BDS)bin\vclhie100.bpl
+$(BDS)bin\vclide100.bpl
+$(BDS)bin\vclmenudesigner100.bpl
+$(BDS)bin\win32debugide100.bpl
+$(BDS)bin\win32debugproide100.bpl
+C:\Program Files\madCollection\madBasic\DeXter\madBasic_.bpl
+C:\Program Files\madCollection\madBasic\DeXter\madHelp_.bpl
+C:\Program Files\madCollection\madCodeHook\DeXter\madCodeHook_.bpl
+C:\Program Files\madCollection\madDisAsm\DeXter\madDisAsm_.bpl
+C:\Program Files\madCollection\madExcept\DeXter\madExceptIde_.bpl
+C:\Program Files\madCollection\madExcept\DeXter\madExceptVcl_.bpl
+C:\Program Files\madCollection\madExcept\DeXter\madExceptWizard_.bpl
+C:\Program Files\madCollection\madExcept\DeXter\madExcept_.bpl
+C:\Program Files\madCollection\madKernel\DeXter\madKernel_.bpl
+C:\Program Files\madCollection\madRemote\DeXter\madRemote_.bpl
+C:\Program Files\madCollection\madSecurity\DeXter\madSecurity_.bpl
+C:\Program Files\madCollection\madShell\DeXter\madShell_.bpl
+d:\delphi2007\delfi\winlock2007\WinlockPkg2007.bpl

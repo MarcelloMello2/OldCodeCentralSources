@@ -1,0 +1,9 @@
+AutoHotkeys
+AutoLineReduction
+AutoMerge
+Images
+Items
+OnChange
+OwnerDraw
+ParentBiDiMode
+Tag

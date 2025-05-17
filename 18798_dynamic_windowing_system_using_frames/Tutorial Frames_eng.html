@@ -1,0 +1,241 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 641  (Win32)">
+	<META NAME="CREATED" CONTENT="20020902;14575200">
+	<META NAME="CHANGED" CONTENT="20020920;11000056">
+	<STYLE>
+	<!--
+		@page { size: 21cm 29.7cm; margin: 2cm }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US">
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=3><B>DYNAMIC
+WINDOWING SYSTEM WITH FRAMES</B></FONT></FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>by
+Didier Largange</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><I><U>User
+level</U> : average, with basics in object programming to go
+ahead.<BR><U>Tools</U> : Delphi 5 Std or above.</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>INTRODUCTION</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>If
+you have wasted enough time, fighting against MDI forms, TPanel and
+TPageControl, trying to achieve modern looking and sophisticated
+interfaces : this tutorial is for you.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>TFrame</B>
+is a marvellous component introduced by Borland in the 5<SUP>th</SUP>
+version of Delphi. I now realize that it was worthing the upgrade for
+itself.<BR>Most of the lighting has been focused on its ability to be
+used as a container for fonctionnal groups of components interacting
+as in a form. The must been the ability to capitalize those modules,
+putting them in the component tab.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium; text-decoration: none">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=2>But more than that,
+frames are not limited to small sets of components, they can compose
+large parts of your application's windows. They can also be
+integrated &ldquo;live&rdquo; (dynamically) in your forms and not
+just as &ldquo;static&rdquo; components.<BR>With this tutorial, you
+should be able to create in a few lines of code, Outlook-like,
+flexible, maintainable and upgradable interfaces.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium; text-decoration: none">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>CREATING THE PROJECT<BR></B>-
+menu File + New application<BR>- rename the main form as &ldquo;FMain&rdquo;<BR>-
+menu File + Save as ... Main.pas<BR>- menu File + Save le projet as
+... Tuto_frame.dpr</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; text-decoration: none"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>CREATING
+THE FRAME MODEL</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><SPAN STYLE="text-decoration: none">-
+</SPAN>menu File + New frame</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><IMG SRC="ecran1.png" NAME="Graphic1" ALIGN=LEFT WIDTH=195 HEIGHT=115 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><SPAN STYLE="text-decoration: none">-
+insert the following</SPAN> code :</FONT></FONT></P>
+<P STYLE="margin-left: 2.01cm; margin-bottom: 0cm"><FONT FACE="OCR A Extended, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><B>interface<BR>procedure</B>
+ShowFrame; virtual;</FONT></FONT></P>
+<P STYLE="margin-left: 2.01cm; margin-bottom: 0cm"><FONT FACE="OCR A Extended, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><B>implementation<BR>procedure</B>
+TfrmModel.ShowFrame;<BR><B>begin<BR></B>// nothing<BR><B>end</B>;</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><SPAN STYLE="text-decoration: none">-
+</SPAN>modify property <B>Name</B> of the frame to &ldquo;FrmModel&rdquo;<BR><SPAN STYLE="text-decoration: none">-
+</SPAN>add a panel and set its properties to : <B>Align</B> := alTop,
+<B>Name</B> := PanelTitre, <B>Color</B> := clGray</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><IMG SRC="ecran2.png" NAME="Graphic2" ALIGN=LEFT WIDTH=434 HEIGHT=207 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><SPAN STYLE="text-decoration: none">-
+</SPAN>menu Save as ... FrModel.pas</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>ADDING
+A FRAME TO THE APPLICATION</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><SPAN STYLE="text-decoration: none">-
+</SPAN>menu File + New + ttab tuto_frame + select FrmModel (inherit)
++ OK<BR><SPAN STYLE="text-decoration: none">- </SPAN>modify property
+<B>PanelTitre.Caption</B> in &ldquo;View n&deg;1&rdquo;<BR><SPAN STYLE="text-decoration: none">-
+</SPAN>modify property <B>Name</B> of the frame to &ldquo;FrmView1&rdquo;<BR><SPAN STYLE="text-decoration: none">-
+specify the actions to make when</SPAN> showing the frame by
+overriding the ShowFrame method:</FONT></FONT></P>
+<P STYLE="margin-left: 2.01cm; margin-bottom: 0cm"><FONT FACE="OCR A Extended, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><B>interface<BR>...<BR>public<BR>procedure
+</B>ShowFrame<B>; override;<BR>...</B></FONT></FONT></P>
+<P STYLE="margin-left: 2.01cm; margin-bottom: 0cm"><FONT FACE="OCR A Extended, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><B>implementation<BR>procedure</B>
+TfrmView1.ShowFrame;<BR><B>begin<BR>inherited</B>;<BR>Memo1.Lines.Add('Here
+you are in the 1<SUP>st</SUP> screen of the application');<BR><B>end</B>;</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><SPAN STYLE="text-decoration: none">-
+save your unit as </SPAN>&ldquo;FrView1.pas&rdquo;</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; font-style: normal"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>CREATING
+THE MAIN WINDOW</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><SPAN STYLE="text-decoration: none">-
+Create the interface in your taste and make sure you keep a
+</SPAN>&ldquo;PanelFrame&rdquo; to serve as a showing area for your
+screens</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><IMG SRC="ecran3.png" NAME="Graphic3" ALIGN=LEFT WIDTH=518 HEIGHT=342 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><SPAN STYLE="text-decoration: none">-
+in the private section, declare a &ldquo;</SPAN>select_frame&rdquo;
+variable of type TFrmModel. It will point to the current frame.<BR><SPAN STYLE="text-decoration: none">-
+</SPAN>add FrView1 to the <B>uses</B> clause of your implementation
+section<BR><SPAN STYLE="text-decoration: none">- name as &ldquo;MenuClick&rdquo;
+the OnClick event for calling the first screen </SPAN><BR><SPAN STYLE="text-decoration: none">-
+Here is the explainations for the source code below</SPAN> : <BR>In
+MenuClick(...) we first destroy the active frame if needed.<BR>Then,
+we <B>dynamically</B> create the new frame of the needed type, and
+assign it to our <B>select_frame</B> variable. This assignment is
+possible because of it type TFrmModel witch is the ancestor class of
+TfrmView1.<BR>We do not forget to initialize its <B>Parent</B>
+property<B> </B>to<B> </B>PanelFrame so it will be placed into its
+dedicated place. <BR>Then we call the virtual method <B>ShowFrame</B>
+toask the new frame to initialize its data.<BR>Last, in the <B>OnDestroy</B>
+event of the MainForm, we use FreeAndNil, FreeAndNil to free the last
+used frame.</FONT></FONT></P>
+<P STYLE="margin-left: 2.01cm; margin-bottom: 0cm"><FONT SIZE=2 STYLE="font-size: 9pt"><FONT FACE="OCR A Extended, monospace"><B>interface<BR>uses
+</B>FrModel;<BR><BR><B>type<BR></B>TFPrincipal =
+<B>class</B>(TForm)<BR>...<BR><B>procedure</B> MenuClick(Sender:
+Tobject);<BR><B>procedure</B> FormDestroy(Sender:
+Tobject);</FONT></FONT><BR><FONT SIZE=2 STYLE="font-size: 9pt"><FONT FACE="OCR A Extended, monospace"><B>private<BR></B>select_frame
+: TFrmModel;<BR><B>public<BR>end</B>;<BR><BR><B>var<BR></B>FPrincipal:
+TFPrincipal;<BR><BR><B>implementation<BR>uses</B> FrView1;<BR><BR><B>procedure</B>
+TFPrincipal.MenuClick(Sender:
+Tobject);<BR><B>begin<BR></B>FreeAndNil(select_frame);<BR><B>if</B>
+Sender = Button1 </FONT></FONT>
+</P>
+<P STYLE="margin-left: 2.01cm; margin-bottom: 0cm"><FONT FACE="OCR A Extended, monospace"><FONT SIZE=2 STYLE="font-size: 9pt"><B>then</B>
+select_frame := TfrmView1.Create(self)<BR><B>else</B>
+Exit;<BR>select_frame.Parent :=
+PanelFrame;<BR>select_frame.ShowFrame;<BR><B>end</B>;<BR><BR><B>procedure</B>
+TFPrincipal.FormDestroy(Sender:
+Tobject);<BR><B>begin<BR></B>FreeAndNil(select_frame);<BR><B>end</B>;</FONT></FONT></P>
+<P STYLE="margin-left: 2.01cm; margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>ADDING
+OTHER FRAMES</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>Repeat
+the procedure ADDING A FRAME TO THE APPLICATION</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT SIZE=2><FONT FACE="Arial, sans-serif"><B>N</B>
+been the numer of the screen you want to add, open the Main.pas
+unit<BR><SPAN STYLE="text-decoration: none">- </SPAN>menu File + Use
+unit ... FrView<B>N<BR></B><SPAN STYLE="text-decoration: none">- </SPAN>add
+the following line of code in the <B>MenuClick(...)</B> event</FONT></FONT><BR><FONT SIZE=2 STYLE="font-size: 9pt"><FONT FACE="OCR A Extended, monospace"><B>else</B>
+<B>if</B> Sender = Button<B>N</B> <B>then</B> select_frame :=
+TFrmView<B>N</B>.Create(self)</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; text-decoration: none"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>-
+don't forget to set the Button<B>N</B> OnClick to MenuClick(...) !</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; text-decoration: none"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>-
+and thats all !</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>THE
+RESULT</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><I>Source
+code : </I></FONT></FONT>
+</P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B><I>frames1.zip
+	</I>:</B> Source code of this tutorial</FONT></FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><I><B>frame2.zip
+	: </B>Improved version incuding : <BR>- procedure allowing the frame
+	to close itself by posting Windows message to the main window<BR>-
+	grid management in Screen 2<BR>- added Screen 21, inherited from
+	Screen2. Adding new functions to its ancestor</I></FONT></FONT></P>
+</UL>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><IMG SRC="ecran4.png" NAME="Graphic4" ALIGN=LEFT WIDTH=609 HEIGHT=326 BORDER=0><BR CLEAR=LEFT><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>GLOSSARY</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>Inheritance<BR></B>Creation
+of a component from an another existing one. In our case, the main
+interest is to automatically make use of the customizations made on
+the ancestor while not duplicating code.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>By
+exemple, define &ldquo;abilities&rdquo; in TfrmModel so that we do
+not need to care about them later in the TFrmView.<BR>The
+<B>FrmView1.ShowFrame</B> method is polymorph, so it call its
+ancestor code with <B>inherited</B> key word, then excecutie its own
+behaviour. <BR>Giving this mecanism, it's no more necessary to manage
+several variables in the MianForm, and the code <U>for each new frame</U>
+is limited to <B>1 </B>line + 1 uses clause !!!</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>Dynamic
+creation<BR></B>The act to not let Delphi auto create the frames by
+placing them at desing time in the main form. We create them when
+needed, thus saving saving ressources and loading time.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><B>CONCLUSION</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>This
+is a powerfull and flexible way to use frames. It makes you save a
+lot of coding and speeds the generation and the <U>maintainability</U>
+of common windows in an application.<BR>By using more polymorphism,
+inheritance and dynamic frame creation, you should be able from this
+embryo to achieve some good windows managing systems for your
+applications.. </FONT></FONT>
+</P>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>Here
+are some suggestions:</FONT></FONT></P>
+<UL>
+	<LI><P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>enrich
+	the ancestor with components that will be automatically present in
+	all your inherited frames at no cost. Especially with TimageList you
+	can save a lot of ressources in an application with lots of similar
+	screens (see the .DFM file of an inherited frame)</FONT></FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>automatically
+	update your application style from the ancestor frame, at
+	design-time or at runtime. Very usefull for anabling the user to
+	custimize the colors of the application</FONT></FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>creating
+	an array or a collection of TFrmModel to store open windows can help
+	you speed rendering </FONT></FONT>
+	</P>
+	<LI><P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>create
+	intermediate classes between TFrmModel and TFrmX for been able to
+	produce several types of screens from the same common base class</FONT></FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>add
+	TActionList, events and methods in the ancestor class to centralize
+	common behaviours : OnResize, print, export, ...</FONT></FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>et
+	caetera !</FONT></FONT></P>
+</UL>
+<P STYLE="margin-bottom: 0cm; font-weight: medium"><FONT FACE="Arial, sans-serif"><FONT SIZE=2>See
+<B>frame2.zip</B> for some illustrations.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><I>I
+hope you'll have fun with these tricks, and I wish you can impress
+more (if not yet) your clients and gain in productivity. Do not
+hesitate to mail me your comments.</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><I>Regards,</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Arial, sans-serif"><FONT SIZE=2><I>Didier
+Largange - LOGICANTILLES</I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><A HREF="mailto:d.largange@logicantilles.com"><I><FONT SIZE=2><FONT FACE="Arial, sans-serif">d.largange@logicantilles.com</FONT></FONT></I></A></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+</BODY>
+</HTML>

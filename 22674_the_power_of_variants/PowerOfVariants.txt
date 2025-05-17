@@ -1,0 +1,53 @@
+// Power Of Variants
+// by High
+// theYuksek@yahoo.com
+
+
+function TDm1.GetValuesFromDB(const SqlStr: string; aResultFields: array of String): Variant;
+var I: Integer;
+begin
+
+ with QrGet do
+ try
+   Close;
+   SQL.Clear;
+   SQL.Add( SqlStr );
+   If not Prepared then Prepare;
+   Open;
+
+   Result :=  VarArrayCreate([0, High(aResultFields)], VarVariant);
+
+   If isEmpty
+   then VarClear(Result)  // Set to UnAssigned
+   else For I:=0 to VarArrayHighBound(Result,1) do
+        begin
+          Result[I] := QrGet.FieldByName(aResultFields[I]).Value;
+          If VarIsNull(Result[I])
+          then Result[I] := '';
+        end;
+
+ finally
+   Close;
+ end;
+
+end;
+
+
+
+procedure TfrmList.myQueryCalcFields(DataSet: TDataSet);
+var
+ Res: Variant;
+begin
+ Res := Dm1.GetValuesFromDB('SELECT LastName, FirstName FROM EMPLOYEE WHERE EmpNo='+myQueryEmpNo.asString,
+                            ['LastName','FirstName' {...} ]);
+
+ If not VarIsEmpty(Res) then //Check the Unassigned
+ begin
+   myQueryCalcLastNAME.Value  := Res[0];
+   myQueryCalcFirstNAME.Value := Res[1];
+   {...}
+ end;
+
+end;
+
+

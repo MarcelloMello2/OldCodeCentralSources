@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<TOptions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ClassPrefix>T</ClassPrefix>
+  <Indent>2</Indent>
+  <AddPrefixDefault>true</AddPrefixDefault>
+  <RemoveUnprefixedDefault>false</RemoveUnprefixedDefault>
+  <PrefixUnitPath>R:\.NET.2\Commons\T</PrefixUnitPath>
+  <TypeListPath>R:\.NET.2\Commons\T\TypeList.xml</TypeListPath>
+  <ItemInterfaceShortcut>Control Alt U</ItemInterfaceShortcut>
+  <ItemImplementationShortcut>Control Alt Y</ItemImplementationShortcut>
+  <ItemRemoveNonPrefixShortCut>Control Alt P</ItemRemoveNonPrefixShortCut>
+  <ItemFindNamespacesShortCut>Control Alt T</ItemFindNamespacesShortCut>
+  <TrayAreaInjector>true</TrayAreaInjector>
+  <TrayAreaPersonality>true</TrayAreaPersonality>
+</TOptions>

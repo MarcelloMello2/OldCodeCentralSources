@@ -1,0 +1,4043 @@
+Packages
+	Design Time
+		dcl31w100
+			Pkg index=64
+			Tag index=1
+			No units=4
+			No cmp=8
+			Description=Delphi 1.0 Compatibility Components
+			Files
+				dpk=
+				bpl=$(BDS)\bin\dcl31w100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+				ExtCtrls
+					Unit index=-1
+					No Comps=2
+					Files
+						Pas=$(BDS)source\Win32\vcl\ExtCtrls.pas
+						dcr=
+						dcu=$(BDS)lib\debug\ExtCtrls.dcu
+						res=
+					Components
+						THeader
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=21
+							3. Category=Win 3.1
+							4. tab=Win 3.1
+							5. group=Header
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtCtrls.pas
+								drc=
+								res=
+						TNotebook
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=20
+							3. Category=Win 3.1
+							4. tab=Win 3.1
+							5. group=Notebook
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtCtrls.pas
+								drc=
+								res=
+				FileCtrl
+					Unit index=-1
+					No Comps=4
+					Files
+						Pas=$(BDS)source\Win32\vcl\FileCtrl.pas
+						dcr=
+						dcu=$(BDS)lib\debug\FileCtrl.dcu
+						res=$(BDS)lib\filectrl.res
+					Components
+						TDirectoryListBox
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=23
+							3. Category=Win 3.1
+							4. tab=Win 3.1
+							5. group=Directory
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\FileCtrl.pas
+								drc=
+								res=
+						TDriveComboBox
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=24
+							3. Category=Win 3.1
+							4. tab=Win 3.1
+							5. group=Drive
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\FileCtrl.pas
+								drc=
+								res=
+						TFileListBox
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=22
+							3. Category=Win 3.1
+							4. tab=Win 3.1
+							5. group=File
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\FileCtrl.pas
+								drc=
+								res=
+						TFilterComboBox
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=25
+							3. Category=Win 3.1
+							4. tab=Win 3.1
+							5. group=Filter
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\FileCtrl.pas
+								drc=
+								res=
+				Outline
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\Outline.pas
+						dcr=
+						dcu=$(BDS)lib\debug\Outline.dcu
+						res=$(BDS)lib\outline.res
+					Components
+						TOutline
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=18
+							3. Category=Win 3.1
+							4. tab=Win 3.1
+							5. group=Outline
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\Outline.pas
+								drc=
+								res=
+				TabNotBk
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\TabNotBk.pas
+						dcr=
+						dcu=$(BDS)lib\debug\TabNotBk.dcu
+						res=
+					Components
+						TTabbedNotebook
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=19
+							3. Category=Win 3.1
+							4. tab=Win 3.1
+							5. group=Tabbed
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\TabNotBk.pas
+								drc=
+								res=
+		dclstd100
+			Pkg index=65
+			Tag index=1
+			No units=24
+			No cmp=82
+			Description=Borland Standard Components
+			Files
+				dpk=
+				bpl=C:\Program Files\Borland\BDS\4.0\Bin\dclstd100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+				ActnList
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\ActnList.pas
+						dcr=
+						dcu=$(BDS)lib\debug\ActnList.dcu
+						res=
+					Components
+						TActionList
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=15
+							3. Category=Standard
+							4. tab=Standard
+							5. group=Action
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ActnList.pas
+								drc=
+								res=
+				AppEvnts
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\AppEvnts.pas
+						dcr=
+						dcu=$(BDS)lib\debug\AppEvnts.dcu
+						res=
+					Components
+						TApplicationEvents
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=62
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Application
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\AppEvnts.pas
+								drc=
+								res=
+				ButtonGroup
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\ButtonGroup.pas
+						dcr=
+						dcu=$(BDS)lib\debug\ButtonGroup.dcu
+						res=
+					Components
+						TButtonGroup
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=68
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Button
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ButtonGroup.pas
+								drc=
+								res=
+				Buttons
+					Unit index=-1
+					No Comps=2
+					Files
+						Pas=$(BDS)source\Win32\vcl\Buttons.pas
+						dcr=
+						dcu=$(BDS)lib\debug\Buttons.dcu
+						res=$(BDS)lib\buttons.res
+					Components
+						TBitBtn
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=49
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Bit
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\Buttons.pas
+								drc=
+								res=
+						TSpeedButton
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=50
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Speed
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\Buttons.pas
+								drc=
+								res=
+				CategoryButtons
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\CategoryButtons.pas
+						dcr=
+						dcu=$(BDS)lib\debug\CategoryButtons.dcu
+						res=$(BDS)lib\CategoryButtons.res
+					Components
+						TCategoryButtons
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=67
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Category
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\CategoryButtons.pas
+								drc=
+								res=
+				CheckLst
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\CheckLst.pas
+						dcr=
+						dcu=$(BDS)lib\debug\CheckLst.dcu
+						res=
+					Components
+						TCheckListBox
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=58
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Check
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\CheckLst.pas
+								drc=
+								res=
+				CmAdmCtl
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\CmAdmCtl.pas
+						dcr=
+						dcu=$(BDS)lib\debug\CmAdmCtl.dcu
+						res=
+					Components
+						TCOMAdminCatalog
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=43
+							3. Category=System
+							4. tab=System
+							5. group=COM
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\CmAdmCtl.pas
+								drc=
+								res=
+				ComCtrls
+					Unit index=-1
+					No Comps=18
+					Files
+						Pas=$(BDS)source\Win32\vcl\ComCtrls.pas
+						dcr=
+						dcu=$(BDS)lib\debug\ComCtrls.dcu
+						res=
+					Components
+						TAnimate
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=90
+							3. Category=Win32
+							4. tab=Win32
+							5. group=Animate
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ComCtrls.pas
+								drc=
+								res=
+						TComboBoxEx
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=100
+							3. Category=Win32
+							4. tab=Win32
+							5. group=Combo
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ComCtrls.pas
+								drc=
+								res=
+						TCoolBar
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=98
+							3. Category=Win32
+							4. tab=Win32
+							5. group=Cool
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ComCtrls.pas
+								drc=
+								res=
+						TDateTimePicker
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=91
+							3. Category=Win32
+							4. tab=Win32
+							5. group=Date
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ComCtrls.pas
+								drc=
+								res=
+						THeaderControl
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=95
+							3. Category=Win32
+							4. tab=Win32
+							5. group=Header
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ComCtrls.pas
+								drc=
+								res=
+						THotKey
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=89
+							3. Category=Win32
+							4. tab=Win32
+							5. group=Hot
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ComCtrls.pas
+								drc=
+								res=
+						TListView
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=94
+							3. Category=Win32
+							4. tab=Win32
+							5. group=List
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ComCtrls.pas
+								drc=
+								res=
+						TMonthCalendar
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=92
+							3. Category=Win32
+							4. tab=Win32
+							5. group=Month
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ComCtrls.pas
+								drc=
+								res=
+						TPageControl
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=83
+							3. Category=Win32
+							4. tab=Win32
+							5. group=Page
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ComCtrls.pas
+								drc=
+								res=
+						TPageScroller
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=99
+							3. Category=Win32
+							4. tab=Win32
+							5. group=Page
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ComCtrls.pas
+								drc=
+								res=
+						TProgressBar
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=87
+							3. Category=Win32
+							4. tab=Win32
+							5. group=Progress
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ComCtrls.pas
+								drc=
+								res=
+						TRichEdit
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=85
+							3. Category=Win32
+							4. tab=Win32
+							5. group=Rich
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ComCtrls.pas
+								drc=
+								res=
+						TStatusBar
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=96
+							3. Category=Win32
+							4. tab=Win32
+							5. group=Status
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ComCtrls.pas
+								drc=
+								res=
+						TTabControl
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=82
+							3. Category=Win32
+							4. tab=Win32
+							5. group=Tab
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ComCtrls.pas
+								drc=
+								res=
+						TToolBar
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=97
+							3. Category=Win32
+							4. tab=Win32
+							5. group=Tool
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ComCtrls.pas
+								drc=
+								res=
+						TTrackBar
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=86
+							3. Category=Win32
+							4. tab=Win32
+							5. group=Track
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ComCtrls.pas
+								drc=
+								res=
+						TTreeView
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=93
+							3. Category=Win32
+							4. tab=Win32
+							5. group=Tree
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ComCtrls.pas
+								drc=
+								res=
+						TUpDown
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=88
+							3. Category=Win32
+							4. tab=Win32
+							5. group=Up
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ComCtrls.pas
+								drc=
+								res=
+				Controls
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\Controls.pas
+						dcr=
+						dcu=$(BDS)lib\debug\Controls.dcu
+						res=$(BDS)lib\controls.res
+					Components
+						TImageList
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=84
+							3. Category=Win32
+							4. tab=Win32
+							5. group=Image
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\Controls.pas
+								drc=
+								res=
+				DdeMan
+					Unit index=-1
+					No Comps=4
+					Files
+						Pas=$(BDS)source\Win32\vcl\DdeMan.pas
+						dcr=
+						dcu=$(BDS)lib\debug\DdeMan.dcu
+						res=
+					Components
+						TDdeClientConv
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=44
+							3. Category=System
+							4. tab=System
+							5. group=Dde
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\DdeMan.pas
+								drc=
+								res=
+						TDdeClientItem
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=45
+							3. Category=System
+							4. tab=System
+							5. group=Dde
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\DdeMan.pas
+								drc=
+								res=
+						TDdeServerConv
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=46
+							3. Category=System
+							4. tab=System
+							5. group=Dde
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\DdeMan.pas
+								drc=
+								res=
+						TDdeServerItem
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=47
+							3. Category=System
+							4. tab=System
+							5. group=Dde
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\DdeMan.pas
+								drc=
+								res=
+				Dialogs
+					Unit index=-1
+					No Comps=9
+					Files
+						Pas=$(BDS)source\Win32\vcl\Dialogs.pas
+						dcr=
+						dcu=$(BDS)lib\debug\Dialogs.dcu
+						res=
+					Components
+						TColorDialog
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=33
+							3. Category=Dialogs
+							4. tab=Dialogs
+							5. group=Color
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\Dialogs.pas
+								drc=
+								res=
+						TFindDialog
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=36
+							3. Category=Dialogs
+							4. tab=Dialogs
+							5. group=Find
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\Dialogs.pas
+								drc=
+								res=
+						TFontDialog
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=32
+							3. Category=Dialogs
+							4. tab=Dialogs
+							5. group=Font
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\Dialogs.pas
+								drc=
+								res=
+						TOpenDialog
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=26
+							3. Category=Dialogs
+							4. tab=Dialogs
+							5. group=Open
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\Dialogs.pas
+								drc=
+								res=
+						TPageSetupDialog
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=38
+							3. Category=Dialogs
+							4. tab=Dialogs
+							5. group=Page
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\Dialogs.pas
+								drc=
+								res=
+						TPrintDialog
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=34
+							3. Category=Dialogs
+							4. tab=Dialogs
+							5. group=Print
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\Dialogs.pas
+								drc=
+								res=
+						TPrinterSetupDialog
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=35
+							3. Category=Dialogs
+							4. tab=Dialogs
+							5. group=Printer
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\Dialogs.pas
+								drc=
+								res=
+						TReplaceDialog
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=37
+							3. Category=Dialogs
+							4. tab=Dialogs
+							5. group=Replace
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\Dialogs.pas
+								drc=
+								res=
+						TSaveDialog
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=27
+							3. Category=Dialogs
+							4. tab=Dialogs
+							5. group=Save
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\Dialogs.pas
+								drc=
+								res=
+				DockTabSet
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\DockTabSet.pas
+						dcr=
+						dcu=$(BDS)lib\debug\DockTabSet.dcu
+						res=
+					Components
+						TDockTabSet
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=69
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Dock
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\DockTabSet.pas
+								drc=
+								res=
+				ExtCtrls
+					Unit index=-1
+					No Comps=15
+					Files
+						Pas=$(BDS)source\Win32\vcl\ExtCtrls.pas
+						dcr=
+						dcu=$(BDS)lib\debug\ExtCtrls.dcu
+						res=
+					Components
+						TBevel
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=56
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Bevel
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtCtrls.pas
+								drc=
+								res=
+						TColorBox
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=65
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Color
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtCtrls.pas
+								drc=
+								res=
+						TColorListBox
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=66
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Color
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtCtrls.pas
+								drc=
+								res=
+						TControlBar
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=61
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Control
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtCtrls.pas
+								drc=
+								res=
+						TFlowPanel
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=72
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Flow
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtCtrls.pas
+								drc=
+								res=
+						TGridPanel
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=73
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Grid
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtCtrls.pas
+								drc=
+								res=
+						TImage
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=54
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Image
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtCtrls.pas
+								drc=
+								res=
+						TLabeledEdit
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=64
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Labeled
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtCtrls.pas
+								drc=
+								res=
+						TPaintBox
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=40
+							3. Category=System
+							4. tab=System
+							5. group=Paint
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtCtrls.pas
+								drc=
+								res=
+						TPanel
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=14
+							3. Category=Standard
+							4. tab=Standard
+							5. group=Panel
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtCtrls.pas
+								drc=
+								res=
+						TRadioGroup
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=13
+							3. Category=Standard
+							4. tab=Standard
+							5. group=Radio
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtCtrls.pas
+								drc=
+								res=
+						TShape
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=55
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Shape
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtCtrls.pas
+								drc=
+								res=
+						TSplitter
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=59
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Splitter
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtCtrls.pas
+								drc=
+								res=
+						TTimer
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=39
+							3. Category=System
+							4. tab=System
+							5. group=Timer
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtCtrls.pas
+								drc=
+								res=
+						TTrayIcon
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=71
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Tray
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtCtrls.pas
+								drc=
+								res=
+				ExtDlgs
+					Unit index=-1
+					No Comps=4
+					Files
+						Pas=$(BDS)source\Win32\vcl\ExtDlgs.pas
+						dcr=
+						dcu=$(BDS)lib\debug\ExtDlgs.dcu
+						res=$(BDS)lib\extdlgs.res
+					Components
+						TOpenPictureDialog
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=28
+							3. Category=Dialogs
+							4. tab=Dialogs
+							5. group=Open
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtDlgs.pas
+								drc=
+								res=
+						TOpenTextFileDialog
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=30
+							3. Category=Dialogs
+							4. tab=Dialogs
+							5. group=Open
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtDlgs.pas
+								drc=
+								res=
+						TSavePictureDialog
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=29
+							3. Category=Dialogs
+							4. tab=Dialogs
+							5. group=Save
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtDlgs.pas
+								drc=
+								res=
+						TSaveTextFileDialog
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=31
+							3. Category=Dialogs
+							4. tab=Dialogs
+							5. group=Save
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ExtDlgs.pas
+								drc=
+								res=
+				Forms
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\Forms.pas
+						dcr=
+						dcu=$(BDS)lib\debug\Forms.dcu
+						res=
+					Components
+						TScrollBox
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=57
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Scroll
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\Forms.pas
+								drc=
+								res=
+				Grids
+					Unit index=-1
+					No Comps=2
+					Files
+						Pas=$(BDS)source\Win32\vcl\Grids.pas
+						dcr=
+						dcu=$(BDS)lib\debug\Grids.dcu
+						res=
+					Components
+						TDrawGrid
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=53
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Draw
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\Grids.pas
+								drc=
+								res=
+						TStringGrid
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=52
+							3. Category=Additional
+							4. tab=Additional
+							5. group=String
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\Grids.pas
+								drc=
+								res=
+				Mask
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\Mask.pas
+						dcr=
+						dcu=$(BDS)lib\debug\Mask.dcu
+						res=
+					Components
+						TMaskEdit
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=51
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Mask
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\Mask.pas
+								drc=
+								res=
+				Menus
+					Unit index=-1
+					No Comps=2
+					Files
+						Pas=$(BDS)source\Win32\vcl\Menus.pas
+						dcr=
+						dcu=$(BDS)lib\debug\Menus.dcu
+						res=
+					Components
+						TMainMenu
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=1
+							3. Category=Standard
+							4. tab=Standard
+							5. group=Main
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\Menus.pas
+								drc=
+								res=
+						TPopupMenu
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=2
+							3. Category=Standard
+							4. tab=Standard
+							5. group=Popup
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\Menus.pas
+								drc=
+								res=
+				MPlayer
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\MPlayer.pas
+						dcr=
+						dcu=$(BDS)lib\debug\MPlayer.dcu
+						res=$(BDS)lib\mplayer.res
+					Components
+						TMediaPlayer
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=41
+							3. Category=System
+							4. tab=System
+							5. group=Media
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\MPlayer.pas
+								drc=
+								res=
+				OleCtnrs
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\OleCtnrs.pas
+						dcr=
+						dcu=$(BDS)lib\debug\OleCtnrs.dcu
+						res=
+					Components
+						TOleContainer
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=42
+							3. Category=System
+							4. tab=System
+							5. group=Ole
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\OleCtnrs.pas
+								drc=
+								res=
+				StdCtrls
+					Unit index=-1
+					No Comps=11
+					Files
+						Pas=$(BDS)source\Win32\vcl\StdCtrls.pas
+						dcr=
+						dcu=$(BDS)lib\debug\StdCtrls.dcu
+						res=
+					Components
+						TButton
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=6
+							3. Category=Standard
+							4. tab=Standard
+							5. group=Button
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\StdCtrls.pas
+								drc=
+								res=
+						TCheckBox
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=7
+							3. Category=Standard
+							4. tab=Standard
+							5. group=Check
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\StdCtrls.pas
+								drc=
+								res=
+						TComboBox
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=10
+							3. Category=Standard
+							4. tab=Standard
+							5. group=Combo
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\StdCtrls.pas
+								drc=
+								res=
+						TEdit
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=4
+							3. Category=Standard
+							4. tab=Standard
+							5. group=Edit
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\StdCtrls.pas
+								drc=
+								res=
+						TGroupBox
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=12
+							3. Category=Standard
+							4. tab=Standard
+							5. group=Group
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\StdCtrls.pas
+								drc=
+								res=
+						TLabel
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=3
+							3. Category=Standard
+							4. tab=Standard
+							5. group=Label
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\StdCtrls.pas
+								drc=
+								res=
+						TListBox
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=9
+							3. Category=Standard
+							4. tab=Standard
+							5. group=List
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\StdCtrls.pas
+								drc=
+								res=
+						TMemo
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=5
+							3. Category=Standard
+							4. tab=Standard
+							5. group=Memo
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\StdCtrls.pas
+								drc=
+								res=
+						TRadioButton
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=8
+							3. Category=Standard
+							4. tab=Standard
+							5. group=Radio
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\StdCtrls.pas
+								drc=
+								res=
+						TScrollBar
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=11
+							3. Category=Standard
+							4. tab=Standard
+							5. group=Scroll
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\StdCtrls.pas
+								drc=
+								res=
+						TStaticText
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=60
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Static
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\StdCtrls.pas
+								drc=
+								res=
+				Tabs
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\Tabs.pas
+						dcr=
+						dcu=$(BDS)lib\debug\Tabs.dcu
+						res=$(BDS)lib\tabs.res
+					Components
+						TTabSet
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=70
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Tab
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\Tabs.pas
+								drc=
+								res=
+				ValEdit
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\ValEdit.pas
+						dcr=
+						dcu=$(BDS)lib\debug\ValEdit.dcu
+						res=
+					Components
+						TValueListEditor
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=63
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Value
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ValEdit.pas
+								drc=
+								res=
+				XPMan
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\XPMan.pas
+						dcr=
+						dcu=$(BDS)lib\XPMan.dcu
+						res=
+					Components
+						TXPManifest
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=101
+							3. Category=Win32
+							4. tab=Win32
+							5. group=XP
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\XPMan.pas
+								drc=
+								res=
+		dclact100
+			Pkg index=67
+			Tag index=1
+			No units=6
+			No cmp=8
+			Description=CodeGear ActionBar Components
+			Files
+				dpk=
+				bpl=$(BDS)\bin\dclact100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+				ActnColorMaps
+					Unit index=-1
+					No Comps=3
+					Files
+						Pas=$(BDS)source\Win32\vcl\ActnColorMaps.pas
+						dcr=
+						dcu=$(BDS)lib\debug\ActnColorMaps.dcu
+						res=
+					Components
+						TStandardColorMap
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=79
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Standard
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ActnColorMaps.pas
+								drc=
+								res=
+						TTwilightColorMap
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=80
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Twilight
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ActnColorMaps.pas
+								drc=
+								res=
+						TXPColorMap
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=78
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Color
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ActnColorMaps.pas
+								drc=
+								res=
+				ActnCtrls
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\ActnCtrls.pas
+						dcr=
+						dcu=$(BDS)lib\debug\ActnCtrls.dcu
+						res=
+					Components
+						TActionToolBar
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=77
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Action
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ActnCtrls.pas
+								drc=
+								res=
+				ActnMan
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\ActnMan.pas
+						dcr=
+						dcu=$(BDS)lib\debug\ActnMan.dcu
+						res=
+					Components
+						TActionManager
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=74
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Action
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ActnMan.pas
+								drc=
+								res=
+				ActnMenus
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\ActnMenus.pas
+						dcr=
+						dcu=$(BDS)lib\debug\ActnMenus.dcu
+						res=
+					Components
+						TActionMainMenuBar
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=75
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Action
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ActnMenus.pas
+								drc=
+								res=
+				ActnPopup
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\ActnPopup.pas
+						dcr=
+						dcu=$(BDS)lib\debug\ActnPopup.dcu
+						res=
+					Components
+						TPopupActionBar
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=76
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Popup
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\ActnPopup.pas
+								drc=
+								res=
+				CustomizeDlg
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\vcl\CustomizeDlg.pas
+						dcr=
+						dcu=$(BDS)lib\debug\CustomizeDlg.dcu
+						res=
+					Components
+						TCustomizeDlg
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=81
+							3. Category=Additional
+							4. tab=Additional
+							5. group=Customize
+							6. Files
+								Pas=$(BDS)source\Win32\vcl\CustomizeDlg.pas
+								drc=
+								res=
+		dcldb100
+			Pkg index=69
+			Tag index=1
+			No units=4
+			No cmp=15
+			Description=Borland Database Components
+			Files
+				dpk=
+				bpl=C:\Program Files\Borland\BDS\4.0\Bin\dcldb100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+				DB
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\db\DB.pas
+						dcr=
+						dcu=$(BDS)lib\debug\DB.dcu
+						res=
+					Components
+						TDataSource
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=110
+							3. Category=Data Access
+							4. tab=Data Access
+							5. group=Data
+							6. Files
+								Pas=$(BDS)source\Win32\db\DB.pas
+								drc=
+								res=
+				DBCGrids
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\db\dbcgrids.pas
+						dcr=
+						dcu=$(BDS)lib\debug\dbcgrids.dcu
+						res=
+					Components
+						TDBCtrlGrid
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=129
+							3. Category=Data Controls
+							4. tab=Data Controls
+							5. group=Ctrl
+							6. Files
+								Pas=$(BDS)source\Win32\db\dbcgrids.pas
+								drc=
+								res=
+				DBCtrls
+					Unit index=-1
+					No Comps=12
+					Files
+						Pas=$(BDS)source\Win32\db\DBCtrls.pas
+						dcr=
+						dcu=$(BDS)lib\debug\DBCtrls.dcu
+						res=$(BDS)lib\dbctrls.res
+					Components
+						TDBCheckBox
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=124
+							3. Category=Data Controls
+							4. tab=Data Controls
+							5. group=Check
+							6. Files
+								Pas=$(BDS)source\Win32\db\DBCtrls.pas
+								drc=
+								res=
+						TDBComboBox
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=123
+							3. Category=Data Controls
+							4. tab=Data Controls
+							5. group=Combo
+							6. Files
+								Pas=$(BDS)source\Win32\db\DBCtrls.pas
+								drc=
+								res=
+						TDBEdit
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=119
+							3. Category=Data Controls
+							4. tab=Data Controls
+							5. group=DB
+							6. Files
+								Pas=$(BDS)source\Win32\db\DBCtrls.pas
+								drc=
+								res=
+						TDBImage
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=121
+							3. Category=Data Controls
+							4. tab=Data Controls
+							5. group=DB
+							6. Files
+								Pas=$(BDS)source\Win32\db\DBCtrls.pas
+								drc=
+								res=
+						TDBListBox
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=122
+							3. Category=Data Controls
+							4. tab=Data Controls
+							5. group=List
+							6. Files
+								Pas=$(BDS)source\Win32\db\DBCtrls.pas
+								drc=
+								res=
+						TDBLookupComboBox
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=127
+							3. Category=Data Controls
+							4. tab=Data Controls
+							5. group=Lookup
+							6. Files
+								Pas=$(BDS)source\Win32\db\DBCtrls.pas
+								drc=
+								res=
+						TDBLookupListBox
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=126
+							3. Category=Data Controls
+							4. tab=Data Controls
+							5. group=Lookup
+							6. Files
+								Pas=$(BDS)source\Win32\db\DBCtrls.pas
+								drc=
+								res=
+						TDBMemo
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=120
+							3. Category=Data Controls
+							4. tab=Data Controls
+							5. group=DB
+							6. Files
+								Pas=$(BDS)source\Win32\db\DBCtrls.pas
+								drc=
+								res=
+						TDBNavigator
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=117
+							3. Category=Data Controls
+							4. tab=Data Controls
+							5. group=DB
+							6. Files
+								Pas=$(BDS)source\Win32\db\DBCtrls.pas
+								drc=
+								res=
+						TDBRadioGroup
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=125
+							3. Category=Data Controls
+							4. tab=Data Controls
+							5. group=Radio
+							6. Files
+								Pas=$(BDS)source\Win32\db\DBCtrls.pas
+								drc=
+								res=
+						TDBRichEdit
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=128
+							3. Category=Data Controls
+							4. tab=Data Controls
+							5. group=Rich
+							6. Files
+								Pas=$(BDS)source\Win32\db\DBCtrls.pas
+								drc=
+								res=
+						TDBText
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=118
+							3. Category=Data Controls
+							4. tab=Data Controls
+							5. group=DB
+							6. Files
+								Pas=$(BDS)source\Win32\db\DBCtrls.pas
+								drc=
+								res=
+				DBGrids
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\db\DBGrids.pas
+						dcr=
+						dcu=$(BDS)lib\debug\DBGrids.dcu
+						res=$(BDS)lib\dbgrids.res
+					Components
+						TDBGrid
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=116
+							3. Category=Data Controls
+							4. tab=Data Controls
+							5. group=DB
+							6. Files
+								Pas=$(BDS)source\Win32\db\DBGrids.pas
+								drc=
+								res=
+		dclmid100
+			Pkg index=77
+			Tag index=1
+			No units=2
+			No cmp=2
+			Description=Borland MyBase DataAccess Components
+			Files
+				dpk=
+				bpl=C:\Program Files\Borland\BDS\4.0\Bin\dclmid100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+				DBClient
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\db\DBClient.pas
+						dcr=
+						dcu=$(BDS)lib\debug\DBClient.dcu
+						res=
+					Components
+						TClientDataSet
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=111
+							3. Category=Data Access
+							4. tab=Data Access
+							5. group=Client
+							6. Files
+								Pas=$(BDS)source\Win32\db\DBClient.pas
+								drc=
+								res=
+				Provider
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\db\Provider.pas
+						dcr=
+						dcu=$(BDS)lib\debug\Provider.dcu
+						res=
+					Components
+						TDataSetProvider
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=112
+							3. Category=Data Access
+							4. tab=Data Access
+							5. group=Data
+							6. Files
+								Pas=$(BDS)source\Win32\db\Provider.pas
+								drc=
+								res=
+		dcldbx4100
+			Pkg index=81
+			Tag index=1
+			No units=1
+			No cmp=6
+			Description=CodeGear dbExpress Components
+			Files
+				dpk=
+				bpl=$(BDS)\bin\dcldbx4100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+				SqlExpr
+					Unit index=-1
+					No Comps=6
+					Files
+						Pas=$(BDS)source\database\src\pas\dbx\vcl\SqlExpr.pas
+						dcr=
+						dcu=$(BDS)lib\debug\SqlExpr.dcu
+						res=
+					Components
+						TSQLConnection
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=131
+							3. Category=dbExpress
+							4. tab=dbExpress
+							5. group=SQL
+							6. Files
+								Pas=$(BDS)source\database\src\pas\dbx\vcl\SqlExpr.pas
+								drc=
+								res=
+						TSQLDataSet
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=132
+							3. Category=dbExpress
+							4. tab=dbExpress
+							5. group=SQL
+							6. Files
+								Pas=$(BDS)source\database\src\pas\dbx\vcl\SqlExpr.pas
+								drc=
+								res=
+						TSQLMonitor
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=136
+							3. Category=dbExpress
+							4. tab=dbExpress
+							5. group=SQL
+							6. Files
+								Pas=$(BDS)source\database\src\pas\dbx\vcl\SqlExpr.pas
+								drc=
+								res=
+						TSQLQuery
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=133
+							3. Category=dbExpress
+							4. tab=dbExpress
+							5. group=SQL
+							6. Files
+								Pas=$(BDS)source\database\src\pas\dbx\vcl\SqlExpr.pas
+								drc=
+								res=
+						TSQLStoredProc
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=134
+							3. Category=dbExpress
+							4. tab=dbExpress
+							5. group=SQL
+							6. Files
+								Pas=$(BDS)source\database\src\pas\dbx\vcl\SqlExpr.pas
+								drc=
+								res=
+						TSQLTable
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=135
+							3. Category=dbExpress
+							4. tab=dbExpress
+							5. group=SQL
+							6. Files
+								Pas=$(BDS)source\database\src\pas\dbx\vcl\SqlExpr.pas
+								drc=
+								res=
+		dclmcn100
+			Pkg index=82
+			Tag index=1
+			No units=5
+			No cmp=7
+			Description=CodeGear DataSnap Connection Components
+			Files
+				dpk=
+				bpl=$(BDS)\bin\dclmcn100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+				DBClient
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\db\DBClient.pas
+						dcr=
+						dcu=$(BDS)lib\debug\DBClient.dcu
+						res=
+					Components
+						TConnectionBroker
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=141
+							3. Category=DataSnap
+							4. tab=DataSnap
+							5. group=Connection
+							6. Files
+								Pas=$(BDS)source\Win32\db\DBClient.pas
+								drc=
+								res=
+				MConnect
+					Unit index=-1
+					No Comps=2
+					Files
+						Pas=$(BDS)source\Win32\db\MConnect.pas
+						dcr=
+						dcu=$(BDS)lib\debug\MConnect.dcu
+						res=
+					Components
+						TDCOMConnection
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=137
+							3. Category=DataSnap
+							4. tab=DataSnap
+							5. group=DCOM
+							6. Files
+								Pas=$(BDS)source\Win32\db\MConnect.pas
+								drc=
+								res=
+						TSharedConnection
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=142
+							3. Category=DataSnap
+							4. tab=DataSnap
+							5. group=Shared
+							6. Files
+								Pas=$(BDS)source\Win32\db\MConnect.pas
+								drc=
+								res=
+				ObjBrkr
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\db\ObjBrkr.pas
+						dcr=
+						dcu=$(BDS)lib\debug\ObjBrkr.dcu
+						res=
+					Components
+						TSimpleObjectBroker
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=139
+							3. Category=DataSnap
+							4. tab=DataSnap
+							5. group=Simple
+							6. Files
+								Pas=$(BDS)source\Win32\db\ObjBrkr.pas
+								drc=
+								res=
+				SConnect
+					Unit index=-1
+					No Comps=2
+					Files
+						Pas=$(BDS)source\Win32\db\SConnect.pas
+						dcr=
+						dcu=$(BDS)lib\debug\SConnect.dcu
+						res=
+					Components
+						TSocketConnection
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=138
+							3. Category=DataSnap
+							4. tab=DataSnap
+							5. group=Socket
+							6. Files
+								Pas=$(BDS)source\Win32\db\SConnect.pas
+								drc=
+								res=
+						TWebConnection
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=140
+							3. Category=DataSnap
+							4. tab=DataSnap
+							5. group=Web
+							6. Files
+								Pas=$(BDS)source\Win32\db\SConnect.pas
+								drc=
+								res=
+				TConnect
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\db\TConnect.pas
+						dcr=
+						dcu=$(BDS)lib\debug\TConnect.dcu
+						res=
+					Components
+						TLocalConnection
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=143
+							3. Category=DataSnap
+							4. tab=DataSnap
+							5. group=Local
+							6. Files
+								Pas=$(BDS)source\Win32\db\TConnect.pas
+								drc=
+								res=
+		dclsmp100
+			Pkg index=101
+			Tag index=1
+			No units=5
+			No cmp=6
+			Description=CodeGear Sample Components
+			Files
+				dpk=
+				bpl=$(BDS)\bin\dclsmp100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+				Calendar
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\Samples\Source\Calendar.pas
+						dcr=
+						dcu=$(BDS)lib\Calendar.dcu
+						res=
+					Components
+						TCalendar
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=454
+							3. Category=Samples
+							4. tab=Samples
+							5. group=Calendar
+							6. Files
+								Pas=$(BDS)source\Win32\Samples\Source\Calendar.pas
+								drc=
+								res=
+				ColorGrd
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\Samples\Source\ColorGrd.pas
+						dcr=
+						dcu=$(BDS)lib\debug\ColorGrd.dcu
+						res=
+					Components
+						TColorGrid
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=450
+							3. Category=Samples
+							4. tab=Samples
+							5. group=Color
+							6. Files
+								Pas=$(BDS)source\Win32\Samples\Source\ColorGrd.pas
+								drc=
+								res=
+				DirOutln
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\Samples\Source\DirOutln.pas
+						dcr=
+						dcu=$(BDS)lib\DirOutln.dcu
+						res=
+					Components
+						TDirectoryOutline
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=453
+							3. Category=Samples
+							4. tab=Samples
+							5. group=Directory
+							6. Files
+								Pas=$(BDS)source\Win32\Samples\Source\DirOutln.pas
+								drc=
+								res=
+				Gauges
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\Samples\Source\Gauges.pas
+						dcr=
+						dcu=$(BDS)lib\Gauges.dcu
+						res=
+					Components
+						TGauge
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=449
+							3. Category=Samples
+							4. tab=Samples
+							5. group=Gauge
+							6. Files
+								Pas=$(BDS)source\Win32\Samples\Source\Gauges.pas
+								drc=
+								res=
+				Spin
+					Unit index=-1
+					No Comps=2
+					Files
+						Pas=$(BDS)source\Win32\Samples\Source\Spin.pas
+						dcr=
+						dcu=$(BDS)lib\Spin.dcu
+						res=$(BDS)lib\spin.res
+					Components
+						TSpinButton
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=451
+							3. Category=Samples
+							4. tab=Samples
+							5. group=Spin
+							6. Files
+								Pas=$(BDS)source\Win32\Samples\Source\Spin.pas
+								drc=
+								res=
+						TSpinEdit
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=452
+							3. Category=Samples
+							4. tab=Samples
+							5. group=Spin
+							6. Files
+								Pas=$(BDS)source\Win32\Samples\Source\Spin.pas
+								drc=
+								res=
+		dclie100
+			Pkg index=103
+			Tag index=1
+			No units=1
+			No cmp=1
+			Description=Internet Explorer Components
+			Files
+				dpk=
+				bpl=$(BDS)\bin\dclie100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+				SHDocVw
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\internet\SHDocVw.pas
+						dcr=
+						dcu=$(BDS)lib\debug\SHDocVw.dcu
+						res=
+					Components
+						TWebBrowser
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=465
+							3. Category=Internet
+							4. tab=Internet
+							5. group=Web
+							6. Files
+								Pas=$(BDS)source\Win32\internet\SHDocVw.pas
+								drc=
+								res=
+		dclwebsnap100
+			Pkg index=104
+			Tag index=1
+			No units=7
+			No cmp=17
+			Description=CodeGear WebSnap Components
+			Files
+				dpk=
+				bpl=$(BDS)\bin\dclwebsnap100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+				DBAdapt
+					Unit index=-1
+					No Comps=2
+					Files
+						Pas=$(BDS)source\Win32\websnap\DBAdapt.pas
+						dcr=
+						dcu=$(BDS)lib\debug\DBAdapt.dcu
+						res=
+					Components
+						TDataSetAdapter
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=470
+							3. Category=WebSnap
+							4. tab=WebSnap
+							5. group=Data
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\DBAdapt.pas
+								drc=
+								res=
+						TDataSetValuesList
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=473
+							3. Category=WebSnap
+							4. tab=WebSnap
+							5. group=Data
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\DBAdapt.pas
+								drc=
+								res=
+				SiteProd
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\websnap\SiteProd.pas
+						dcr=
+						dcu=$(BDS)lib\debug\SiteProd.dcu
+						res=
+					Components
+						TAdapterPageProducer
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=484
+							3. Category=WebSnap
+							4. tab=WebSnap
+							5. group=Adapter
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\SiteProd.pas
+								drc=
+								res=
+				WebAdapt
+					Unit index=-1
+					No Comps=7
+					Files
+						Pas=$(BDS)source\Win32\websnap\WebAdapt.pas
+						dcr=
+						dcu=$(BDS)lib\debug\WebAdapt.dcu
+						res=
+					Components
+						TAdapter
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=468
+							3. Category=WebSnap
+							4. tab=WebSnap
+							5. group=Adapter
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\WebAdapt.pas
+								drc=
+								res=
+						TApplicationAdapter
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=475
+							3. Category=WebSnap
+							4. tab=WebSnap
+							5. group=Application
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\WebAdapt.pas
+								drc=
+								res=
+						TEndUserAdapter
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=476
+							3. Category=WebSnap
+							4. tab=WebSnap
+							5. group=End
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\WebAdapt.pas
+								drc=
+								res=
+						TEndUserSessionAdapter
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=477
+							3. Category=WebSnap
+							4. tab=WebSnap
+							5. group=End
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\WebAdapt.pas
+								drc=
+								res=
+						TLoginFormAdapter
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=471
+							3. Category=WebSnap
+							4. tab=WebSnap
+							5. group=Login
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\WebAdapt.pas
+								drc=
+								res=
+						TPagedAdapter
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=469
+							3. Category=WebSnap
+							4. tab=WebSnap
+							5. group=Paged
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\WebAdapt.pas
+								drc=
+								res=
+						TStringsValuesList
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=472
+							3. Category=WebSnap
+							4. tab=WebSnap
+							5. group=Strings
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\WebAdapt.pas
+								drc=
+								res=
+				WebDisp
+					Unit index=-1
+					No Comps=4
+					Files
+						Pas=$(BDS)source\Win32\websnap\WebDisp.pas
+						dcr=
+						dcu=$(BDS)lib\debug\WebDisp.dcu
+						res=
+					Components
+						TAdapterDispatcher
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=479
+							3. Category=WebSnap
+							4. tab=WebSnap
+							5. group=Adapter
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\WebDisp.pas
+								drc=
+								res=
+						TLocateFileService
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=480
+							3. Category=WebSnap
+							4. tab=WebSnap
+							5. group=Locate
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\WebDisp.pas
+								drc=
+								res=
+						TPageDispatcher
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=478
+							3. Category=WebSnap
+							4. tab=WebSnap
+							5. group=Page
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\WebDisp.pas
+								drc=
+								res=
+						TWebAppComponents
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=474
+							3. Category=WebSnap
+							4. tab=WebSnap
+							5. group=Web
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\WebDisp.pas
+								drc=
+								res=
+				WebSess
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\websnap\WebSess.pas
+						dcr=
+						dcu=$(BDS)lib\debug\WebSess.dcu
+						res=
+					Components
+						TSessionsService
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=481
+							3. Category=WebSnap
+							4. tab=WebSnap
+							5. group=Sessions
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\WebSess.pas
+								drc=
+								res=
+				WebUsers
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\websnap\WebUsers.pas
+						dcr=
+						dcu=$(BDS)lib\debug\WebUsers.dcu
+						res=
+					Components
+						TWebUserList
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=482
+							3. Category=WebSnap
+							4. tab=WebSnap
+							5. group=Web
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\WebUsers.pas
+								drc=
+								res=
+				XSLProd
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\websnap\XSLProd.pas
+						dcr=
+						dcu=$(BDS)lib\debug\XSLProd.dcu
+						res=
+					Components
+						TXSLPageProducer
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=483
+							3. Category=WebSnap
+							4. tab=WebSnap
+							5. group=XSL
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\XSLProd.pas
+								drc=
+								res=
+		dclwbm100
+			Pkg index=105
+			Tag index=1
+			No units=3
+			No cmp=5
+			Description=CodeGear InternetExpress Components
+			Files
+				dpk=
+				bpl=$(BDS)\bin\dclwbm100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+				MidProd
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\websnap\MidProd.pas
+						dcr=
+						dcu=$(BDS)lib\debug\MidProd.dcu
+						res=
+					Components
+						TInetXPageProducer
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=467
+							3. Category=InternetExpress
+							4. tab=InternetExpress
+							5. group=InetX
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\MidProd.pas
+								drc=
+								res=
+				XMLBrokr
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\websnap\XMLBrokr.pas
+						dcr=
+						dcu=$(BDS)lib\debug\XMLBrokr.dcu
+						res=
+					Components
+						TXMLBroker
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=466
+							3. Category=InternetExpress
+							4. tab=InternetExpress
+							5. group=XML
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\XMLBrokr.pas
+								drc=
+								res=
+				Xmlxform
+					Unit index=-1
+					No Comps=3
+					Files
+						Pas=$(BDS)source\Win32\websnap\Xmlxform.pas
+						dcr=
+						dcu=$(BDS)lib\debug\Xmlxform.dcu
+						res=
+					Components
+						TXMLTransform
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=113
+							3. Category=Data Access
+							4. tab=Data Access
+							5. group=XML
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\Xmlxform.pas
+								drc=
+								res=
+						TXMLTransformClient
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=115
+							3. Category=Data Access
+							4. tab=Data Access
+							5. group=XML
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\Xmlxform.pas
+								drc=
+								res=
+						TXMLTransformProvider
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=114
+							3. Category=Data Access
+							4. tab=Data Access
+							5. group=XML
+							6. Files
+								Pas=$(BDS)source\Win32\websnap\Xmlxform.pas
+								drc=
+								res=
+		dclnet100
+			Pkg index=106
+			Tag index=1
+			No units=8
+			No cmp=10
+			Description=CodeGear Internet Components
+			Files
+				dpk=
+				bpl=$(BDS)\bin\dclnet100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+				DBBdeWeb
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\internet\DBBdeWeb.pas
+						dcr=
+						dcu=$(BDS)lib\debug\DBBdeWeb.dcu
+						res=
+					Components
+						TQueryTableProducer
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=459
+							3. Category=Internet
+							4. tab=Internet
+							5. group=Query
+							6. Files
+								Pas=$(BDS)source\Win32\internet\DBBdeWeb.pas
+								drc=
+								res=
+				DBWeb
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\internet\DBWeb.pas
+						dcr=
+						dcu=$(BDS)lib\debug\DBWeb.dcu
+						res=
+					Components
+						TDataSetTableProducer
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=457
+							3. Category=Internet
+							4. tab=Internet
+							5. group=Data
+							6. Files
+								Pas=$(BDS)source\Win32\internet\DBWeb.pas
+								drc=
+								res=
+				DBXpressWeb
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\internet\DBXpressWeb.pas
+						dcr=
+						dcu=$(BDS)lib\debug\DBXpressWeb.dcu
+						res=
+					Components
+						TSQLQueryTableProducer
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=460
+							3. Category=Internet
+							4. tab=Internet
+							5. group=SQL
+							6. Files
+								Pas=$(BDS)source\Win32\internet\DBXpressWeb.pas
+								drc=
+								res=
+				DSProd
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\internet\DSProd.pas
+						dcr=
+						dcu=$(BDS)lib\debug\DSProd.dcu
+						res=
+					Components
+						TDataSetPageProducer
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=458
+							3. Category=Internet
+							4. tab=Internet
+							5. group=Data
+							6. Files
+								Pas=$(BDS)source\Win32\internet\DSProd.pas
+								drc=
+								res=
+				HTTPApp
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\internet\HTTPApp.pas
+						dcr=
+						dcu=$(BDS)lib\debug\HTTPApp.dcu
+						res=
+					Components
+						TWebDispatcher
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=455
+							3. Category=Internet
+							4. tab=Internet
+							5. group=Web
+							6. Files
+								Pas=$(BDS)source\Win32\internet\HTTPApp.pas
+								drc=
+								res=
+				HTTPProd
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\internet\HTTPProd.pas
+						dcr=
+						dcu=$(BDS)lib\debug\HTTPProd.dcu
+						res=
+					Components
+						TPageProducer
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=456
+							3. Category=Internet
+							4. tab=Internet
+							5. group=Page
+							6. Files
+								Pas=$(BDS)source\Win32\internet\HTTPProd.pas
+								drc=
+								res=
+				Sockets
+					Unit index=-1
+					No Comps=3
+					Files
+						Pas=$(BDS)source\Win32\internet\Sockets.pas
+						dcr=
+						dcu=$(BDS)lib\debug\Sockets.dcu
+						res=
+					Components
+						TTcpClient
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=461
+							3. Category=Internet
+							4. tab=Internet
+							5. group=Tcp
+							6. Files
+								Pas=$(BDS)source\Win32\internet\Sockets.pas
+								drc=
+								res=
+						TTcpServer
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=462
+							3. Category=Internet
+							4. tab=Internet
+							5. group=Tcp
+							6. Files
+								Pas=$(BDS)source\Win32\internet\Sockets.pas
+								drc=
+								res=
+						TUdpSocket
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=463
+							3. Category=Internet
+							4. tab=Internet
+							5. group=Udp
+							6. Files
+								Pas=$(BDS)source\Win32\internet\Sockets.pas
+								drc=
+								res=
+				XMLDoc
+					Unit index=-1
+					No Comps=1
+					Files
+						Pas=$(BDS)source\Win32\xml\XMLDoc.pas
+						dcr=
+						dcu=$(BDS)lib\debug\XMLDoc.dcu
+						res=
+					Components
+						TXMLDocument
+							0. Cmp index=0
+							1. Tag index=0
+							2. Table index=464
+							3. Category=Internet
+							4. tab=Internet
+							5. group=XML
+							6. Files
+								Pas=$(BDS)source\Win32\xml\XMLDoc.pas
+								drc=
+								res=
+	Run Time
+		asmview100
+			Pkg index=0
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Konown IDE package in Delphi Registry
+			Files
+				dpk=
+				bpl=$(BDS)\Bin\asmview100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		plugview100
+			Pkg index=1
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Konown IDE package in Delphi Registry
+			Files
+				dpk=
+				bpl=$(BDS)\bin\plugview100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		vclx100
+			Pkg index=2
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		vcl100
+			Pkg index=3
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		rtl100
+			Pkg index=4
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		vclactnband100
+			Pkg index=5
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		vclie100
+			Pkg index=6
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		vclide100
+			Pkg index=7
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		vcljpg100
+			Pkg index=8
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		designide100
+			Pkg index=9
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		xmlrtl100
+			Pkg index=10
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		idectrls100
+			Pkg index=11
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		coreide100
+			Pkg index=12
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		codetemplates100
+			Pkg index=13
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Konown IDE package in Delphi Registry
+			Files
+				dpk=
+				bpl=$(BDS)\Bin\codetemplates100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		coreproide100
+			Pkg index=14
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Konown IDE package in Delphi Registry
+			Files
+				dpk=
+				bpl=$(BDS)\bin\coreproide100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		dbkdebugide100
+			Pkg index=15
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Konown IDE package in Delphi Registry
+			Files
+				dpk=
+				bpl=$(BDS)\Bin\dbkdebugide100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		dbkdebugproide100
+			Pkg index=16
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Konown IDE package in Delphi Registry
+			Files
+				dpk=
+				bpl=$(BDS)\bin\dbkdebugproide100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		dotnetcoreide100
+			Pkg index=17
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Konown IDE package in Delphi Registry
+			Files
+				dpk=
+				bpl=$(BDS)\Bin\dotnetcoreide100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		dotnetcoreassemblies100
+			Pkg index=18
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		exceptiondiag100
+			Pkg index=19
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Konown IDE package in Delphi Registry
+			Files
+				dpk=
+				bpl=$(BDS)\bin\exceptiondiag100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		soaprtl100
+			Pkg index=20
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		inet100
+			Pkg index=21
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		dbrtl100
+			Pkg index=22
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		dsnap100
+			Pkg index=23
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		vcldb100
+			Pkg index=24
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		fileexplorer100
+			Pkg index=25
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Konown IDE package in Delphi Registry
+			Files
+				dpk=
+				bpl=$(BDS)\bin\fileexplorer100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		historyide100
+			Pkg index=26
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Konown IDE package in Delphi Registry
+			Files
+				dpk=
+				bpl=$(BDS)\bin\historyide100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		htmlhelp2100
+			Pkg index=27
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Konown IDE package in Delphi Registry
+			Files
+				dpk=
+				bpl=$(BDS)\Bin\htmlhelp2100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		delphicoreide100
+			Pkg index=28
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		idefilefilters100
+			Pkg index=29
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Konown IDE package in Delphi Registry
+			Files
+				dpk=
+				bpl=$(BDS)\bin\idefilefilters100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		refactoride100
+			Pkg index=30
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Konown IDE package in Delphi Registry
+			Files
+				dpk=
+				bpl=$(BDS)\bin\refactoride100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		startpageide100
+			Pkg index=31
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Konown IDE package in Delphi Registry
+			Files
+				dpk=
+				bpl=$(BDS)\Bin\startpageide100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		todoide100
+			Pkg index=32
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Konown IDE package in Delphi Registry
+			Files
+				dpk=
+				bpl=$(BDS)\bin\todoide100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		vclhie100
+			Pkg index=33
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		dataexplorer100
+			Pkg index=34
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Konown IDE package in Delphi Registry
+			Files
+				dpk=
+				bpl=$(BDS)\Bin\DataExplorer100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		htmide100
+			Pkg index=35
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Konown IDE package in Delphi Registry
+			Files
+				dpk=
+				bpl=$(BDS)\bin\htmide100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		htmldlgs100
+			Pkg index=36
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		mlcc100
+			Pkg index=37
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Konown IDE package in Delphi Registry
+			Files
+				dpk=
+				bpl=$(BDS)\bin\mlcc100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		htmltidy100
+			Pkg index=38
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Konown IDE package in Delphi Registry
+			Files
+				dpk=
+				bpl=$(BDS)\bin\htmltidy100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		htmlide100
+			Pkg index=39
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Konown IDE package in Delphi Registry
+			Files
+				dpk=
+				bpl=$(BDS)\bin\htmlide100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		websnap100
+			Pkg index=40
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		webdsnap100
+			Pkg index=41
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		inetdb100
+			Pkg index=42
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		vclmenudesigner100
+			Pkg index=43
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		comcore100
+			Pkg index=44
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		tlbview100
+			Pkg index=45
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		tlib100
+			Pkg index=46
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		delphivclide100
+			Pkg index=47
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		vcldesigner100
+			Pkg index=48
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		win32debugide100
+			Pkg index=49
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		win32debugproide100
+			Pkg index=50
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		delphicompro100
+			Pkg index=51
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		delphicoreproide100
+			Pkg index=52
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		delphipro100
+			Pkg index=53
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		delphide100
+			Pkg index=54
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		delphicoment100
+			Pkg index=55
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		comentcore100
+			Pkg index=56
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		delphierrorinsite100
+			Pkg index=57
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		unittestide100
+			Pkg index=58
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		iteidew32100
+			Pkg index=59
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		iteide100
+			Pkg index=60
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		itecore100
+			Pkg index=61
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		tgide100
+			Pkg index=62
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		applet100
+			Pkg index=63
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=CodeGear Control Panel Applet Package
+			Files
+				dpk=
+				bpl=$(BDS)\bin\applet100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		vclimg100
+			Pkg index=66
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=CodeGear Delphi image support library
+			Files
+				dpk=
+				bpl=C:\WINDOWS\system32\vclimg100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		dclbde100
+			Pkg index=68
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=CodeGear BDE DB Components
+			Files
+				dpk=
+				bpl=$(BDS)\bin\dclbde100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		dbx100
+			Pkg index=70
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Borland SQL Explorer UI Package
+			Files
+				dpk=
+				bpl=C:\Program Files\Borland\BDS\4.0\Bin\dbx100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		vcldbx100
+			Pkg index=71
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		bdertl100
+			Pkg index=72
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		dclemacsedit100
+			Pkg index=73
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=CodeGear Editor Emacs Enhancements
+			Files
+				dpk=
+				bpl=$(BDS)\bin\dclemacsedit100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		dclmlwiz100
+			Pkg index=74
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=CodeGear Markup Language Wizards
+			Files
+				dpk=
+				bpl=$(BDS)\bin\dclmlwiz100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		dclsmpedit100
+			Pkg index=75
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=CodeGear Editor Script Enhancements
+			Files
+				dpk=
+				bpl=$(BDS)\bin\dclsmpedit100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		dcldbxcds4100
+			Pkg index=76
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=CodeGear SimpleDataset Component (DBX)
+			Files
+				dpk=
+				bpl=$(BDS)\bin\dcldbxcds4100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		dbxcds4100
+			Pkg index=78
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		dbxcommondriver100
+			Pkg index=79
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		dbexpress4100
+			Pkg index=80
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		dsnapcon100
+			Pkg index=83
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		dcltee7100
+			Pkg index=84
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=TeeChart Components
+			Files
+				dpk=
+				bpl=$(BDS)\bin\dcltee7100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		teeui7100
+			Pkg index=85
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		teedb7100
+			Pkg index=86
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		tee7100
+			Pkg index=87
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		adortl100
+			Pkg index=88
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		dclib100
+			Pkg index=89
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Borland InterBase Express Components
+			Files
+				dpk=
+				bpl=$(BDS)\Bin\dclib100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		vclib100
+			Pkg index=90
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		ibxpress100
+			Pkg index=91
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		dclado100
+			Pkg index=92
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=CodeGear ADO DB Components
+			Files
+				dpk=
+				bpl=$(BDS)\bin\dclado100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		dclindycore100
+			Pkg index=93
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Indy 10 Core Design Time
+			Files
+				dpk=
+				bpl=$(BDS)\bin\dclIndyCore100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		indycore100
+			Pkg index=94
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		indysystem100
+			Pkg index=95
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		dclindyprotocols100
+			Pkg index=96
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Indy 10 Protocols Design Time
+			Files
+				dpk=
+				bpl=$(BDS)\Bin\dclIndyProtocols100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		indyprotocols100
+			Pkg index=97
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		dclintraweb_90_100
+			Pkg index=98
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=VCL for the Web Design Package for CodeGear Delphi 2007 for Win32
+			Files
+				dpk=
+				bpl=$(BDS)\Bin\dclintraweb_90_100.bpl
+				dcp=
+				dcu=$(BDS)lib\dclIntraweb_90_100.dcu
+				Res=
+			Units
+		intrawebdb_90_100
+			Pkg index=99
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=$(BDS)lib\IntrawebDB_90_100.dcu
+				Res=
+			Units
+		intraweb_90_100
+			Pkg index=100
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=$(BDS)lib\Intraweb_90_100.dcu
+				Res=
+			Units
+		vclsmp100
+			Pkg index=102
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		inetdbbde100
+			Pkg index=107
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		inetdbxpress4100
+			Pkg index=108
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units
+		dclsoap100
+			Pkg index=109
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=CodeGear SOAP Components
+			Files
+				dpk=
+				bpl=$(BDS)\bin\dclsoap100.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		delsight2007
+			Pkg index=110
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=DelSight - IDE Component Browser (in Tools menu)
+			Files
+				dpk=
+				bpl=D:\Delphi2007\delfi\users\lib\DelSight2007.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		winlockpkg2007
+			Pkg index=111
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=Kassl dWinlock
+			Files
+				dpk=
+				bpl=D:\Delphi2007\delfi\WinLock2007\WinlockPkg2007.bpl
+				dcp=
+				dcu=d:\delphi2007\delfi\winlock2007\WinlockPkg2007.dcu
+				Res=
+			Units
+		madbasic_
+			Pkg index=112
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=madBasic 1.1n  -  www.madshi.net
+			Files
+				dpk=
+				bpl=C:\Program Files\madCollection\madBasic\DeXter\madBasic_.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		madhelp_
+			Pkg index=113
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=madHelp 1.1a  -  www.madshi.net
+			Files
+				dpk=
+				bpl=C:\Program Files\madCollection\madBasic\DeXter\madHelp_.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		maddisasm_
+			Pkg index=114
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=madDisAsm 2.1d  -  www.madshi.net
+			Files
+				dpk=
+				bpl=C:\Program Files\madCollection\madDisAsm\DeXter\madDisAsm_.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		madexceptide_
+			Pkg index=115
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=madExceptIde 1.1  -  www.madshi.net
+			Files
+				dpk=
+				bpl=C:\Program Files\madCollection\madExcept\DeXter\madExceptIde_.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		madexcept_
+			Pkg index=116
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=madExcept 3.0g  -  www.madshi.net
+			Files
+				dpk=
+				bpl=C:\Program Files\madCollection\madExcept\DeXter\madExcept_.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		madexceptvcl_
+			Pkg index=117
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=madExceptVcl 2.0c  -  www.madshi.net
+			Files
+				dpk=
+				bpl=C:\Program Files\madCollection\madExcept\DeXter\madExceptVcl_.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		madexceptwizard_
+			Pkg index=118
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=madExceptWizard 3.0e  -  www.madshi.net
+			Files
+				dpk=
+				bpl=C:\Program Files\madCollection\madExcept\DeXter\madExceptWizard_.bpl
+				dcp=
+				dcu=
+				Res=
+			Units
+		cpiexpertpackagev30bds2007
+			Pkg index=119
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=CPI Expert Beat Version V3
+			Files
+				dpk=
+				bpl=C:\CPI Expert\BDS2007\CPIV30\Package Files\CPIExpertPackageV30BDS2007.bpl
+				dcp=
+				dcu=C:\CPI Expert\BDS2007\CPIV30\Package Files\CPIExpertPackageV30BDS2007.dcu
+				Res=
+			Units
+		vclshlctrls100
+			Pkg index=120
+			Tag index=1
+			No units=0
+			No cmp=0
+			Description=
+			Files
+				dpk=
+				bpl=
+				dcp=
+				dcu=
+				Res=
+			Units

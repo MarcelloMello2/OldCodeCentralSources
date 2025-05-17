@@ -1,0 +1,183 @@
+OptionsSets V5.0
+
+In Delphi 2006 it is possible to have different project options sets only
+for C# project and C++. This seems unfair so this OTA plugin introduce
+project options sets for Delphi proper (Pascal) projects.
+
+
+Installation
+
+To install OptionsSets copy OptionsSets.dll (from the merged
+directory) to a directory in your PC and add the complete path
+to the IDE 'Known IDE Assemblies' registry key. OptionsSets.reg
+gives a sample.
+
+
+Usage
+
+OptionsSets adds a item named 'Options Sets...[<Name>]' at the end of the
+IDE Project menu. <Name> is the name of the active options set, if any.
+Selecting this item, enabled only for Delphi proper projects, an IDE
+Save All command is executed and then a dialog shows up where the options
+sets can be managed. The dialog contains the path of the current project,
+a combo box and some buttons. The buttons are dinamically enabled to
+reflect the status and the operation that can be done.
+
+Combo box: can be used to select the name of the set to operate upon or
+  to type the name of a new set.
+New button: creates a new set named after the value in the combo box.
+Delete button: deletes the set selected in the combo box.
+New Debug/Release button: this button replaces the Delete button
+  when no set still exists. It creates two new sets named Debug and
+  Release. The Debug set contains the current settings, the Release set
+  contains the same set modified according the ReleaseValues node
+  of the configuration file (see below).
+Activate button: makes active the set selected in the combo box and
+  closes the dialog.
+Cancel button: closes the dialog without any action.
+Config.: open a configuration management dialog (see below).
+
+Options sets are saved in a file in the project folder named
+<project name>.bdsproj.sets
+
+
+Configuration
+
+OptionsSets configuration is kept in file OptionsSets.xml that has
+to be in the same directory of OptionsSets.dll The default for it is
+
+<?xml version="1.0"?>
+<TOptions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IgnoreOptions>
+    <anyType xsi:type="xsd:string">DefaultNamespace</anyType>
+    <anyType xsi:type="xsd:string">ExeDescription</anyType>
+    <anyType xsi:type="xsd:string">NamespacePrefix</anyType>
+    <anyType xsi:type="xsd:string">ObjDir</anyType>
+    <anyType xsi:type="xsd:string">Packages</anyType>
+    <anyType xsi:type="xsd:string">ResDir</anyType>
+    <anyType xsi:type="xsd:string">SrcDir</anyType>
+    <anyType xsi:type="xsd:string">UnitAliases</anyType>
+    <anyType xsi:type="xsd:string">UnitDir</anyType>
+    <anyType xsi:type="xsd:string">RunParams</anyType>
+  </IgnoreOptions>
+  <TrayAreaInjector>false</TrayAreaInjector>
+  <ReleaseValues>
+    <anyType xsi:type="TReleaseProjectOption">
+      <Name>Assertions</Name>
+      <Value xsi:type="xsd:int">0</Value>
+      <Conditions />
+    </anyType>
+    <anyType xsi:type="TReleaseProjectOption">
+      <Name>DebugInfo</Name>
+      <Value xsi:type="xsd:boolean">false</Value>
+      <Conditions />
+    </anyType>
+    <anyType xsi:type="TReleaseProjectOption">
+      <Name>ImageDebugInfo</Name>
+      <Value xsi:type="xsd:boolean">false</Value>
+      <Conditions />
+    </anyType>
+    <anyType xsi:type="TReleaseProjectOption">
+      <Name>LocalSymbols</Name>
+      <Value xsi:type="xsd:int">0</Value>
+      <Conditions />
+    </anyType>
+    <anyType xsi:type="TReleaseProjectOption">
+      <Name>OutputDir</Name>
+      <Value xsi:type="xsd:string">release</Value>
+      <Conditions>
+        <anyType xsi:type="TProjectOption">
+          <Name>GenPackage</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+      </Conditions>
+    </anyType>
+    <anyType xsi:type="TReleaseProjectOption">
+      <Name>PkgDllDir</Name>
+      <Value xsi:type="xsd:string">release</Value>
+      <Conditions>
+        <anyType xsi:type="TProjectOption">
+          <Name>GenPackage</Name>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </anyType>
+      </Conditions>
+    </anyType>
+    <anyType xsi:type="TReleaseProjectOption">
+      <Name>ReferenceInfo</Name>
+      <Value xsi:type="xsd:int">0</Value>
+      <Conditions />
+    </anyType>
+    <anyType xsi:type="TReleaseProjectOption">
+      <Name>UnitDebugInfo</Name>
+      <Value xsi:type="xsd:int">0</Value>
+      <Conditions />
+    </anyType>
+  </ReleaseValues>
+</TOptions>
+
+TrayAreaInjector
+  If true a status feedback is provided inside the Windows Task Bar.
+  If true TrayAreaInjector is to be installed. It can be found at
+  http://cc.borland.com/Item.aspx?id=22893
+
+IgnoreOptions
+  A list of options that are ignored by the plugin and that therefore
+  have the same value for all the sets. To add one check the corresponding
+  item in the 'Ignore in Sets' list of the configuration dialog.
+
+ReleaseValues
+  The list of options that are to changed to obtain the Release set
+  from the Debug set when the New Debug/Release button is clicked.
+  The simplest list element has this format
+
+    <anyType xsi:type="TReleaseProjectOption">
+      <Name>[Option Name]</Name>
+      <Value xsi:type="xsd:[Option Type]">[Option Value]</Value>
+      <Conditions />
+    </anyType>
+
+  where [Option Name] is the name of the option and [Option Value]
+  is the value it must have for the Release set.
+  To add one check the corresponding item in the 'Change for Release Set'
+  list of the configuration dialog. The value can not be directly set
+  but it can be set to the project current value using the item in the
+  context menu.
+  When the change depends on the value of other options the Conditions
+  node provides the list of them.
+
+    <anyType xsi:type="TReleaseProjectOption">
+      <Name>[Option Name]</Name>
+      <Value xsi:type="xsd:[Option Type]">[Option Value]</Value>
+	  <Conditions>
+        .
+        .
+	  </Conditions>
+    </anyType>
+
+  The change to the Release set is applied only if all the options
+  in the Conditions list have the required value. The elements of the
+  Conditions list have this format
+
+        <anyType xsi:type="TProjectOption">
+          <Name>[Option Name]</Name>
+          <Value xsi:type="xsd:[Option Type]">[Option Value]</Value>
+        </anyType>
+
+  where [Option Name] is the name of the option and [Option Value] is
+  the required value.
+  To add or remove condition use the context menu of the
+  'Change for Release Set' list of the configuration dialog. On add
+  a check list of the options is presented and the requested can be
+  checked. The value can not be directly set but it can be set to the
+  project current value using the item in the context menu.
+
+
+This application was generated and tested using Borland Developer
+Studio V10.0.2151.25345 (Delhi 2006) under Windows 2000 SP4,
+.NET 1.1 SP1
+The XML custom serializers were genrated using XSGen.
+XSGen can be dowloaded at http://cc.borland.com/Item.aspx?id=23579
+The final executable (OptionsSets.dll in the merged directory) was
+obtained by assembly merging using DILMerge.
+DILMerge can be dowloaded at http://cc.borland.com/Item.aspx?id=23227
+

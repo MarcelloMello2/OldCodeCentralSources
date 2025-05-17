@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<TOptions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IgnoreOptions>
+    <anyType xsi:type="xsd:string">DefaultNamespace</anyType>
+    <anyType xsi:type="xsd:string">ExeDescription</anyType>
+    <anyType xsi:type="xsd:string">NamespacePrefix</anyType>
+    <anyType xsi:type="xsd:string">ObjDir</anyType>
+    <anyType xsi:type="xsd:string">Packages</anyType>
+    <anyType xsi:type="xsd:string">ResDir</anyType>
+    <anyType xsi:type="xsd:string">SrcDir</anyType>
+    <anyType xsi:type="xsd:string">UnitAliases</anyType>
+    <anyType xsi:type="xsd:string">UnitDir</anyType>
+    <anyType xsi:type="xsd:string">RunParams</anyType>
+  </IgnoreOptions>
+  <TrayAreaInjector>false</TrayAreaInjector>
+  <ReleaseValues>
+    <anyType xsi:type="TReleaseProjectOption">
+      <Name>Assertions</Name>
+      <Value xsi:type="xsd:int">0</Value>
+      <Conditions />
+    </anyType>
+    <anyType xsi:type="TReleaseProjectOption">
+      <Name>DebugInfo</Name>
+      <Value xsi:type="xsd:boolean">false</Value>
+      <Conditions />
+    </anyType>
+    <anyType xsi:type="TReleaseProjectOption">
+      <Name>ImageDebugInfo</Name>
+      <Value xsi:type="xsd:boolean">false</Value>
+      <Conditions />
+    </anyType>
+    <anyType xsi:type="TReleaseProjectOption">
+      <Name>LocalSymbols</Name>
+      <Value xsi:type="xsd:int">0</Value>
+      <Conditions />
+    </anyType>
+    <anyType xsi:type="TReleaseProjectOption">
+      <Name>OutputDir</Name>
+      <Value xsi:type="xsd:string">release</Value>
+      <Conditions>
+        <anyType xsi:type="TProjectOption">
+          <Name>GenPackage</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+      </Conditions>
+    </anyType>
+    <anyType xsi:type="TReleaseProjectOption">
+      <Name>PkgDllDir</Name>
+      <Value xsi:type="xsd:string">release</Value>
+      <Conditions>
+        <anyType xsi:type="TProjectOption">
+          <Name>GenPackage</Name>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </anyType>
+      </Conditions>
+    </anyType>
+    <anyType xsi:type="TReleaseProjectOption">
+      <Name>ReferenceInfo</Name>
+      <Value xsi:type="xsd:int">0</Value>
+      <Conditions />
+    </anyType>
+    <anyType xsi:type="TReleaseProjectOption">
+      <Name>UnitDebugInfo</Name>
+      <Value xsi:type="xsd:int">0</Value>
+      <Conditions />
+    </anyType>
+  </ReleaseValues>
+</TOptions>

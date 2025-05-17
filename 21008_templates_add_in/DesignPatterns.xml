@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<!-- ============================================================================== -->
+<!-- File name:      Singleton.xml                                                  -->
+<!-- Last updated:   1/2/04                                                         -->
+<!-- Author:         Sergey Mishkovskiy                                             -->
+<!-- Company:        USysWare, Inc.                                                 -->
+<!-- Contact info:   usysware@comcast.net                                           -->
+<!-- Description:    Design Patterns Template configuration file.                   -->
+<!--                                                                                -->
+<!--                 Note that Delphi has to be restarted for <addin> tag           -->
+<!--                 attributes changes to take effect. No restart is necessary for -->
+<!--                 changes made to <units> and/or <references> tags.              -->
+<!--                                                                                -->
+<!-- Note that <dialog> tag is optional.                                            -->
+<!--                                                                                -->
+<!-- You can provide your own categories, separating sub-categories using '\' char. -->
+<!-- Some of the standard BDS menu categories for 'menuCategory' attribute:         -->
+<!-- 'Borland.Root'                                                                 -->
+<!-- 'Borland.Galileo.Other'                                                        -->
+<!-- 'Borland.Delphi.New'                                                           -->
+<!-- 'Borland.Delphi.NewFiles'                                                      -->
+<!-- 'Borland.Delphi.NET.New'                                                       -->
+<!-- 'Borland.Delphi.NET.NewFiles'                                                  -->
+<!--                                                                                -->
+<!-- Some of the valid 'unit' attribute types:                                      -->
+<!-- 'application' or 'console'                                                     -->
+<!-- 'library', 'package' or 'assembly'                                             -->
+<!-- 'form' or 'winform'                                                            -->
+<!-- 'class' or 'unit' (default value)                                              -->
+<!-- 'text' (considered pass-through type, i.e. simply copied)                      -->
+<!--                                                                                -->
+<!-- References may include full path.                                              -->
+<!-- References may include $(BDS) const to resolve Borland's assembly path.        -->
+<!-- ============================================================================== -->
+<configuration>
+  <addins>
+    <!-- Singleton Class -->
+    <addin name="Singleton Class" version="1.0" company="USysWare" companyLong="USysWare, Inc." menuCategory="Design Patterns" imageFile="">
+      <dialog title="Singleton Class Defaults" enabled="true">
+        <group name="classes" caption="Class Information" enabled="true"/>
+      </dialog>
+      <units>
+        <unit name="Singleton" template="SingletonClassTemplate.pas">
+          <expressions>
+            <expression replace="[!ClassName]" value="Singleton">
+              <groupItem group="classes" caption="Singleton Class Name"/>
+            </expression>
+          </expressions>
+        </unit>
+      </units>
+      <references>
+        <reference name="System.dll"/>
+      </references>
+    </addin>
+    <!-- Thread-safe Singleton Class -->
+    <addin name="Thread-safe Singleton Class" version="1.0" company="USysWare" companyLong="USysWare, Inc." menuCategory="Design Patterns" imageFile="">
+      <dialog title="Thread-safe Singleton Class Defaults" enabled="true">
+        <group name="classes" caption="Class Information" enabled="true"/>
+      </dialog>
+      <units>
+        <unit name="SafeSingleton" template="SafeSingletonClassTemplate.pas">
+          <expressions>
+            <expression replace="[!ClassName]" value="SafeSingleton">
+              <groupItem group="classes" caption="Singleton Class Name"/>
+            </expression>
+          </expressions>
+        </unit>
+      </units>
+      <references>
+        <reference name="System.dll"/>
+      </references>
+    </addin>
+    <!-- Observer Classes -->
+    <addin name="Observer Classes" version="1.0" company="USysWare" companyLong="USysWare, Inc." menuCategory="Design Patterns" imageFile="">
+      <dialog title="Observer Classes Defaults" enabled="true">
+        <group name="classes" caption="Class Information" enabled="true"/>
+      </dialog>
+      <units>
+        <unit name="ObserverInterface" template="ObserverInterfaceTemplate.pas">
+          <expressions>
+            <expression replace="[!ObserverInterfaceName]" value="Observer">
+              <groupItem group="classes" caption="Observer Interface Name"/>
+            </expression>
+            <expression replace="[!NotifierInterfaceName]" value="Notifier">
+              <groupItem group="classes" caption="Notifier Interface Name"/>
+            </expression>
+          </expressions>
+        </unit>
+        <unit name="ObserverServer" template="ObserverServerTemplate.pas">
+          <expressions>
+            <expression replace="[!InterfaceUnitName]" value="ObserverInterface"/>
+            <expression replace="[!ServerClassName]" value="ObserverServer">
+              <groupItem group="classes" caption="Server Class Name"/>
+            </expression>
+            <expression replace="[!ObserverInterfaceName]" unit="ObserverInterface"/>
+            <expression replace="[!NotifierInterfaceName]" unit="ObserverInterface"/>
+          </expressions>
+        </unit>
+        <unit name="ObserverClient" template="ObserverClientTemplate.pas">
+          <expressions>
+            <expression replace="[!InterfaceUnitName]" value="ObserverInterface"/>
+            <expression replace="[!ClientClassName]" value="ObserverClient">
+              <groupItem group="classes" caption="Client Class Name"/>
+            </expression>
+            <expression replace="[!ObserverInterfaceName]" unit="ObserverInterface"/>
+          </expressions>
+        </unit>
+      </units>
+      <references>
+        <reference name="System.dll"/>
+      </references>
+    </addin>
+    <!-- Singleton Project -->
+    <addin name="Singleton Application" version="1.0" company="USysWare" companyLong="USysWare, Inc." menuCategory="Design Patterns\Demos" imageFile="">
+      <units>
+        <unit name="SingletonDemo" template="SingletonTemplate.dpr" type="console"/>
+        <unit name="Singleton" template="SingletonClassTemplate.pas">
+          <expressions>
+            <expression replace="[!ClassName]" value="Singleton"/>
+          </expressions>
+        </unit>
+      </units>
+      <references>
+        <reference name="System.dll"/>
+      </references>
+    </addin>
+    <!-- Observer Project -->
+    <addin name="Observer Application" version="1.0" company="USysWare" companyLong="USysWare, Inc." menuCategory="Design Patterns\Demos" imageFile="">
+      <units>
+        <unit name="ObserverDemo" template="ObserverTemplate.dpr" type="console">
+          <expressions>
+            <expression replace="[!ObserverInterfaceName]" unit="ObserverInterface"/>
+            <expression replace="[!ServerClassName]" unit="ObserverServer"/>
+            <expression replace="[!ClientClassName]" unit="ObserverClient"/>
+          </expressions>
+        </unit>
+        <unit name="ObserverInterface" template="ObserverInterfaceTemplate.pas">
+          <expressions>
+            <expression replace="[!ObserverInterfaceName]" value="Observer"/>
+            <expression replace="[!NotifierInterfaceName]" value="Notifier"/>
+          </expressions>
+        </unit>
+        <unit name="ObserverServer" template="ObserverServerTemplate.pas">
+          <expressions>
+            <expression replace="[!InterfaceUnitName]" value="ObserverInterface"/>
+            <expression replace="[!ServerClassName]" value="ObserverServer"/>
+            <expression replace="[!ObserverInterfaceName]" unit="ObserverInterface"/>
+            <expression replace="[!NotifierInterfaceName]" unit="ObserverInterface"/>
+          </expressions>
+        </unit>
+        <unit name="ObserverClient" template="ObserverClientTemplate.pas">
+          <expressions>
+            <expression replace="[!InterfaceUnitName]" value="ObserverInterface"/>
+            <expression replace="[!ClientClassName]" value="ObserverClient"/>
+            <expression replace="[!ObserverInterfaceName]" unit="ObserverInterface"/>
+          </expressions>
+        </unit>
+      </units>
+      <references>
+        <reference name="System.dll"/>
+      </references>
+    </addin>
+  </addins>
+</configuration>

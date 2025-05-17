@@ -1,0 +1,150 @@
+<html>
+<head>
+  <title>Garbage Collector For Delphi Objects and Components</title>
+</head>
+ <body>
+  <b>Garbage Collector For Delphi Objects and Components</b><br>
+                                 
+<p> </p>
+                                     
+<blockquote class="abstract"><b>Abstract: </b>Automatic memory management
+ of Delphi objects and components. By Rossen Assenov.</blockquote>
+                                                                         
+ 
+  <p>   </p>
+                                                                         
+ 
+  <p>One of the fundamental questions in object oriented programming is how 
+         the memory management of objects should be done. Different languages 
+    take     different approaches. C++ calls the constructor/destructor of 
+ stack   allocated     objects automaticaly, but for heap allocated objects 
+ you have   to do it  manually   and there is no try..finally statement. In
+ Java you  create the  objects when   you need them and the garabage collector 
+ takes  care of the  memory cleanup,   but there are no destructors, so you 
+ can not  explictly say you don't need   an object anymore and there is little 
+  control  over the process of garbage   collection.<br>
+                     <br>
+                   Delphi provides three ways of object management :<br>
+                     <br>
+                   1. Create/destroy the objects using try..finally.<br>
+                   2. Use TComponent descendants - create a component and 
+let   its   owner    free   it.<br>
+                   3. Interfaces - when the reference count for an interface
+  becomes     0  the   object which implements it is destroyed.<br>
+                     <br>
+                   Interfaces are great for new development - start using 
+them   !  ;)  -  but   sometimes  they can be an overhead because there are 
+two  declarations    of the   same thing.  Also, most of the base VCL classes
+ - TList, TStream,    etc. -  are not components  or interface enabled -
+so  you have to create/destroy    them explicitly.</p>
+                                                                         
+ 
+  <h3>THE OBJECT SAFE</h3>
+                            The Delphi help says you shouldn't mix the TComponent 
+    owner    approach  with the interface memory management, but as always 
+ the   forbidden    fruit is  the sweetest ;). As you'll see it is really 
+useful   to have a TComponent   descendant  which implements an interface 
+and at the  same time IS reference   counted so  when it goes out of scope 
+it frees itself  and all the components   it owns.  We'll extend it so it 
+keeps a list of TObjects and frees them too.<br>
+                    <br>
+                  Lets name the interface IObjectSafe and the reference counted 
+   TComponent      descendent which implements it - TObjectSafe.<br>
+                                                                        
+     
+  <p>Here is the source code for <i>SafeUnit.pas</i> :</p>
+                                                                        
+   
+  <pre class="sourcecode"><code><br><b>unit</b> SafeUnit;<br><br><b>interface</b><br><br><b>uses</b> Classes;<br><br><b>type</b> IObjectSafe = <b>interface</b><br>      <b>function</b>  Safe : TComponent;<br><br>      <b>function</b>  New     (<b>out</b>   aReference <font color="#003399"><i>{: Pointer}</i></font>;<br>                         <b>const</b> aObject     : TObject) : IObjectSafe;<br><br>      <b>procedure</b> Guard   (<b>const</b> aObject     : TObject);<br><br>      <b>procedure</b> Dispose (<b>var</b>   aReference <font color="#003399"><i>{: Pointer}</i></font>);<br>     <b>end</b>;<br><br>     IExceptionSafe = <b>interface</b><br>      <b>procedure</b> SaveException;<br>     <b>end</b>;<br><br><b>function</b> ObjectSafe                                 : IObjectSafe; overload;<br><b>function</b> ObjectSafe (<b>out</b> aObjectSafe : IObjectSafe) : IObjectSafe; overload;<br><b>function</b> ExceptionSafe                              : IExceptionSafe;<br><br><b>function</b> IsAs (<b>out</b>   aReference <font color="#003399"><i>{: Pointer}</i></font>;<br>               <b>const</b> aObject     : TObject;<br>               <b>const</b> aClass      : TClass) : Boolean;<br><br><b>implementation</b><br><br><b>uses</b> Windows, SysUtils;<br><br><b>type</b> TExceptionSafe = <b>class</b> (TInterfacedObject, IExceptionSafe)<br>     <b>private</b><br>      FMessages : <b>String</b>;<br>     <b>public</b><br>      <b>destructor</b> Destroy; override;<br><br>      <b>procedure</b> SaveException;<br>     <b>end</b>;<br><br>     TInterfacedComponent = <b>class</b> (TComponent)<br>     <b>private</b><br>      FRefCount : Integer;<br>     <b>protected</b><br>      <b>function</b> _AddRef  : Integer; <b>stdcall</b>;<br>      <b>function</b> _Release : Integer; <b>stdcall</b>;<br>     <b>public</b><br>      <b>procedure</b> BeforeDestruction; override;<br>     <b>end</b>;<br><br>     TAddObjectMethod = <b>procedure</b> (<b>const</b> aObject : TObject) <b>of</b> <b>object</b>;<br><br>     TObjectSafe = <b>class</b> (TInterfacedComponent, IObjectSafe)<br>     <b>private</b><br>      FObjects    : <b>array</b> <b>of</b> TObject;<br>      FEmptySlots : <b>array</b> <b>of</b> Integer;<br>      AddObject   : TAddObjectMethod;<br><br>      <b>procedure</b> AddObjectAtEndOfList (<b>const</b> aObject : TObject);<br>      <b>procedure</b> AddObjectInEmptySlot (<b>const</b> aObject : TObject);<br><br>      <b>procedure</b> RemoveObject (<b>const</b> aObject : TObject);<br>     <b>public</b><br>      <b>constructor</b> Create (aOwner : TComponent); override;<br>      <b>destructor</b>  Destroy; override;<br><br>      <b>function</b>  Safe : TComponent;<br>      <b>function</b>  New     (<b>out</b>   aReference;<br>                         <b>const</b> aObject : TObject) : IObjectSafe;<br>      <b>procedure</b> Guard   (<b>const</b> aObject : TObject);<br>      <b>procedure</b> Dispose (<b>var</b>   aReference) ;<br>     <b>end</b>;<br><br><b>function</b> TInterfacedComponent._AddRef : Integer;<br><b>begin</b><br> Result := InterlockedIncrement (FRefCount);<br><b>end</b>;<br><br><b>function</b> TInterfacedComponent._Release : Integer;<br><b>begin</b><br> Result := InterlockedDecrement (FRefCount);<br><br> <b>if</b>   Result = 0<br> <b>then</b> Destroy;<br><b>end</b>;<br><br><b>procedure</b> TInterfacedComponent.BeforeDestruction;<br><b>begin</b><br> <b>if</b>   FRefCount &lt;&gt; 0<br> <b>then</b> <b>raise</b> Exception.Create (ClassName + <font color="#9933cc">' not freed correctly'</font>);<br><b>end</b>;<br><br><font color="#003399"><i>{ TObjectSafe }</i></font><br><br><b>constructor</b> TObjectSafe.Create (aOwner : TComponent);<br><b>begin</b><br> <b>inherited</b> Create (aOwner);<br><br> AddObject := AddObjectAtEndOfList;<br><b>end</b>;<br><br><b>destructor</b> TObjectSafe.Destroy;<br> <b>var</b> aIndex     : Integer;<br>     aComponent : TComponent;<br><b>begin</b><br> <b>with</b> ExceptionSafe <b>do</b><br> <b>begin</b><br>  <b>for</b> aIndex := High (FObjects) <b>downto</b> Low (FObjects) <b>do</b><br>  <b>try</b><br>   FObjects [aIndex].Free;<br>  <b>except</b><br>   SaveException;<br>  <b>end</b>;<br><br>  <b>for</b> aIndex := Pred (ComponentCount) <b>downto</b> 0 <b>do</b><br>  <b>try</b><br>   aComponent := Components [aIndex];<br>   <b>try</b><br>    RemoveComponent (aComponent);<br>   <b>finally</b><br>    aComponent.Free;<br>   <b>end</b>;<br>  <b>except</b><br>   SaveException;<br>  <b>end</b>;<br><br>  <b>try</b><br>   <b>inherited</b> Destroy;<br>  <b>except</b><br>   SaveException;<br>  <b>end</b>;<br> <b>end</b>;<br><b>end</b>;<br><br><b>function</b> TObjectSafe.Safe : TComponent;<br><b>begin</b><br> Result := Self;<br><b>end</b>;<br><br><b>procedure</b> TObjectSafe.AddObjectAtEndOfList (<b>const</b> aObject : TObject);<br><b>begin</b><br> SetLength (FObjects, Succ (Length (FObjects)));<br> FObjects [High (FObjects)] := aObject;<br><b>end</b>;<br><br><b>procedure</b> TObjectSafe.AddObjectInEmptySlot (<b>const</b> aObject : TObject);<br><b>begin</b><br> FObjects  [FEmptySlots [High (FEmptySlots)]] := aObject;<br> SetLength (FEmptySlots, High (FEmptySlots));<br><br> <b>if</b>   Length (FEmptySlots) = 0<br> <b>then</b> AddObject := AddObjectAtEndOfList;<br><b>end</b>;<br><br><b>procedure</b> TObjectSafe.RemoveObject (<b>const</b> aObject : TObject);<br> <b>var</b> aIndex : Integer;<br><b>begin</b><br> <b>for</b> aIndex := High (FObjects) <b>downto</b> Low (FObjects) <b>do</b><br> <b>begin</b><br>  <b>if</b> FObjects [aIndex] = aObject <b>then</b><br>  <b>begin</b><br>   FObjects [aIndex] := <b>Nil</b>;<br><br>   SetLength (FEmptySlots, Succ (Length (FEmptySlots)));<br>   FEmptySlots [High (FEmptySlots)] := aIndex;<br>   AddObject := AddObjectInEmptySlot;<br>   <br>   Exit;<br>  <b>end</b>;<br> <b>end</b>;<br><b>end</b>;<br><br><b>procedure</b> TObjectSafe.Dispose (<b>var</b> aReference);<br><b>begin</b><br> <b>try</b><br>  <b>try</b><br>   <b>if</b>   TObject (aReference) <b>is</b> TComponent<br>   <b>then</b> RemoveComponent (TComponent (TObject (aReference)))<br>   <b>else</b> RemoveObject (TObject (aReference));<br>  <b>finally</b><br>   TObject (aReference).Free;<br>  <b>end</b>;<br> <b>finally</b><br>  TObject (aReference) := <b>Nil</b>;<br> <b>end</b>;<br><b>end</b>;<br><br><b>procedure</b> TObjectSafe.Guard (<b>const</b> aObject : TObject);<br><b>begin</b><br> <b>try</b><br>  <b>if</b> aObject <b>is</b> TComponent <b>then</b><br>  <b>begin</b><br>   <b>if</b>   TComponent (aObject).Owner &lt;&gt; Self<br>   <b>then</b> InsertComponent (TComponent (aObject));<br>  <b>end</b><br>  <b>else</b> AddObject (aObject);<br> <b>except</b><br>  aObject.Free;<br><br>  <b>raise</b>;<br> <b>end</b>;<br><b>end</b>;<br><br><b>function</b> TObjectSafe.New (<b>out</b> aReference; <b>const</b> aObject : TObject) : IObjectSafe;<br><b>begin</b><br> <b>try</b><br>  Guard (aObject);<br><br>  TObject (aReference) := aObject;<br> <b>except</b><br>  TObject (aReference) := <b>Nil</b>;<br><br>  <b>raise</b>;<br> <b>end</b>;<br><br> Result := Self;<br><b>end</b>;<br><br><font color="#003399"><i>{ TExceptionSafe }</i></font><br><br><b>destructor</b> TExceptionSafe.Destroy;<br><b>begin</b><br> <b>try</b><br>  <b>if</b>   Length (FMessages) &gt; 0<br>  <b>then</b> <b>raise</b> Exception.Create (FMessages);<br> <b>finally</b><br>  <b>try</b> <b>inherited</b> Destroy; <b>except</b> <b>end</b>;<br> <b>end</b>;<br><b>end</b>;<br><br><b>procedure</b> TExceptionSafe.SaveException;<br><b>begin</b><br> <b>try</b><br>  <b>if</b>   (ExceptObject &lt;&gt; <b>Nil</b>) <b>and</b> (ExceptObject <b>is</b> Exception)<br>  <b>then</b> FMessages := FMessages + Exception (ExceptObject).Message + #13#10;<br> <b>except</b><br> <b>end</b>; <br><b>end</b>;<br><br><b>function</b> ExceptionSafe : IExceptionSafe;<br><b>begin</b><br> Result := TExceptionSafe.Create;<br><b>end</b>;<br><br><b>function</b> ObjectSafe : IObjectSafe;<br><b>begin</b><br> Result := TObjectSafe.Create (<b>Nil</b>);<br><b>end</b>;<br><br><b>function</b> ObjectSafe (<b>out</b> aObjectSafe : IObjectSafe) : IObjectSafe; overload;<br><b>begin</b><br> Result      := ObjectSafe;<br><br> aObjectSafe := Result;<br><b>end</b>;<br><br><b>function</b> IsAs (<b>out</b>   aReference <font color="#003399"><i>{: Pointer}</i></font>;<br>               <b>const</b> aObject     : TObject;<br>               <b>const</b> aClass      : TClass) : Boolean;<br><b>begin</b><br> Result := (aObject &lt;&gt; <b>Nil</b>) <b>and</b> (aObject <b>is</b> aClass);<br><br> <b>if</b>   Result<br> <b>then</b> TObject (aReference) := aObject;<br><b>end</b>;<br><br><b>end</b>.<br><br></code></pre>
+                                                                        
+     
+  <p>How do you use a safe ? It's pretty simple :<br>
+                       </p>
+                                                           
+  <pre class="sourcecode"><code><br><b>procedure</b> TestTheSafe;<br><br> <b>var</b> aMyObject    : TMyObject;<br>     aMyComponent : TMyComponent;<br><br><b>begin</b><br> <b>with</b> ObjectSafe <b>do</b><br> <b>begin</b><br>  New (aMyObject, TMyObject.Create);<br><br>  <font color="#003399"><i>// or</i></font><br>  <font color="#003399"><i>// aMyObject := TMyObject.Create; Guard (aMyObject);</i></font><br> <br>  aMyComponent := TMyComponent.Create (Safe);<br> <b>end</b>;<br><b>end</b>;<br><br></code></pre>
+                                                              
+  <p>Notice the use of the 'with' statement - you can use a safe without
+having to declare a local variable for it. When you create a component just
+pass the 'safe' component as the owner to the constructor.&nbsp; When the
+execution of the code reaches the 'end' of the 'with' statement the reference
+count of IObjectSafe will hit 0, the destructor of TObjectSafe will be called
+and all the components and objects it owns will be freed. So now you have
+the best of both worlds - you can create an object when you need it, be sure
+it will be automaticaly destroyed and know exactly when it will happen.<br>
+                    <br>
+                  The 'New'/'Dispose' methods of IObjectSafe use the 'untyped'
+   pointer     type   to return a reference to an object - this will cause
+ exception  if   you mismatch   the types of the reference and the actual
+object created   (there   won't be  a memory leak though), but it is flexible
+and shorter  to type.  If you want  to play it safe use the 'Guard' function
+instead.<br>
+                    <br>
+                  You can also create one IObjectSafe in the constructor
+of  a  complex     object   which uses a lot of internal objects so you don't 
+ need  to explicitly     free   them&nbsp; in the destructor.<br>
+                    <br>
+                  Take a look at the implementation of the AddObject 'procedure'
+    inside    TObjectSafe.  This is a method pointer technique you can use
+ when   you need    to do one operation  most of the time - add an object
+at the  end of the  array  - and some other  operation rarely - put an object
+ into  an empty slot  - and  you don't want to check each time which one
+of  them  to perform.<br>
+                    </p>
+                                                                       
+  <h3>THE EXCEPTION SAFE</h3>
+                                                                        
+       
+  <p>Another useful safe used in the implementation of TObjectSafe is IExceptionSafe.
+        Many times you need to perform an action over many objects but sometimes
+       you can get an exception. The usual practice is to write something
+like     :</p>
+                                                             
+  <pre class="sourcecode"><code><br><b>for</b> aIndex := 1 <b>to</b> 10 <b>do</b><br><b>try</b><br> <font color="#003399"><i>// do something which might raise an exception</i></font><br><b>except</b><br><b>end</b>;<br><br></code></pre>
+                                                                        
+   
+  <p>and ignore the exceptions, but it's better to remember the exception
+       messages and show them later.<br>
+                <br>
+              That's what IExceptionSafe is used for. It has only one procedure 
+   'SaveException'    without parameters - it uses the system function 'ExceptObject' 
+   to get a  pointer to the current exception. Create a new ExceptionSafe 
+interface   at  the start of the block where you want to remember the exceptions 
+and  when  the execution reaches the end of the 'with' statement the destructor
+   of TExcetionSafe  checks if there were any exceptions remembered and raises
+   a new exception  with all of the exception messages :<br>
+                </p>
+                                                                        
+   
+  <pre class="sourcecode"><code><br><b>with</b> ExceptionSafe <b>do</b><br><b>try</b><br> <b>for</b> aIndex := 1 <b>to</b> 10 <b>do</b><br> <b>try</b><br>  <font color="#330099"><i>// do something which might raise an exception</i></font><br> <b>except</b><br>  SaveException; <br> <b>end</b>;<br><br> <b>for</b> aIndex := 10 <b>to</b> 20 <b>do<br> try</b><br>  </code><code><font color="#330099"><i>// do something which might raise an exception</i></font></code><br><code> <b>except</b><br>  SaveException; <br> <b>end</b>;<br><br> </code><code><font color="#330099"><i>// do something which might raise an exception</i></font></code><br><code><b>except</b><br> SaveException;<br><b>end</b>;<br><br></code></pre>
+                                                                        
+       
+  <h3>THE 'IsAs' OPERATOR</h3>
+                                                                        
+              
+  <p>Often you need to check the type of some object and typecast it to a 
+     reference using the 'is' and 'as' operators, like this :</p>
+                                                                         
+ 
+  <pre class="sourcecode"><code><br><b>if</b> aSomeObject <b>is</b> TMyObject <b>then</b><br><b>begin</b><br> aMyObject := aSomeObject <b>as</b> TMyObject;<br><br> <font color="#330099"><i>// do something with aMyObject</i></font><br><b>end</b>;<br><br></code></pre>
+                                                                        
+     
+  <p>With the 'IsAs' function you can accomplish all this in just one line
+  : </p>
+                                                
+  <pre class="sourcecode"><code><br><b>if</b> IsAs (aMyObject, aSomeObject, TMyObject) <b>then<br>begin</b><br> <font color="#330099"><i>// do something with aMyObject</i></font><br><b>end</b>;<br><br></code></pre>
+              
+  <p>As you can see 'untyped' pointer types can be quite handy.</p>
+                                   
+  <h3>CONCLUSION</h3>
+                                   
+  <p>By using the presented techniques you can greatly simplify the memory
+    management of Delphi objects/components and make your programs safer.<br>
+         Suggestions and comments are welcomed -- just <a href="mailto:rossen_assenov@yahoo.com">
+                   write me</a>!<br>
+ The source code is available at <a href="http://codecentral.borland.com/codecentral/ccweb.exe/listing?id=17286">
+ CodeCentral</a><br>
+   </p>
+                                                                        
+   
+  </body>
+  </html>

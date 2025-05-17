@@ -1,0 +1,220 @@
+C:\LMD70SE\LIB\D10\LMDTaskDialogTemplate.dfm
+C:\LMD70SE\LIB\D10\pLMD3DEffectEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDAboutDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDAviEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDBevelEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDBitmapItemPropertiesEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDBitmapListEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDBitmapPropertiesEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDBitmapStyleEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDBmpRegionEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDBrushEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDButtonLayoutEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDCaptionEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDCustomImageListSelectDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDDateListEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDDateTimeEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDDateTimeFormatEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDFillObjectEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDFilterPropertyEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDFontFXEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDGlyphTextLayoutEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDGradientEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDGraphicLabelEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDHideNonVC.dfm
+C:\LMD70SE\LIB\D10\pLMDImageListEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDLEDEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDMaskEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDMMButtonFaceEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDPeStr.dfm
+C:\LMD70SE\LIB\D10\pLMDPictureItemPropertiesEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDPointListEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDSectionEdit.dfm
+C:\LMD70SE\LIB\D10\pLMDShadowEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDShapeEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDSimpleBevelEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDSmallBarEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDStatusBarEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDStringListEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDStringListItemPropertiesEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDStringsEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDTaskDialogButtonDsgn.dfm
+C:\LMD70SE\LIB\D10\pLMDTaskDialogEditor.dfm
+C:\LMD70SE\LIB\D10\pLMDTeethEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDToolsSE.dfm
+C:\LMD70SE\LIB\D10\pLMDTransparentEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDWaveEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDWaveItemPropertiesEditorDlg.dfm
+C:\LMD70SE\LIB\D10\pLMDWaveListEditorDlg.dfm
+$(BDS)lib\ActnRes.dfm
+$(BDS)lib\AdoConEd.dfm
+$(BDS)lib\CustomizeDlg.dfm
+$(BDS)lib\DBActRes.dfm
+$(BDS)lib\DBClientActnRes.dfm
+$(BDS)lib\DBEditCh.dfm
+$(BDS)lib\DbExcept.dfm
+$(BDS)lib\dbinpreq.dfm
+$(BDS)lib\DBLogDlg.dfm
+$(BDS)lib\DBPWDlg.dfm
+$(BDS)lib\DunitAbout.dfm
+$(BDS)lib\DUnitMainForm.dfm
+$(BDS)lib\GUITestRunner.dfm
+$(BDS)lib\HTTPIntr.dfm
+$(BDS)lib\IBDatabaseEdit.dfm
+$(BDS)lib\IBEventsEditor.dfm
+$(BDS)lib\IBFilterDialog.dfm
+$(BDS)lib\IBFilterSummary.dfm
+$(BDS)lib\IBGeneratorEditor.dfm
+$(BDS)lib\IBRestoreEditor.dfm
+$(BDS)lib\IBSecurityEditor.dfm
+$(BDS)lib\IBServiceEditor.dfm
+$(BDS)lib\IBTransactionEdit.dfm
+$(BDS)lib\IBUpdateSQLEditor.dfm
+$(BDS)lib\recerror.dfm
+$(BDS)lib\ScktMain.dfm
+$(BDS)lib\SqlEdit.dfm
+$(BDS)lib\TeeAreaEdit.dfm
+$(BDS)lib\TeeArrowEdi.dfm
+$(BDS)lib\TeeAvgFuncEditor.dfm
+$(BDS)lib\TeeAxisIncr.dfm
+$(BDS)lib\TeeAxMaxMin.dfm
+$(BDS)lib\TeeBarEdit.dfm
+$(BDS)lib\TeeBaseFuncEdit.dfm
+$(BDS)lib\TeeBMPOptions.dfm
+$(BDS)lib\TeeBrushDlg.dfm
+$(BDS)lib\TeeBubbleEdit.dfm
+$(BDS)lib\TeeCircledEdit.dfm
+$(BDS)lib\TeeCustEdit.dfm
+$(BDS)lib\TeeCustomFuncEditor.dfm
+$(BDS)lib\TeeCustomShapeEditor.dfm
+$(BDS)lib\TeeDBCrosstab.dfm
+$(BDS)lib\TeeDBEdit.dfm
+$(BDS)lib\TeeDBSourceEditor.dfm
+$(BDS)lib\TeeDBSumEdit.dfm
+$(BDS)lib\TeeEdi3D.dfm
+$(BDS)lib\TeeEdiAxis.dfm
+$(BDS)lib\TeeEdiFont.dfm
+$(BDS)lib\TeeEdiGene.dfm
+$(BDS)lib\TeeEdiGrad.dfm
+$(BDS)lib\TeeEdiLege.dfm
+$(BDS)lib\TeeEdiPage.dfm
+$(BDS)lib\TeeEdiPane.dfm
+$(BDS)lib\TeeEdiPeri.dfm
+$(BDS)lib\TeeEdiSeri.dfm
+$(BDS)lib\TeeEditCha.dfm
+$(BDS)lib\TeeEdiTitl.dfm
+$(BDS)lib\TeeEdiWall.dfm
+$(BDS)lib\TeeEMFOptions.dfm
+$(BDS)lib\TeeExport.dfm
+$(BDS)lib\TeeFLineEdi.dfm
+$(BDS)lib\TeeFormatting.dfm
+$(BDS)lib\TeeFuncEdit.dfm
+$(BDS)lib\TeeGalleryAlternate.dfm
+$(BDS)lib\TeeGanttEdi.dfm
+$(BDS)lib\TeePenDlg.dfm
+$(BDS)lib\TeePieEdit.dfm
+$(BDS)lib\TeeSelectList.dfm
+$(BDS)lib\TeeShadowEditor.dfm
+$(BDS)lib\TeeShapeEdi.dfm
+$(BDS)lib\TeeSourceEdit.dfm
+$(BDS)lib\TeeStackBarEdit.dfm
+$(BDS)lib\TeeSymbolEditor.dfm
+$(BDS)lib\debug\DunitAbout.dfm
+$(BDS)lib\debug\DUnitMainForm.dfm
+$(BDS)lib\debug\GUITestRunner.dfm
+$(BDS)ObjRepos\DelphiWin32\ActiveFormAbout.dfm
+$(BDS)ObjRepos\DelphiWin32\dcdemo.dfm
+$(BDS)ObjRepos\DelphiWin32\dcexampl.dfm
+$(BDS)ObjRepos\DelphiWin32\RecError.dfm
+$(BDS)ObjRepos\DelphiWin32\MDIApp\About.dfm
+$(BDS)ObjRepos\DelphiWin32\MDIApp\ChildWin.dfm
+$(BDS)ObjRepos\DelphiWin32\MDIApp\Main.dfm
+$(BDS)ObjRepos\DelphiWin32\Win2kApp\About.dfm
+$(BDS)ObjRepos\DelphiWin32\Win2kApp\LogoMain.dfm
+$(BDS)ObjRepos\DelphiWin32\Win2kApp\W2kMain.dfm
+$(BDS)source\database\src\pas\samples\dbx\delegates\DelegateForm.dfm
+$(BDS)source\dUnit\Contrib\DUnitWizard\Source\DelphiExperts\DUnitProject\XPDUnitProject.dfm
+$(BDS)source\dUnit\Contrib\DUnitWizard\Source\DelphiExperts\DUnitProject\XPDUnitSetup.dfm
+$(BDS)source\dUnit\Contrib\DUnitWizard\Source\DelphiExperts\DUnitProject\XPDUnitTestClass.dfm
+$(BDS)source\dUnit\Contrib\DUnitWizard\Source\DelphiExperts\DUnitProject\XPDUnitTestModule.dfm
+$(BDS)source\dUnit\Contrib\DUnitWizard\Source\DelphiExperts\DUnitProject\dunit\WizardFormsDemoMain.dfm
+$(BDS)source\dUnit\Contrib\XPGen\frmXPGenOpts.dfm
+$(BDS)source\dUnit\Contrib\XPGen\testunit.dfm
+$(BDS)source\dUnit\Contrib\XPGen\xpmain.dfm
+$(BDS)source\dUnit\examples\embeddable\EmbeddableGUITestRunner.dfm
+$(BDS)source\dUnit\src\DunitAbout.dfm
+$(BDS)source\dUnit\src\DUnitMainForm.dfm
+$(BDS)source\dUnit\src\GUITestRunner.dfm
+$(BDS)source\dUnit\tests\UnitTestGUITesting.dfm
+$(BDS)source\ToolsAPI\ToolWnds.dfm
+$(BDS)source\Win32\db\DBClientActnRes.dfm
+$(BDS)source\Win32\db\DBLogDlg.dfm
+$(BDS)source\Win32\db\DBPWDlg.dfm
+$(BDS)source\Win32\db\HTTPIntr.dfm
+$(BDS)source\Win32\db\ScktMain.dfm
+$(BDS)source\Win32\IBX\IBFilterDialog.dfm
+$(BDS)source\Win32\IBX\IBFilterSummary.dfm
+$(BDS)source\Win32\IBX\IBServiceEditor.dfm
+$(BDS)source\Win32\IBX\Property Editors\frmIBAvailableFieldsU.dfm
+$(BDS)source\Win32\IBX\Property Editors\frmIBFilterFieldEditorU.dfm
+$(BDS)source\Win32\IBX\Property Editors\IBDatabaseEdit.dfm
+$(BDS)source\Win32\IBX\Property Editors\IBEventsEditor.dfm
+$(BDS)source\Win32\IBX\Property Editors\IBGeneratorEditor.dfm
+$(BDS)source\Win32\IBX\Property Editors\IBRestoreEditor.dfm
+$(BDS)source\Win32\IBX\Property Editors\IBSecurityEditor.dfm
+$(BDS)source\Win32\IBX\Property Editors\IBTransactionEdit.dfm
+$(BDS)source\Win32\IBX\Property Editors\IBUpdateSQLEditor.dfm
+$(BDS)source\Win32\internet\StubAction.dfm
+$(BDS)source\Win32\Property Editors\AdoConEd.dfm
+$(BDS)source\Win32\Property Editors\CDSEdit.dfm
+$(BDS)source\Win32\Property Editors\ColnEdit.dfm
+$(BDS)source\Win32\Property Editors\Dbedit.dfm
+$(BDS)source\Win32\Property Editors\dbinpreq.dfm
+$(BDS)source\Win32\Property Editors\DbOleEdt.dfm
+$(BDS)source\Win32\Property Editors\DSAdd.dfm
+$(BDS)source\Win32\Property Editors\DSAttrA.dfm
+$(BDS)source\Win32\Property Editors\DSAttrS.dfm
+$(BDS)source\Win32\Property Editors\DSDefine.dfm
+$(BDS)source\Win32\Property Editors\DSDesign.dfm
+$(BDS)source\Win32\Property Editors\FldLinks.dfm
+$(BDS)source\Win32\Property Editors\Ixedit.dfm
+$(BDS)source\Win32\Property Editors\PicEdit.dfm
+$(BDS)source\Win32\Property Editors\SqlEdit.dfm
+$(BDS)source\Win32\Property Editors\StrEdit.dfm
+$(BDS)source\Win32\Property Editors\StringsEdit.dfm
+$(BDS)source\Win32\Property Editors\ValueEdit.dfm
+$(BDS)source\Win32\Samples\Source\Ibevnts.dfm
+$(BDS)source\Win32\vcl\ActnRes.dfm
+$(BDS)source\Win32\vcl\AdoConEd.dfm
+$(BDS)source\Win32\vcl\CustomizeDlg.dfm
+$(BDS)source\Win32\vcl\DbExcept.dfm
+$(BDS)source\Win32\websnap\AddActn.dfm
+$(BDS)source\Win32\websnap\SvrInfoConsole.dfm
+$(BDS)source\Win32\websnap\SvrInfoModule.dfm
+$(BDS)source\Win32\websnap\SvrLogColSettingsFrame.dfm
+$(BDS)source\Win32\websnap\SvrLogDetailDlg.dfm
+$(BDS)source\Win32\websnap\SvrLogDetailFrame.dfm
+$(BDS)source\Win32\websnap\SvrLogFrame.dfm
+$(BDS)source\Win32\websnap\SvrMainForm.dfm
+$(BDS)source\Win32\websnap\SvrPropDlg.dfm
+$(BDS)source\Win32\websnap\SvrStatsFrame.dfm
+$(BDS)source\Win32\websnap\WebAppDbgAbout.dfm
+d:\inspector\code\bds2007\testing.dfm
+d:\inspector\code\bds2007\CPImainForm.dfm
+d:\inspector\code\common\cpicommon\CPIBase.dfm
+d:\inspector\code\common\cpicommon\CPIDockForm.dfm
+d:\inspector\code\common\cpicommon\CPITempForm.dfm
+d:\inspector\code\common\cpicommon\CPIRemoteExpert.dfm
+d:\inspector\code\common\cpicommon\CPIHelpEditor.dfm
+d:\inspector\code\common\cpicommon\CPIRunObjectInspector.dfm
+d:\inspector\code\common\cpicommon\CPIcmpProperties.dfm
+d:\inspector\code\common\cpicommon\CPIHelpExpert.dfm
+d:\inspector\code\common\cpicommon\CPICmpEditors.dfm
+d:\inspector\code\common\cpicommon\CPIBreakPointsManager.dfm
+d:\inspector\code\common\cpicommon\CPITimageListEditor.dfm
+d:\inspector\code\common\cpicommon\CPINBDSToolPalette.dfm
+d:\inspector\code\common\cpicommon\CPIBPpropertiesEditor.dfm
+d:\inspector\code\common\pascommon\PASDataIO.dfm
+d:\inspector\code\common\pascommon\PASDebug.dfm
+d:\inspector\code\common\pascommon\PASProgress.dfm
+d:\inspector\code\common\pascommon\PASImageSelector.dfm

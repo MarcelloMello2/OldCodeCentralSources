@@ -1,0 +1,3 @@
+JS   - Microsoft JScript 5.5
+VBS  - Microsoft VBScript 5.5
+

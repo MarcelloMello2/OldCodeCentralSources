@@ -1,0 +1,9 @@
+Caption
+HelpKeyword
+OnActivate
+OnClick
+OnClose
+OnCreate
+OnResize
+PopupMenu
+ShowHint

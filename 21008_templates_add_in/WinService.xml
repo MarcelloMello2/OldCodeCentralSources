@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!-- ============================================================================== -->
+<!-- File name:      WinService.xml                                                 -->
+<!-- Last updated:   1/2/04                                                         -->
+<!-- Author:         Sergey Mishkovskiy                                             -->
+<!-- Company:        USysWare, Inc.                                                 -->
+<!-- Contact info:   usysware@comcast.net                                           -->
+<!-- Description:    Windows Service Application Template configuration file.       -->
+<!--                                                                                -->
+<!--                 Note that Delphi has to be restarted for <addin> tag           -->
+<!--                 attributes changes to take effect. No restart is necessary for -->
+<!--                 changes made to <units> and/or <references> tags.              -->
+<!--                                                                                -->
+<!-- Note that <dialog> tag is optional.                                            -->
+<!--                                                                                -->
+<!-- You can provide your own categories, separating sub-categories using '\' char. -->
+<!-- Some of the standard BDS menu categories for 'menuCategory' attribute:         -->
+<!-- 'Borland.Root'                                                                 -->
+<!-- 'Borland.Galileo.Other'                                                        -->
+<!-- 'Borland.Delphi.New'                                                           -->
+<!-- 'Borland.Delphi.NewFiles'                                                      -->
+<!-- 'Borland.Delphi.NET.New'                                                       -->
+<!-- 'Borland.Delphi.NET.NewFiles'                                                  -->
+<!--                                                                                -->
+<!-- Some of the valid 'unit' attribute types:                                      -->
+<!-- 'application' or 'console'                                                     -->
+<!-- 'library', 'package' or 'assembly'                                             -->
+<!-- 'form' or 'winform'                                                            -->
+<!-- 'class' or 'unit' (default value)                                              -->
+<!-- 'text' (considered pass-through type, i.e. simply copied)                      -->
+<!--                                                                                -->
+<!-- References may include full path.                                              -->
+<!-- References may include $(BDS) const to resolve Borland's assembly path.        -->
+<!-- ============================================================================== -->
+<configuration>
+  <addins>
+    <addin name="Windows Service Application" version="1.0" company="USysWare" companyLong="USysWare, Inc." menuCategory="Other Projects" imageFile="WinService.ico">
+      <dialog title="Windows Service Defaults" enabled="true">
+        <group name="names" caption="Service Information" enabled="true"/>
+        <group name="classes" caption="Class Information" enabled="true"/>
+      </dialog>
+      <units>
+        <unit name="WinService" template="WinServiceTemplate.dpr" type="application">
+          <expressions>
+            <expression replace="[!ClassName]" unit="Service"/>
+          </expressions>
+        </unit>
+        <unit name="Service" template="ServiceTemplate.pas">
+          <expressions>
+            <expression replace="[!DependantUnitName]" value="ProjectInstaller"/>
+            <expression replace="[!ClassName]" value="WindowsService">
+              <groupItem group="classes" caption="Service Class Name"/>
+            </expression>
+          </expressions>
+        </unit>
+        <unit name="ProjectInstaller" template="ProjectInstallerTemplate.pas">
+          <expressions>
+            <expression replace="[!ClassName]" value="ServiceInstaller">
+              <groupItem group="classes" caption="Installer Class Name"/>
+            </expression>
+            <expression replace="[!ServiceName]" value="MyWindowsService">
+              <groupItem group="names" caption="Service Name"/>
+            </expression>
+            <expression replace="[!ServiceDisplayName]" value="My Windows Service">
+              <groupItem group="names" caption="Service Display Name"/>
+            </expression>
+            <expression replace="[!ServiceDescription]" value="This is my Windows service">
+              <groupItem group="names" caption="Service Description"/>
+            </expression>
+          </expressions>
+        </unit>
+      </units>
+      <references>
+        <reference name="System.dll"/>
+        <reference name="System.Data.dll"/>
+        <reference name="System.ServiceProcess.dll"/>
+        <reference name="System.XML.dll"/>
+      </references>
+    </addin>
+  </addins>
+</configuration>

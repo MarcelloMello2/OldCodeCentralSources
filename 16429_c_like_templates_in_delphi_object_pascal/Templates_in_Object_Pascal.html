@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+                                                       
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+</head>
+ <body>
+ <b>Templates in Object Pascal</b><br>
+ <br>
+ Did it happen to you ? You're talking with a C++ programmer about    Delphi 
+   and how powerful it is, but at the end they usually say something    like 
+"Ok,   but Delphi uses Pascal and it doesn't support multiple-inheritance
+    and templates.   So it is not as good as C++.". Multiple inheritance
+is   easy - Delphi has   interfaces and they do the job just fine, but you
+have   to agree about templates   - Object Pascal doesn't support them as
+a language     feature. Well, guess what  - you can actually implement templates
+in Delphi     as good as in C++.<br>
+  <br>
+              Templates give you the possibility to make generic containers,
+  like   lists,   stacks, queues, etc. If you want to implement something
+like  this   in Delphi   you have two choices : <br>
+  <br>
+              &nbsp;1) use a container like TList which holds pointers -
+in  this   case   you have to make explicit typecast all the time<br>
+              &nbsp;2) subclass a container like TCollection or TObjectList 
+ and   override    all the type-dependent methods each time you want to use 
+ new  data type<br>
+  <br>
+              A third alternative is to make a unit with generic container
+  and each time you want to use it for a new data type you can perform search-and-replace 
+in the editor.     This will work, but if you change the implementation you 
+have to change   all  of the units for the different types by hand. It would 
+be nice if the   compiler  can do the dirty work for you and this is exactly 
+what we'll do.<br>
+  <br>
+              Take for example the TCollection / TCollectionItem classes. 
+When you declare a new  TCollectionItem      descendant you also subclass 
+a new class from TOwnedCollection  and override      most of the methods so
+now they use the new collection item  class type and then  call    the inherited
+method with the proper typecast.<br>
+  <br>
+ <b>Here is how to implement a generic collecti</b><b>on class template in 
+3 easy steps :</b><br>
+ <br>
+ <b>           1)</b><b> create a new TEXT file (not an unit file) called 
+"TemplateCollectionInterface.pas"     :</b> 
+<pre class="sourcecode"><code>_COLLECTION_ = <b>class</b> (TOwnedCollection)<br><b>protected</b>
+ <b>function</b>  GetItem (<b>const</b> aIndex : Integer) : _COLLECTION_ITEM_;<br> <b>procedure</b> SetItem (<b>const</b> aIndex : Integer;<br>                    <b>const</b> aValue : _COLLECTION_ITEM_);<br><b>public</b>
+ <b>constructor</b> Create (<b>const</b> aOwner : TComponent);<br><br> <b>function</b> Add                                 : _COLLECTION_ITEM_;<br> <b>function</b> FindItemID (<b>const</b> aID    : Integer) : _COLLECTION_ITEM_;<br> <b>function</b> Insert     (<b>const</b> aIndex : Integer) : _COLLECTION_ITEM_;<br> <b>property</b> Items      [<b>const</b> aIndex : Integer] : _COLLECTION_ITEM_ <b>read</b> GetItem <b>write</b> SetItem;<br><b>end</b>;<br></code></pre>
+               Note that there are no "uses" or "interface" clauses, just 
+a  generic    type   declaration, where :<br>
+  <br>
+              &nbsp;a) _COLLECTION_ is the name of the generic  collection
+ class.<br>
+              &nbsp;b) _COLLECTION_ITEM_ is the name of the collection item 
+ subclass     the  collection will hold.<br>
+  <br>
+ <b>2) Create a second TEXT file called "TemplateCollectionImplementation.pas"
+     :</b> 
+<pre class="sourcecode"><code><b>constructor</b> _COLLECTION_.Create (<b>const</b> aOwner : TComponent);<br><b>begin</b>
+ <b>inherited</b> Create (aOwner, _COLLECTION_ITEM_);<br><b>end</b>;<br><br><b>function</b> _COLLECTION_.Add : _COLLECTION_ITEM_;<br><b>begin</b>
+ Result := _COLLECTION_ITEM_ (<b>inherited</b> Add);<br><b>end</b>;<br><br><b>function</b> _COLLECTION_.FindItemID (<b>const</b> aID : Integer) : _COLLECTION_ITEM_;<br><b>begin</b>
+ Result := _COLLECTION_ITEM_ (<b>inherited</b> FindItemID (aID));<br><b>end</b>;<br><br><b>function</b> _COLLECTION_.GetItem (<b>const</b> aIndex : Integer) : _COLLECTION_ITEM_;<br><b>begin</b>
+ Result := _COLLECTION_ITEM_ (<b>inherited</b> GetItem (aIndex));<br><b>end</b>;<br><br><b>function</b> _COLLECTION_.Insert (<b>const</b> aIndex : Integer) : _COLLECTION_ITEM_;<br><b>begin</b>
+ Result := _COLLECTION_ITEM_ (<b>inherited</b> Insert (aIndex));<br><b>end</b>;<br><br><b>procedure</b> _COLLECTION_.SetItem (<b>const</b> aIndex : Integer;<br>                                <b>const</b> aValue : _COLLECTION_ITEM_);<br><b>begin</b>
+ <b>inherited</b> SetItem (aIndex, aValue);<br><b>end</b>;<br></code></pre>
+              Again, there are no "uses" or "implementation" clauses here 
+-  just   the   implementation  code of the generic type, which is pretty 
+straight-forward.<br>
+  <br>
+ <b>3) Now,&nbsp; create a new unit file called "MyCollectionUnit.pas" :</b>
+ 
+<pre class="sourcecode"><code><b>unit</b> MyCollectionUnit;<br><br><b>interface</b>
+
+<b>uses</b> Classes;<br><br><b>type</b> TMyCollectionItem = <b>class</b> (TCollectionItem)<br>     <b>private</b>
+      FMyStringData  : <b>String</b>;<br>      FMyIntegerData : Integer;<br>     <b>public</b>
+      <b>procedure</b> Assign (aSource : TPersistent); override;<br>     <b>published</b>
+      <b>property</b> MyStringData  : <b>String</b>  <b>read</b> FMyStringData  <b>write</b> FMyStringData;<br>      <b>property</b> MyIntegerData : Integer <b>read</b> FMyIntegerData <b>write</b> FMyIntegerData;<br>     <b>end</b>;<br><br>     <font color="#003399"><i>// !!! tell the generic collection class what is the actual collection item class type </i></font>
+     
+     _COLLECTION_ITEM_ = TMyCollectionItem; 
+     
+     <font color="#003399"><i>// !!! insert the generic collection class interface file - preprocessor directive</i></font>
+
+     <font color="#990033"><i>{$INCLUDE TemplateCollectionInterface}</i></font> <br><br>     <font color="#003399"><i>// !!! rename the generic collection class</i></font>
+
+     TMyCollection = _COLLECTION_;          
+
+<b>implementation</b>
+
+<b>uses</b> SysUtils;<br><br><font color="#003399"><i>// !!! insert the generic collection class implementation file - preprocessor directive</i></font>
+
+<font color="#990033"><i>{$INCLUDE TemplateCollectionImplementation}</i></font> <br><br><b>procedure</b> TMyCollectionItem.Assign (aSource : TPersistent);<br><b>begin</b>
+ <b>if</b> aSource <b>is</b> TMyCollectionItem <b>then</b>
+ <b>begin</b>
+  FMyStringData  := TMyCollectionItem(aSource).FMyStringData;
+  FMyIntegerData := TMyCollectionItem(aSource).FMyIntegerData;
+ <b>end</b>
+ <b>else</b> <b>inherited</b>;<br><b>end</b>;<br><br><b>end</b>.<br></code></pre>
+              That's it! With only four lines of code the new collection
+class    is  ready   and the compiler did all the work for you. If you change
+the   interface   or   implementation of the generic collection class the
+changes   will propagate     to all the units which use it.<br>
+  <br>
+ <b>One more example. This time we'll implement a generic class    wrapper 
+   for dynamic arrays.</b><br>
+  <br>
+ <b>1) Create a new TEXT file named "TemplateVectorInterface.pas" :</b> 
+<pre class="sourcecode"><code>_VECTOR_INTERFACE_ = <b>nterface</b>
+ <b>function</b>  GetLength : Integer;<br> <b>procedure</b> SetLength (<b>const</b> aLength : Integer);<br><br> <b>function</b>  GetItems (<b>const</b> aIndex : Integer) : _VECTOR_DATA_TYPE_;<br> <b>procedure</b> SetItems (<b>const</b> aIndex : Integer;<br>                     <b>const</b> aValue : _VECTOR_DATA_TYPE_);<br><br> <b>function</b>  GetFirst : _VECTOR_DATA_TYPE_;<br> <b>procedure</b> SetFirst (<b>const</b> aValue : _VECTOR_DATA_TYPE_);<br><br> <b>function</b>  GetLast  : _VECTOR_DATA_TYPE_;<br> <b>procedure</b> SetLast  (<b>const</b> aValue : _VECTOR_DATA_TYPE_);<br><br> <b>function</b>  High  : Integer;<br> <b>function</b>  Low   : Integer;<br><br> <b>function</b>  Clear                              : _VECTOR_INTERFACE_;<br> <b>function</b>  Extend   (<b>const</b> aDelta : Word = 1) : _VECTOR_INTERFACE_;<br> <b>function</b>  Contract (<b>const</b> aDelta : Word = 1) : _VECTOR_INTERFACE_; <br><br> <b>property</b>  Length                         : Integer             <b>read</b> GetLength <b>write</b> SetLength;<br> <b>property</b>  Items [<b>const</b> aIndex : Integer] : _VECTOR_DATA_TYPE_  <b>read</b> GetItems  <b>write</b> SetItems; <b>default</b>;<br> <b>property</b>  First                          : _VECTOR_DATA_TYPE_  <b>read</b> GetFirst  <b>write</b> SetFirst;<br> <b>property</b>  Last                           : _VECTOR_DATA_TYPE_  <b>read</b> GetLast   <b>write</b> SetLast;<br><b>end</b>;<br><br>_VECTOR_CLASS_ = <b>class</b> (TInterfacedObject, _VECTOR_INTERFACE_)<br><b>private</b>
+ FArray : <b>array</b> <b>of</b> _VECTOR_DATA_TYPE_;<br><b>protected</b>
+ <b>function</b>  GetLength : Integer;<br> <b>procedure</b> SetLength (<b>const</b> aLength : Integer);<br><br> <b>function</b>  GetItems (<b>const</b> aIndex : Integer) : _VECTOR_DATA_TYPE_;<br> <b>procedure</b> SetItems (<b>const</b> aIndex : Integer;<br>                     <b>const</b> aValue : _VECTOR_DATA_TYPE_);<br><br> <b>function</b>  GetFirst : _VECTOR_DATA_TYPE_;<br> <b>procedure</b> SetFirst (<b>const</b> aValue : _VECTOR_DATA_TYPE_);<br><br> <b>function</b>  GetLast  : _VECTOR_DATA_TYPE_;<br> <b>procedure</b> SetLast  (<b>const</b> aValue : _VECTOR_DATA_TYPE_);<br><b>public</b>
+ <b>function</b>  High  : Integer;<br> <b>function</b>  Low   : Integer;<br><br> <b>function</b>  Clear                              : _VECTOR_INTERFACE_;<br> <b>function</b>  Extend   (<b>const</b> aDelta : Word = 1) : _VECTOR_INTERFACE_;<br> <b>function</b>  Contract (<b>const</b> aDelta : Word = 1) : _VECTOR_INTERFACE_; <br><br> <b>constructor</b> Create (<b>const</b> aLength : Integer);<br><b>end</b>;<br></code></pre>
+ <b>2) Create a new TEXT file named "TemplateVectorImplementation.pas" :</b>
+ 
+<pre class="sourcecode"><code><b>constructor</b> _VECTOR_CLASS_.Create (<b>const</b> aLength : Integer);<br><b>begin</b>
+ <b>inherited</b> Create;<br><br> SetLength (aLength);<br><b>end</b>;<br><br><b>function</b> _VECTOR_CLASS_.GetLength : Integer;<br><b>begin</b>
+ Result := System.Length (FArray);
+<b>end</b>;<br><br><b>procedure</b> _VECTOR_CLASS_.SetLength (<b>const</b> aLength : Integer);<br><b>begin</b>
+ System.SetLength (FArray, aLength);
+<b>end</b>;<br><br><b>function</b> _VECTOR_CLASS_.GetItems (<b>const</b> aIndex : Integer) : _VECTOR_DATA_TYPE_;<br><b>begin</b>
+ Result := FArray [aIndex];
+<b>end</b>;<br><br><b>procedure</b> _VECTOR_CLASS_.SetItems (<b>const</b> aIndex : Integer;<br>                                   <b>const</b> aValue : _VECTOR_DATA_TYPE_);<br><b>begin</b>
+ FArray [aIndex] := aValue;
+<b>end</b>;<br><br><b>function</b> _VECTOR_CLASS_.High : Integer;<br><b>begin</b>
+ Result := System.High (FArray);
+<b>end</b>;<br><br><b>function</b> _VECTOR_CLASS_.Low : Integer;<br><b>begin</b>
+ Result := System.Low (FArray);
+<b>end</b>;<br><br><b>function</b> _VECTOR_CLASS_.GetFirst : _VECTOR_DATA_TYPE_;<br><b>begin</b>
+ Result := FArray [System.Low (FArray)];
+<b>end</b>;<br><br><b>procedure</b> _VECTOR_CLASS_.SetFirst (<b>const</b> aValue : _VECTOR_DATA_TYPE_);<br><b>begin</b>
+ FArray [System.Low (FArray)] := aValue;
+<b>end</b>;<br><br><b>function</b> _VECTOR_CLASS_.GetLast : _VECTOR_DATA_TYPE_;<br><b>begin</b>
+ Result := FArray [System.High (FArray)];
+<b>end</b>;<br><br><b>procedure</b> _VECTOR_CLASS_.SetLast (<b>const</b> aValue : _VECTOR_DATA_TYPE_);<br><b>begin</b>
+ FArray [System.High (FArray)] := aValue;
+<b>end</b>;<br><br><b>function</b> _VECTOR_CLASS_.Clear : _VECTOR_INTERFACE_;<br><b>begin</b>
+ FArray := <b>Nil</b>;<br><br> Result := Self;<br><b>end</b>;<br><br><b>function</b> _VECTOR_CLASS_.Extend (<b>const</b> aDelta : Word) : _VECTOR_INTERFACE_;<br><b>begin</b>
+ System.SetLength (FArray, System.Length (FArray) + aDelta);
+
+ Result := Self;
+<b>end</b>;<br><br><b>function</b> _VECTOR_CLASS_.Contract (<b>const</b> aDelta : Word) : _VECTOR_INTERFACE_;<br><b>begin</b>
+ System.SetLength (FArray, System.Length (FArray) - aDelta);
+
+ Result := Self;
+<b>end</b>;<br></code></pre>
+ <b>3) Finally, create UNIT file named "FloatVectorUnit.pas" :</b> 
+<pre class="sourcecode"><code><b>unit</b> FloatVectorUnit;<br><br><b>interface</b>
+
+<b>uses</b> Classes;                           <font color="#003399"><i>// !!! "Classes" unit contains TInterfacedObject class declaration</i></font>
+
+<b>type</b> _VECTOR_DATA_TYPE_ = Double;       <font color="#003399"><i>// !!! the data type for the array class is Double</i></font>
+
+     <font color="#990033"><i>{$INCLUDE TemplateVectorInterface}</i></font>
+
+     IFloatVector = _VECTOR_INTERFACE_; <font color="#003399"><i>// !!! give the interface a meanigful name</i></font>
+     TFloatVector = _VECTOR_CLASS_;     <font color="#003399"><i>// !!! give the class a meanigful name</i></font>
+
+<b>function</b> CreateFloatVector (<b>const</b> aLength : Integer = 0) : IFloatVector; <font color="#003399"><i>// !!! this is an optional factory function </i></font>
+
+<b>implementation</b>
+
+<font color="#990033"><i>{$INCLUDE TemplateVectorImplementation}</i></font>
+
+<b>function</b> CreateFloatVector (<b>const</b> aLength : Integer = 0) : IFloatVector;     <br><b>begin</b>
+ Result := TFloatVector.Create (aLength);
+<b>end</b>;<br><br><b>end</b>.<br></code></pre>
+             You can also easily extend the generic vector class with iterators
+    and   some  additional functions.<br>
+  <br>
+              And here is how you can use the new vector interface : 
+<pre class="sourcecode"><code><b>procedure</b> TestFloatVector;<br> <b>var</b> aFloatVector : IFloatVector;<br>     aIndex       : Integer;<br><b>begin</b>
+ aFloatVector := CreateFloatVector;
+
+ aFloatVector.Extend.Last := 1;
+ aFloatVector.Extend.Last := 2;
+
+ <b>for</b> aIndex := aFloatVector.Low <b>to</b> aFloatVector.High <b>do</b>
+ <b>begin</b>
+  WriteLn (FloatToStr (aFloatVector [aIndex]));
+ <b>end</b>;<br><b>end</b>.<br></code></pre>
+              The only requirements when implementing templates this way
+is  that   each   new type should be declared in a separate unit and you
+should  have   the sources   for the generic classes.<br>
+<br>
+Suggestions and comments are welcomed at : rossen_assenov@yahoo.com.<br>
+  <br>
+   
+</body>
+</html>

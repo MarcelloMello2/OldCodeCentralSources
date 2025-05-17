@@ -1,0 +1,475 @@
+<html>
+	<head>
+		<style type="text/css">
+			body {
+				font-family: times new roman, serif;
+			}
+			h1 {
+				font-size: 32;
+			}
+			h2 {
+				margin-left: 0;
+				font-size: 20;
+				text-decoration: underline;
+			}
+			ul {
+				margin-left: 3em;
+			}
+			P {
+				margin-left: 2em;
+			}
+			span.name {
+				font-family: Comic Sans MS, Arial, sans-serif;
+				font-style: italic;
+				color: red;
+			}
+			span.jb {
+				text-decoration: underline;
+			}
+			span.ui {
+				font-weight: bold;
+			}
+			p.example {
+				font-family: monospaced;
+				margin-left: 4em;
+			}
+			p.url {
+				margin-top: 5;
+				margin-left: 5em;
+			}
+			table.files {
+				margin-left: 2em;
+				background-color: #E0E0E0
+			}
+			tr.files-header {
+				background-color: #B0D0E0
+			}
+		</style>
+		<title>Delphi 2005 C# Goodies OpenTool Readme</title>
+	</head>
+
+	<body>
+		<center>
+  <h1> <span class="name"><img src="images/taenzer.gif" width="25" height="25">Delphi 
+    2005 C# Goodies </span>&nbsp;v.1.1 OpenTool Readme</h1>
+		</center>
+		<hr>
+			<center>
+  Copyright &copy; 2004, Valentino Kyriakides (KyrSoft ) 
+</center>
+		<hr>
+
+		<!---------------------------------------------------------------------------->
+		
+<h2><u>Contents</u></h2>
+<ul>
+  <li> <a href="#Overview"> Overview</a> 
+  <li> <a href="#Installation"> Installation</a>
+  <li><a href="#Shortcut">Customizing the Shortcuts</a>
+  <li> <a href="#Uninstall"> Uninstall</a> 
+  <li> <a href="#Usage"> Usage and Documentation</a> 
+    <ul>
+      <li><a href="#Docviewer">The Doc Viewer</a></li>
+      <li><a href="#Keycodeanalyzer">The Keycode Analyzer</a></li>
+      <li><a href="#Docinsight">The Doc Insight and Keyword autocompletion mechanism</a><br>
+      </li>
+    </ul>
+  <li> <a href="#Compatibility"> Compatibility</a> 
+  <a href="#Contacts"> 
+  <li> Contacts 
+  </a> 
+</ul>
+		<hr>
+<!---------------------------------------------------------------------------->
+<a name="Overview"></a> 
+<h2><u>Overview</u></h2>
+
+		
+<p> The <span class="name">Delphi 2005 C# Goodies</span> OpenTool is an add-on 
+  module for the Borland <span class="jb">Delphi 2005</span> IDE which helps you 
+  to perform C# language specific reserved keyword and XML documentation autocompletions 
+  inside the Delphi C# editors. Further it actually also includes a quick access 
+  WYSIWYG XML to HTML viewer helper and a keycode analyzer helper. The main motivation 
+  for this Delphi 2005 related C# OpenTool is, to enhance the productivity of 
+  lazy typers by offering some of the missing Delphi 2005 support for C# reserved 
+  keywords and XML documentation tags autocompletion. 
+  <!---------------------------------------------------------------------------->
+  <a name="Installation"></a> 
+<h2><u>Installation</u></h2>
+
+		
+<p> To install the <span class="name">Delphi 2005 C# Goodies</span>, copy the 
+  contents of the distributions <b>\assembly</b> directory into some suitable 
+  place on your harddisk, e.g.&quot;D:\Programs\dcsgoodies\&quot; or the like. 
+  The below <i>table</i> shows which <span class="name">Delphi 2005 C# Goodies&nbsp;</span> 
+  distribution files must be all actually installed into one and the same directory. 
+<p> In the following table, <b><i>&lt;dcsgoodies&gt;</i></b> refers as an example 
+  for a directory to which to install this <span class="jb">distributions</span> 
+  files: 
+<p>
+		
+<table class="files" border="1" cellpadding="5" width="561">
+  <tr class="files-header"> 
+    <td width="171"> <b>File to copy </b></td>
+    <td width="109"><b>Target directory</b></td>
+    <td width="235"><b>Description </b></td>
+  </tr>
+  <tr> 
+    <td width="171">dcsgoodies.dll</td>
+    <td width="109"><code><b><i>&lt;dcsgoodies&gt;</i></b></code> </td>
+    <td width="235">the main dcsgoodies assembly</td>
+  </tr>
+  <tr> 
+    <td width="171">ShowXmlDocumentation.xsl</td>
+    <td width="109"><code><b><i>&lt;dcsgoodies&gt;</i></b></code> </td>
+    <td width="235">a XSLT file needed by the XML to HTML docviewer</td>
+  </tr>
+  <tr> 
+    <td width="171">MsdnHelp.css</td>
+    <td width="109"><code><b><i>&lt;dcsgoodies&gt;</i></b></code> </td>
+    <td width="235">a CSS file needed by the XML to HTML docviewer</td>
+  </tr>
+  <tr>
+    <td width="171">ShortcutConfig.xml</td>
+    <td width="109"><code><b><i>&lt;dcsgoodies&gt;</i></b></code> </td>
+    <td width="235">a XML file where you can customize the shortcuts for the Delphi 
+      2005 C# Goddies</td>
+  </tr>
+  <tr> 
+    <td width="171">add_to_registry.bat</td>
+    <td width="109"><code><b><i>&lt;dcsgoodies&gt;</i></b></code> </td>
+    <td width="235">a help batch file which adds for you the needed <i>dcsgoodies.dll</i> 
+      Delphi 2005 registry entry into the Windows registry</td>
+  </tr>
+  <tr> 
+    <td width="171">delete_from_registry.bat </td>
+    <td width="109"><code><b><i>&lt;dcsgoodies&gt;</i></b></code> </td>
+    <td width="235">a help batch file which deletes the <i>dcsgoodies.dll</i> 
+      Delphi 2005 registry entry from the Windows registry for you </td>
+  </tr>
+</table>
+
+		
+<p> After copying the above files to it's destination directory location, you 
+  must execute the <b><i>add_to_registry.bat</i></b> file from inside of the directory 
+  where you installed this distribution into. This batch file performs an automatic 
+  <i>dcsgoodies.dll</i> registry entry setup for Delphi 2005. - Performing a manual 
+  registry setup from a DOS shell with <i>reg.exe</i>, would instead look like 
+  somehow like this: 
+<p>&gt; reg add &quot;HKCU\Software\Borland\BDS\1.0\Known IDE Assemblies&quot; 
+  /v <b>d:\...</b>\dcsgoodies\dcsgoodies.dll /t REG_SZ /d Goodies</p>
+<p> Now you will have to restart <span class="jb">Delphi 2005</span>, in order 
+  that it can load the <i>dcsgoodies.dll</i> assembly. If all went well, you should 
+  now see a new #Goodies top menu entry with three sub menu entries inside <span class="jb">Delphi 
+  2005 </span>: 
+<p><img src="images/topmenu.gif" width="479" height="27"> 
+<p><img src="images/menuentries.gif" width="166" height="89">
+<p>Now the <span class="name">Delphi 2005 C# Goodies</span> is enabled and can be used. 
+  See below under the section <i><a href="#Usage">Usage and Documentation</a></i> 
+  how to make use of it.
+<p>&nbsp;
+<p><b>The Extras Folder:</b>
+<p>For those of you, which possibly may prefer Delphi C# Code Templates, I've 
+  also added two custom C#Builder compatible code templates files, one for XML 
+  doc tags and one for C# keywords into the Delphi 2005 C# Goodies distribution 
+  extras folder. These files are named: 
+<p>&nbsp;
+<table class="files" border="1" cellpadding="5" width="426">
+  <tr class="files-header"> 
+    <td width="118"> <b>Code Template File</b></td>
+    <td width="160"><b>Purpose</b></td>
+  </tr>
+  <tr> 
+    <td width="118">xmldoctags.dci</td>
+    <td width="160"><code>offers C# XML doc tags code templates</code></td>
+  </tr>
+  <tr> 
+    <td width="118">keywords.dci</td>
+    <td width="160"><code>offers C# keyword code templates</code></td>
+  </tr>
+</table>
+<p>You can import these files into Delphi 2005 via it's <i>Code Templates</i> 
+  dialog:</p>
+<p><img src="images/codetemplates.gif" width="439" height="420"></p>
+<p>After doing so, you can use these Delphi C# XML doc tags and keword code templates 
+  by typing in the associated abbreviations <i>(look into the code template files 
+  to see the used ones</i>) inside a C# edit view and hitting the Ctrl-J shortcut. 
+<p>&nbsp; 
+<h2> 
+  <!---------------------------------------------------------------------------->
+  <a name="Shortcut"></a></h2>
+<h2><u>Customizing the Shortcuts</u></h2>
+<p> The shortcuts used by the <span class="name">Delphi 2005 C# Goodies&nbsp;</span> 
+  are customizable by changing the default value settings inside the <b><i>ShortcutConfig.xml</i></b> 
+  configuration file. The configuration file should reside inside of the installation 
+  directory where you installed the Delphi 2005 C# Goodies into. 
+<p>The contents of the <i>ShortcutConfig.xml</i> file looks like this:
+<p><code>&lt;Configuration&gt;<br>
+  &lt;Shortcut Name=&quot;ViewDocShortcut&quot; Value=&quot;24767&quot; /&gt;<br>
+  &lt;Shortcut Name=&quot;DocInsightShortcut&quot; Value=&quot;49343&quot; /&gt;<br>
+  &lt;Shortcut Name=&quot;KeycodeAnalyzerShortcut&quot; Value=&quot;0&quot; /&gt;<br>
+  &lt;/Configuration&gt;</code>
+<p>The above shown config file contains default keyboard shortcut value entries 
+  (Value=&quot;xxxxx&quot;) for the Delphi 2005 C# Goodies tools. You can change 
+  these default assigned values to your prefered ones, with the help of the <a href="#Keyboardanalyzer">Keyboard 
+  Analyzer</a> in order to determine correct Delphi 2005 C# OTA integer values 
+  for specific keyboard shortcuts. - However, keep in mind that there are a lot 
+  of shortcuts already in use by Delphi 2005 itself, so you should check twice 
+  to not accidently take one of those which are already used internally by Delphi. 
+<p>The default used keyboard shortcut values for the Delphi 2005 C# Goodies are:
+<p>&nbsp;
+<table class="files" border="1" cellpadding="5" width="426">
+  <tr class="files-header"> 
+    <td width="118"> <b>Tool</b></td>
+    <td width="160"><b>Default Shortcut Value</b></td>
+    <td width="102"><b>Shortcut name</b></td>
+  </tr>
+  <tr> 
+    <td width="118">Doc Viewer</td>
+    <td width="160"><code>24767</code></td>
+    <td width="102">Ctrl-Shift-#</td>
+  </tr>
+  <tr> 
+    <td width="118">Doc Insight</td>
+    <td width="160"><code>49343</code></td>
+    <td width="102">Ctrl-Alt-#</td>
+  </tr>
+  <tr> 
+    <td width="118">Keycode Analyzer</td>
+    <td width="160"><code>0</code></td>
+    <td width="102">none</td>
+  </tr>
+</table>
+<p>&nbsp;
+<p>After making changes to the shortcut values inside the <i>ShortcutConfig.xml</i> 
+  file you must restart <span class="jb">Delphi</span> in order to use the new 
+  associated shortcuts for the Delphi 2005 C# Goodies. 
+<p>&nbsp; 
+<h2>
+  <!---------------------------------------------------------------------------->
+  <a name="Uninstall"></a> </h2>
+<h2><u>Uninstall</u></h2>
+
+		
+<p> To uninstall the <span class="name">Delphi 2005 C# Goodies&nbsp;</span> use 
+  the distributions <b><i>delete_from_registry.bat</i></b> file from inside of 
+  the installation directory where you installed the Delphi 2005 C# Goodies into. 
+  Execute that batch file and afterwards delete your installation directory. Then 
+  restart <span class="jb">Delphi 2005</span>. 
+<p>&nbsp;
+<p> 
+  <!---------------------------------------------------------------------------->
+  <a name="Usage"></a> 
+<h2><u>Usage and Documentation</u></h2>
+<h2> 
+  <!---------------------------------------------------------------------------->
+  <a name="Docviewer"></a> </h2>
+<h2>The Doc Viewer</h2>
+<p><span class="name">Delphi 2005 C# Goodies</span> adds a sort of WYSIWYG XML 
+  documentation preview support for the Delphi 2005 IDE: 
+<p><img src="images/docview.gif" width="761" height="463">
+<p>Just place the cursor inside a XML documentation section of the C#Builder editor 
+  and press <i><b>Ctrl-Shift-#</b></i> or use the related #Goodies <i>View Doc</i> 
+  menu entry: 
+<p><img src="images/menuentries2.gif" width="166" height="89">
+<p><b>NOTE: </b>the above shown Ctrl-Shift-# keyboard shortcut is the default 
+  one, which you can change to your prefered one by customizing the<i> ShortcutConfig.xml</i> 
+  file! - Note also that the docviewer can only be closed via the windows <b>[x]</b> 
+  close button, or by clicking outside of the docviewer window with the mouse. 
+<p>&nbsp;
+<p>&nbsp; 
+<h1> 
+  <!---------------------------------------------------------------------------->
+  <a name="Keycodeanalyzer"></a> </h1>
+<h2>The Keycode Analyzer</h2>
+<p>The <span class="name">Delphi 2005 C# Goodies</span> contain also a little 
+  <i>Keycode Analyzer</i> tool for the Delphi 2005 IDE, which also helps to inspect 
+  the Delphi OTA related keycodes beside the usual ones. 
+<p><img src="images/keycodeanalyzer.gif" width="300" height="167">
+<p>The Keycode Analyzer can be accessed from the #Goodies menu: 
+<p><img src="images/menuentries3.gif" width="166" height="89">
+<p>&nbsp;
+<p>&nbsp; 
+<h1> 
+  <!---------------------------------------------------------------------------->
+  <a name="Docinsight"></a> </h1>
+<h2>The Doc Insight and Keyword autocompletion mechanism</h2>
+<p>One of the main <span class="name">Delphi 2005 C# Goodies</span> tasks is, 
+  to add some autocompletion support for C# XML documentation tags and language 
+  keywords. Typing the first characters of a C# keyword or XML documentation and 
+  afterwards pressing the default setup <b><i>Ctrl-Alt-#</i></b> shortcut, autocompletes 
+  relevant words or strings, where the completed portion of a matched relevant 
+  word will remain highlighted for overtyping. When the matched completion is 
+  the desired one, just use the <i>cursor right</i> or <i>end</i> key to accept 
+  the completed portion of the word. In case it's not the right one, type on further 
+  characters of the word to match and access the autocompletion mechanism again. 
+<p><img src="images/menuentries4.gif" width="166" height="89"> 
+<p><img src="images/keyw1.gif" width="337" height="110"> 
+<p><img src="images/keyw2.gif" width="233" height="73">
+<p><img src="images/docinsight1.gif" width="164" height="59">
+<p><img src="images/docinsight2.gif" width="164" height="59">
+<p><img src="images/docinsight3.gif" width="247" height="94">
+<p><b>NOTE: </b>the above shown Ctrl-Alt-# keyboard shortcut is the default one, 
+  which you can change to your prefered one by customizing the<i> ShortcutConfig.xml</i> 
+  file! 
+<p> The following tables show the C# keywords and XML documentation tags, which 
+  have been added to the <span class="name">Delphi 2005 C# Goodies</span> code insight 
+  like mechanism.
+<p><b>Table of supported C# autocompletion keywords:</b> 
+<p><b>Note:</b> These words are reserved--you cannot use any of these words as 
+  names in your C# programs.
+<P>
+  <TABLE cellPadding=5 border=1>
+    <TBODY>
+    <TR><TD><CODE>abstract</CODE></TD><TD><CODE>event</CODE></TD><TD><CODE>new</CODE></TD><TD><CODE>struct</CODE></TD></TR>
+<TR><TD><CODE>as</CODE></TD><TD><CODE>explicit</CODE></TD><TD><CODE>null</CODE></TD><TD><CODE>switch</CODE></TD></TR>
+<TR><TD><CODE>base</CODE></TD><TD><CODE>extern</CODE></TD><TD><CODE>object</CODE></TD><TD><CODE>this</CODE></TD></TR>
+<TR><TD><CODE>bool</CODE></TD><TD><CODE>false</CODE></TD><TD><CODE>operator</CODE></TD><TD><CODE>throw</CODE></TD></TR>
+<TR><TD><CODE>break</CODE></TD><TD><CODE>finally</CODE></TD><TD><CODE>out</CODE></TD><TD><CODE>true</CODE></TD></TR>
+<TR><TD><CODE>byte</CODE></TD><TD><CODE>fixed</CODE></TD><TD><CODE>override</CODE></TD><TD><CODE>try</CODE></TD></TR>
+<TR><TD><CODE>case</CODE></TD><TD><CODE>float</CODE></TD><TD><CODE>params</CODE></TD><TD><CODE>typeof</CODE></TD></TR>
+<TR><TD><CODE>catch</CODE></TD><TD><CODE>for</CODE></TD><TD><CODE>private</CODE></TD><TD><CODE>uint</CODE></TD></TR>
+<TR><TD><CODE>char</CODE></TD><TD><CODE>foreach</CODE></TD><TD><CODE>protected</CODE></TD><TD><CODE>ulong</CODE></TD></TR>
+<TR><TD><CODE>checked</CODE></TD><TD><CODE>goto</CODE></TD><TD><CODE>public</CODE></TD><TD><CODE>unchecked</CODE></TD></TR>
+<TR><TD><CODE>class</CODE></TD><TD><CODE>if</CODE></TD><TD><CODE>readonly</CODE></TD><TD><CODE>unsafe</CODE></TD></TR>
+<TR><TD><CODE>const</CODE></TD><TD><CODE>implicit</CODE></TD><TD><CODE>ref</CODE></TD><TD><CODE>ushort</CODE></TD></TR>
+<TR><TD><CODE>continue</CODE></TD><TD><CODE>in</CODE></TD><TD><CODE>return</CODE></TD><TD><CODE>using</CODE></TD></TR>
+<TR><TD><CODE>decimal</CODE></TD><TD><CODE>int</CODE></TD><TD><CODE>sbyte</CODE></TD><TD><CODE>virtual</CODE></TD></TR>
+<TR><TD><CODE>default</CODE></TD><TD><CODE>interface</CODE></TD><TD><CODE>sealed</CODE></TD><TD><CODE>volatile</CODE></TD></TR>
+<TR><TD><CODE>delegate</CODE></TD><TD><CODE>internal</CODE></TD><TD><CODE>short</CODE></TD><TD><CODE>void</CODE></TD></TR>
+<TR><TD><CODE>do</CODE></TD><TD><CODE>is</CODE></TD><TD><CODE>sizeof</CODE></TD><TD><CODE>while</CODE></TD></TR>
+<TR><TD><CODE>double</CODE></TD><TD><CODE>lock</CODE></TD><TD><CODE>stackalloc</CODE></TD><TD><CODE>else</CODE></TD></TR>
+<TR><TD><CODE>long</CODE></TD><TD><CODE>static</CODE></TD><TD><CODE>enum</CODE></TD><TD><CODE>namespace</CODE></TD></TR>
+<TR><TD><CODE>string</CODE></TD></TR> </TBODY></TABLE>
+  
+<p>&nbsp;</p><p><b>Table of supported XML documentation autocompletion tags:</b> </p>
+<table width="75%" border="1">
+  <tr> 
+    <td width="21%">&lt;summary&gt;</td>
+    <td width="20%">&lt;value&gt;</td>
+    <td width="22%">&lt;remarks&gt;</td>
+    <td width="37%">&lt;returns&gt;</td>
+  </tr>
+  <tr> 
+    <td width="21%">&lt;/summary&gt;</td>
+    <td width="20%">&lt;/value&gt;</td>
+    <td width="22%">&lt;/remarks&gt;</td>
+    <td width="37%">&lt;/returns&gt;</td>
+  </tr>
+  <tr> 
+    <td width="21%">&lt;summary&gt;xxx&lt;/summary&gt;</td>
+    <td width="20%">&lt;value&gt;xxx&lt;/value&gt;</td>
+    <td width="22%">&lt;remarks&gt;xxx&lt;/remarks&gt;</td>
+    <td width="37%">&lt;returns&gt;xxx&lt;/returns&gt;</td>
+  </tr>
+  <tr> 
+    <td width="21%">&lt;para&gt;</td>
+    <td width="20%">&lt;param name=&quot;xxx&quot;&gt;</td>
+    <td width="22%">&lt;exception cref=&quot;xxx&quot;&gt;</td>
+    <td width="37%">&lt;see cref=&quot;xxx&quot;/&gt;</td>
+  </tr>
+  <tr> 
+    <td width="21%">&lt;/para&gt;</td>
+    <td width="20%">&lt;/param&gt;</td>
+    <td width="22%">&lt;/exception&gt;</td>
+    <td width="37%">&lt;seealso cref=&quot;xxx&quot;/&gt;</td>
+  </tr>
+  <tr> 
+    <td width="21%">&lt;para&gt;xxx&lt;/para&gt;</td>
+    <td width="20%">&lt;param name=&quot;xxx&quot;&gt;xxx&lt;/param&gt;</td>
+    <td width="22%">&lt;exception cref=&quot;xxx&quot;&gt;xxx&lt;/exception&gt;</td>
+    <td width="37%">&lt;permission cref=&quot;xxx&quot;&gt;</td>
+  </tr>
+  <tr> 
+    <td width="21%">&lt;code&gt;</td>
+    <td width="20%">&lt;paramref name=&quot;xxx&quot;/&gt;</td>
+    <td width="22%">&lt;example&gt;</td>
+    <td width="37%">&lt;/permission&gt;</td>
+  </tr>
+  <tr> 
+    <td width="21%">&lt;/code&gt;</td>
+    <td width="20%">&lt;c&gt;</td>
+    <td width="22%">&lt;/example&gt;</td>
+    <td width="37%">&lt;permission cref=&quot;xxx&quot;&gt;xxx&lt;/permission&gt;</td>
+  </tr>
+  <tr> 
+    <td width="21%">&lt;code&gt;xxx&lt;/code&gt;</td>
+    <td width="20%">&lt;/c&gt;</td>
+    <td width="22%">&lt;example&gt;xxx&lt;/example&gt;</td>
+    <td width="37%">&lt;list type=&quot;bullet&quot; | &quot;number&quot; | &quot;table&quot;&gt;</td>
+  </tr>
+  <tr> 
+    <td width="21%">&lt;listheader&gt;</td>
+    <td width="20%">&lt;c&gt;xxx&lt;/c&gt;</td>
+    <td width="22%">&lt;item&gt;</td>
+    <td width="37%">&lt;/list&gt;</td>
+  </tr>
+  <tr> 
+    <td width="21%">&lt;/listheader&gt;</td>
+    <td width="20%">&lt;term&gt;</td>
+    <td width="22%">&lt;/item&gt;</td>
+    <td width="37%">&lt;list&gt;xxx&lt;/list&gt;</td>
+  </tr>
+  <tr>
+    <td width="21%">&lt;listheader&gt;xxx&lt;/listheader&gt;</td>
+    <td width="20%">&lt;/term&gt;</td>
+    <td width="22%">&lt;item&gt;xxx&lt;/item&gt;</td>
+    <td width="37%">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="21%"><code>///</code></td>
+    <td width="20%">&lt;term&gt;xxx&lt;/term&gt;</td>
+    <td width="22%">/&gt;</td>
+    <td width="37%">&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;
+<p>Here are some typing/expanding examples, which assume/use the default setup 
+  Ctrl-# keyboard shortcut, in order for you to try them out inside the Delphi 
+  2005 C# editor: 
+<ul>
+  <li><code>typing in <b> cl| &lt;Ctrl-Alt-#&gt;</b> will result to <b>cl[ass]</b></code></li>
+  <li><code>typing in <b> inte| &lt;Ctrl-Alt-#&gt;</b> will result to <b>inte[rface]</b></code></li>
+  <li><code>typing in <b> pro| &lt;Ctrl-Alt-#&gt;</b> will result to <b>pro[tected]</b></code></li>
+  <li>...and so on...<br>
+  </li>
+</ul>
+<p>&nbsp;
+<p> 
+  <!---------------------------------------------------------------------------->
+  <a name="Compatibility"></a> 
+<h2><u>Compatibility</u></h2>
+
+		
+<p> The <span class="name">Delphi 2005 C# Goodies&nbsp;</span> OpenTools has been 
+  tested with a versions of <span class="jb">Delphi 2005</span> Architect and 
+  the .NET framework v.1.1 running under Windows 2000 with SP4. 
+<p> 
+  <!---------------------------------------------------------------------------->
+  <a name="Contacts"></a> 
+<h2><u>Contacts</u></h2>
+
+		
+<p> If you have problems with the installation of the <span class="name">Delphi 2005 C# Goodies&nbsp;</span> or support questions, you are welcome to send an e-mail 
+  (see the below e-mail address) to 
+<p> <img src="images/logo.gif" width="151" height="47"> 
+<p> For any other questions regarding the operation of Delphi 2005 and C#Builder, 
+  or any general C# questions you are encouraged to visit the appropriate newsgroup 
+  on the Borland news server. There you will find many good people who are willing 
+  to help others with technical problems. You will likely find KyrSoft's author 
+  of this program as well there. 
+<p> Information on the Borland developer newsgroups is available at: 
+<p class="url">
+		<a href="http://www.borland.com/newsgroups/#jbuilder">
+		http://www.borland.com/newsgroups/</a>.
+
+		
+<p> If you believe that you have encountered a bug in the operation of the <span class="name">Delphi 2005 C# Goodies&nbsp;</span> or have a suggestion for an improvement that will be of 
+  use to many others, please send me e-mail at: 
+<p class="url"> <a href="mailto:info@kyrsoft.com">info@kyrsoft.com</a>. 
+<p>
+		<hr>
+Copyright &copy; 2004, Valentino Kyriakides (KyrSoft ) 
+</body>
+
+</html>

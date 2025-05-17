@@ -1,0 +1,238 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Context Search'
+  ClientHeight = 449
+  ClientWidth = 855
+  Visible = False
+  OnCreate = FormCreate
+  Fill.Color = claGray
+  Fill.Kind = bkSolid
+  StyleBook = StyleBook1
+  StyleLookup = 'backgroundstyle'
+  object Layout1: TLayout
+    Align = alTop
+    Position.Point = '(0,25)'
+    Width = 855.000000000000000000
+    Height = 40.000000000000000000
+    object Rectangle1: TRectangle
+      Align = alClient
+      Width = 855.000000000000000000
+      Height = 40.000000000000000000
+      object Layout2: TLayout
+        Align = alRight
+        Position.Point = '(648,0)'
+        Width = 207.000000000000000000
+        Height = 40.000000000000000000
+        object edtSearch: TClearingEdit
+          Position.Point = '(11,10)'
+          Width = 182.000000000000000000
+          Height = 22.000000000000000000
+          OnKeyUp = edtSearchKeyUp
+          TabOrder = 0
+          KeyboardType = vktDefault
+          Password = False
+        end
+      end
+    end
+    object ReflectionEffect1: TReflectionEffect
+      Opacity = 0.500000000000000000
+      Offset = 0
+      Length = 0.500000000000000000
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 112
+    Top = 88
+  end
+  object VertScrollBox1: TVertScrollBox
+    Align = alClient
+    Position.Point = '(0,90)'
+    Width = 855.000000000000000000
+    Height = 359.000000000000000000
+    Padding.Rect = '(0,25,0,0)'
+    StyleLookup = 'scrollboxstyle'
+    TabOrder = 1
+    MouseTracking = True
+    UseSmallScrollBars = True
+  end
+  object MenuBar1: TMenuBar
+    Align = alTop
+    Width = 855.000000000000000000
+    Height = 25.000000000000000000
+    StyleLookup = 'menubarstyle'
+    TabOrder = 2
+    UseOSMenu = True
+    object MenuItem4: TMenuItem
+      Position.Point = '(2,2)'
+      Width = 58.500000000000000000
+      Height = 20.000000000000000000
+      TabOrder = 0
+      ShortCut = 0
+      Text = 'Options'
+      object MenuItem5: TMenuItem
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        OnClick = LoadData
+        TabOrder = 0
+        ShortCut = 0
+        Text = 'Load Data'
+      end
+      object MenuItem1: TMenuItem
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        OnClick = LoadImages
+        TabOrder = 1
+        ShortCut = 0
+        Text = 'Load Images'
+      end
+      object MenuItem6: TMenuItem
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        OnClick = ManageClick
+        TabOrder = 2
+        ShortCut = 0
+        Text = 'Manage Data'
+      end
+    end
+  end
+  object StyleBook1: TStyleBook
+    Resource.Strings = (
+      'object _1: TLayout'
+      '  Align = alClient'
+      '  Position.Point = '#39'(0,33)'#39
+      '  Width = 1079.000000000000000000'
+      '  Height = 651.000000000000000000'
+      '  object TLayout'
+      '    StyleName = '#39'edtSearchStyle1'#39
+      '    Position.Point = '#39'(494,313)'#39
+      '    Width = 91.000000000000000000'
+      '    Height = 24.000000000000000000'
+      '    DesignVisible = False'
+      '    object TRectangle'
+      '      StyleName = '#39'background'#39
+      '      Align = alContents'
+      '      Locked = True'
+      '      Width = 91.000000000000000000'
+      '      Height = 24.000000000000000000'
+      '      HitTest = False'
+      '      Fill.Color = xFFFEFEFE'
+      '      Stroke.Color = claWhite'
+      '      object TColorAnimation'
+      '        Duration = 0.200000002980232200'
+      '        Trigger = '#39'IsMouseOver = true'#39
+      '        StartValue = claSilver'
+      '        StopValue = xFFA5D9FF'
+      '        PropertyName = '#39'Stroke.Color'#39
+      '      end'
+      '      object TColorAnimation'
+      '        Duration = 0.200000002980232200'
+      '        Inverse = True'
+      '        Trigger = '#39'IsMouseOver = false'#39
+      '        StartValue = claSilver'
+      '        StopValue = xFFA5D9FF'
+      '        PropertyName = '#39'Stroke.Color'#39
+      '      end'
+      '    end'
+      '    object TContent'
+      '      StyleName = '#39'content'#39
+      '      Align = alClient'
+      '      Position.Point = '#39'(4,4)'#39
+      '      Locked = True'
+      '      Width = 63.000000000000000000'
+      '      Height = 16.000000000000000000'
+      '      Padding.Rect = '#39'(4,4,0,4)'#39
+      '      HitTest = False'
+      '    end'
+      '    object TButton'
+      '      StyleName = '#39'clearbutton'#39
+      '      Align = alFitRight'
+      '      Position.Point = '#39'(69,2)'#39
+      '      Width = 20.000000000000000000'
+      '      Height = 20.000000000000000000'
+      '      Padding.Rect = '#39'(2,2,2,2)'#39
+      '      StyleLookup = '#39'edtSearchclearbutton1'#39
+      '      TabOrder = 2'
+      '      CanFocus = False'
+      '      object TPath'
+      '        Align = alFit'
+      '        Position.Point = '#39'(4,4)'#39
+      '        Locked = True'
+      '        Width = 12.000000000000000000'
+      '        Height = 12.000000000000000000'
+      '        Padding.Rect = '#39'(4,4,4,4)'#39
+      '        HitTest = False'
+      '        Fill.Color = xFF101010'
+      '        Stroke.Kind = bkNone'
+      '        Data.Path = {'
+      
+        '          10000000000000000000A0C00000704101000000000070410000A0' +
+        'C001000000'
+      
+        '          000048420000F041010000000000AA420000A0C0010000000000D2' +
+        '4200007041'
+      
+        '          0100000000008C4200004842010000000000D2420000B442010000' +
+        '000000AA42'
+      
+        '          0000DC42020000003BDF34429E6F8C4202000000FE547D427FAAB0' +
+        '4202000000'
+      
+        '          000048420000964201000000000070410000DC42010000000000A0' +
+        'C00000B442'
+      
+        '          010000000000F04100005C42010000000000A0C000007041030000' +
+        '0000000000'
+      '          00000000}'
+      '      end'
+      '    end'
+      '    object TBrushObject'
+      '      StyleName = '#39'foreground'#39
+      '      Brush.Color = claBlack'
+      '    end'
+      '    object TBrushObject'
+      '      StyleName = '#39'selection'#39
+      '      Brush.Color = x802A8ADF'
+      '    end'
+      '    object TGlowEffect'
+      '      Trigger = '#39'IsFocused=true'#39
+      '      Enabled = False'
+      '      Softness = 0.200000002980232200'
+      '      GlowColor = x82005ACC'
+      '      Opacity = 0.899999976158142100'
+      '    end'
+      '  end'
+      '  object TEllipse'
+      '    StyleName = '#39'edtSearchclearbutton1'#39
+      '    Position.Point = '#39'(532,318)'#39
+      '    Width = 15.000000000000000000'
+      '    Height = 15.000000000000000000'
+      '    HitTest = False'
+      '    DesignVisible = False'
+      '    Fill.Color = x00808080'
+      '    Stroke.Kind = bkNone'
+      '    object TColorAnimation'
+      '      Duration = 0.100000001490116100'
+      '      Trigger = '#39'IsMouseOver=true'#39
+      '      TriggerInverse = '#39'IsMouseOver=false'#39
+      '      StartValue = x00808080'
+      '      StopValue = xAF808080'
+      '      PropertyName = '#39'Fill.Color'#39
+      '    end'
+      '    object TFloatAnimation'
+      '      Duration = 0.100000001490116100'
+      '      Trigger = '#39'IsMouseOver=true'#39
+      '      TriggerInverse = '#39'IsMouseOver=false'#39
+      '      StartValue = 1.000000000000000000'
+      '      StopValue = 0.500000000000000000'
+      '      PropertyName = '#39'Parent.Opacity'#39
+      '    end'
+      '  end'
+      'end')
+    Left = 48
+    Top = 80
+  end
+end

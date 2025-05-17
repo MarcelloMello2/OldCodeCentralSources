@@ -1,0 +1,87 @@
+MarcRohloff.FavouritesMenuAddIn Read Me
+-----------------------------------------
+
+I often find that the recent files list in C# Builder no longer contains
+the files which I most often use. This add-in as an update of the previous
+version which I had created for Delphi 5. It adds a 'Favourites' menu
+option in the 'File' menu. But you can make it add a 'Favorites' menu option
+if you prefer it that way.
+
+Notes
+------
+This expert is built upon the abstractions provided by two assemblies:
+BDS.Utilities     : This assembly abstracts much of the functionality
+                    required to interact with the BDS and to create BDS
+                    Add-Ins
+
+BDS.AddInManager : This assembly supplies all the logic required to automatically
+                   install and uninstall add-ins.
+
+
+Building
+---------
+You don't NEED to build the code. You can install the files in the 'bin' directory. This being .NET they will install in C# Builder 1 and Delphi 8.
+
+Open the Favourites menu project group. Open the project options for
+the FavouritesExpert project and choose the British build (or the
+American build if you prefer spelling it 'Favorite')
+
+Perform a build all projects.
+
+Note:
+You may need to update the reference path to Borland.Studio.ToolsAPI
+assembly before you can build. (You can do this by removing and readding it.
+right click on the reference and make sure that 'Copy Local' is not
+checked)
+
+Installation
+-------------
+Run the executable created during building.
+A dialog will be shown displaying all the installed BDS Versions.
+Multi-select the versions you want to install the menu into and click the
+'Install' button.
+
+The same process can be repeated to uninstall the add-in when required.
+
+Usage
+------
+The expert appears as a 'Favourite' menu option under the 'File' menu.
+
+Initially the favourites list is empty except for the 'Add File', 'Add project'
+and 'Edit Favourites' options. These first two can be used to add the
+currently active file, project or project group to the menu. Once they have been
+added you can open them simply by clicking on their menu items.
+
+You can also use the 'Edit Favourites' option to bring up a configuration form.
+The form contains a list of favourites and several buttons. These are
+Up and Down   : Moves a favourite up or down in the list (Shift-Up, Shift-Down)
+Add Item      : Adds a new item below the currently selected item (Ins key)
+Add Seperator : Adds a seperator below the currently selected item  (- Key)
+Delete        : Deletes the currently selected item (Del Key)
+Clean         : Cleans the favourites list by removing non-existant
+                files and redundant seperators.
+
+You can also drag items to reorder the list or drag files across from windows
+explorer.
+If you select an item and type a key combination using control, alt or
+shift then a shortcut will be assigned for the menu item.
+(Pressing space clears the shortcut)
+
+Lastly there are two options to control the display format of the items in
+the favourites menu. Choose one of:
+Fullname      : Always displays the fullname and path
+Filename Only : Only displays the filename
+Relative      : Displays a relative path if possible,
+                Otherwise displays the fullname
+You can also choose to hide the file extensions.
+
+Future
+----------
+None currently but I am open to suggestions
+
+Bugs
+-----
+None that I know of
+
+Marc Rohloff
+MarcRohloff@BigFoot.com

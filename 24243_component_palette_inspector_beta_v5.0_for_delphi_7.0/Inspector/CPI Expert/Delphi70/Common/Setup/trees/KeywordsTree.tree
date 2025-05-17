@@ -1,0 +1,710 @@
+Adapter
+	Application
+	Form
+		Login
+	Paged
+	Session
+		User
+			End
+	Set
+		Data
+	User
+		End
+Alerter
+	Event
+		IB
+Animate
+Applet
+	IW
+Application
+	Access
+	Excel
+	Outlook
+	Point
+		Power
+	Word
+Bar
+	Control
+	Cool
+	Menu
+		Main
+			Action
+	Progress
+	Scroll
+	Status
+	Tool
+		Action
+	Track
+Bevel
+Book
+	F
+Box
+	Check
+		DB
+		IW
+		IWDB
+	Color
+	Combo
+		DB
+		Drive
+		Filter
+		IW
+		IWDB
+		Lookup
+			DB
+			IWDB
+		Shell
+	Group
+	List
+		Check
+		DB
+		Directory
+		File
+		Lookup
+			DB
+			IWDB
+	Mail
+		Id
+	Paint
+	Scroll
+Broker
+	Connection
+	Object
+		Simple
+	XML
+Browser
+	Web
+Btn
+	Bit
+Button
+	IW
+	Radio
+	Speed
+	Spin
+Calculator
+	Network
+		Id
+Calendar
+	Month
+Card
+	IdV
+Catalog
+	Admin
+		COM
+Chart
+	DB
+	Dynamic
+		IW
+	Excel
+	Vt
+Chartfx
+Class
+Client
+	Cast
+		IdIPM
+	Icmp
+		Id
+	IdTCP
+	IdUDP
+	Tcp
+	Transform
+		XML
+Combo
+	Lookup
+		DB
+Command
+	ADO
+Component
+	Thread
+		Id
+Components
+	App
+		Web
+Connection
+	ADO
+	DCOM
+	Local
+	RDS
+	Shared
+	Soap
+	Socket
+	SQL
+	Web
+Container
+	Ole
+Content
+	Letter
+		Word
+Control
+	Header
+	Page
+	Tab
+Controller
+	Module
+		IW
+Conv
+	Client
+		Dde
+	Server
+		Dde
+Convert
+	Dom
+		Soap
+			To
+				OP
+Cube
+	Decision
+Database
+	IB
+Dataset
+	Side
+		Client
+			IW
+Debug
+	Log
+		Id
+DecoderMIME
+	Id
+	Message
+		Id
+DecoderUUE
+	Id
+DecoderXXE
+	Id
+Default
+	Mgr
+		Thread
+			Id
+Dialog
+	Color
+	Find
+	Font
+	Open
+	Picture
+		Open
+		Save
+	Print
+	Replace
+	Save
+	Setup
+		Page
+		Printer
+Dispatcher
+	Adapter
+	Page
+	Soap
+		HTTP
+	Web
+Dlg
+	Customize
+Document
+	Word
+	XML
+Down
+	Up
+Echo
+	Id
+EchoUDP
+	Id
+Edit
+	DB
+	IW
+	IWDB
+	Labeled
+	Mask
+	Rich
+		DB
+	Spin
+Editor
+	List
+		Value
+EncoderMIME
+	Id
+EncoderUUE
+	Id
+EncoderXXE
+	Id
+Event
+	Log
+		Id
+Events
+	Application
+	IB
+Ex
+	Box
+		Combo
+Explorers
+Extract
+	IB
+File
+	Image
+		IW
+	IW
+	IWDB
+	Log
+		Id
+Finger
+	Id
+Flash
+	IW
+Folders
+Font
+	Word
+Form
+	Access
+	Mgr
+		Layout
+			IW
+Format
+	Paragraph
+		Word
+Freeze
+	Anti
+		Id
+Gauge
+Gopher
+	Id
+Graph
+	Decision
+Grid
+	Color
+	Ctrl
+		DB
+	DB
+	Decision
+	Draw
+	Dyn
+		IW
+	IW
+	IWDB
+	String
+Group
+	Radio
+		DB
+		IW
+Groups
+	Bar
+		Outlook
+HandlerSSL
+	ServerIO
+		Id
+Header
+HTTPRIO
+IBSQL
+Ident
+	Id
+IdFTP
+IdHL
+IdHTTP
+IdIMAP
+IdIRC
+IdLPR
+IdNNTP
+IdPOP
+IdQOTD
+IdQOTDUDP
+IdRSH
+IdSMTP
+IdSNMP
+IdSNPP
+IdSNTP
+Image
+	DB
+	IW
+	IWDB
+Info
+	Database
+		IB
+	Socks
+		Id
+Inspectors
+Install
+	IB
+	Un
+		IB
+Intercept
+	Cipher
+		Block
+			Id
+	Compression
+		Id
+	Connection
+		Id
+Invoker
+	Pascal
+		Soap
+			HTTP
+Item
+	Accept
+		Request
+			Task
+	Client
+		Dde
+	Contact
+	Decline
+		Request
+			Task
+	Document
+	Journal
+	List
+		Dist
+	Post
+	Remote
+	Report
+	Request
+		Task
+	Server
+		Dde
+	Update
+		Request
+			Task
+Items
+IWURL
+Key
+	Hot
+Label
+	IW
+	IWCS
+	IWDB
+Legend
+	Chart
+		Dynamic
+			IW
+Link
+	DatasetDB
+		Side
+			Client
+				IW
+	IW
+List
+	Action
+	Image
+	IW
+	Lookup
+		DB
+	User
+		Web
+	Values
+		Set
+			Data
+		Strings
+Listbox
+	IW
+	IWDB
+Log
+	Sys
+		Id
+Manager
+	Action
+	Cookie
+		Id
+	User
+		Id
+Manifest
+	XP
+Map
+	Color
+		Standard
+		Twilight
+		XP
+MappedFTP
+	Id
+Master
+	Tunnel
+		Id
+Memo
+	DB
+	IW
+	IWDB
+Menu
+	IW
+	Main
+	Popup
+Message
+	Id
+	Log
+		Sys
+			Id
+MgrHTML
+	Layout
+		IW
+Monitor
+	IBSQL
+	SQL
+Move
+	Batch
+Navigator
+	DB
+	IWCS
+	IWDB
+Notebook
+	Tabbed
+Notifier
+	Change
+		Shell
+Object
+	ExcelOLE
+	Sync
+Outline
+	Directory
+Pane
+	Bar
+		Outlook
+Panel
+Picker
+	Time
+		Date
+Pivot
+	Decision
+Player
+	Media
+Pool
+	Mgr
+		Thread
+			Id
+Pop
+	Mapped
+		Id
+PortTCP
+	Mapped
+		Id
+PortUDP
+	Mapped
+		Id
+Presentation
+	Point
+		Power
+Printable
+	Quoted
+		Decoder
+			Id
+		Encoder
+			Id
+Proc
+	Stored
+		ADO
+		IB
+		SQL
+ProcessorHTML
+	Template
+		IW
+Producer
+	Page
+		Adapter
+		InetX
+		IW
+		Set
+			Data
+		XSL
+	Table
+		Query
+			SQL
+		Set
+			Data
+Properties
+	Server
+		IB
+Provider
+	Set
+		Data
+	Transform
+		XML
+Publish
+	WSDLHTML
+Query
+	ADO
+	Decision
+	IB
+	SQL
+Rectangle
+	IW
+References
+	Access
+Region
+	IW
+Report
+	Access
+Resolver
+	IdDNS
+Resp
+	Req
+		HTTP
+Rexec
+	Id
+Rule
+	IWH
+Scroller
+	Page
+Server
+	Alone
+		Stand
+			IW
+	Cast
+		IdIPM
+	Chargen
+		Id
+	ChargenUDP
+		Id
+	DiscardUDP
+		Id
+	EchoUDP
+		Id
+	Finger
+		Id
+	Gopher
+		Id
+	IdDICT
+	IdDISCARD
+	IdECHO
+	Ident
+		Id
+	IdFTP
+	IdHTTP
+	IdIMAP
+	IdIRC
+	IdNNTP
+	IdPOP
+	IdQOTD
+	IdRSH
+	IdSMTP
+	IdTCP
+	IdUDP
+	Is
+		Who
+			Id
+	QotdUDP
+		Id
+	Rexec
+		Id
+	Simple
+		Id
+	Syslog
+		Id
+	Tcp
+	Telnet
+		Id
+	Time
+		Day
+			Id
+		Id
+	TimeUDP
+		Day
+			Id
+		Id
+	TrivialFTP
+		Id
+Service
+	Backup
+		IB
+	Config
+		IB
+	File
+		Locate
+	Licensing
+		IB
+	Log
+		IB
+	Restore
+		IB
+	Security
+		IB
+	Sessions
+	Statistical
+		IB
+	Validation
+		IB
+Session
+Set
+	Data
+		ADO
+		Client
+			IB
+		IB
+		Simple
+		SQL
+	Tab
+Shape
+Shortcuts
+	Bar
+		Outlook
+Slave
+	Tunnel
+		Id
+Slide
+	Point
+		Power
+Socket
+	Handler
+		IdIO
+		IdSSLIO
+		ServerIO
+			Id
+	Udp
+Source
+	Data
+	Decision
+Space
+	Name
+Spell
+	VS
+Splitter
+Stamp
+	Time
+		Date
+			Id
+Stream
+	Handler
+		IdIO
+	Log
+		Id
+Table
+	ADO
+	IB
+	Nested
+	Query
+		Excel
+	SQL
+Telnet
+	Id
+	Mapped
+		Id
+Text
+	DB
+	IW
+	IWDB
+	Static
+Throttle
+	Handler
+		IdIO
+Time
+	Day
+		Id
+	Id
+Timer
+	IW
+TimeUDP
+	Day
+		Id
+	Id
+Transaction
+	IB
+Transform
+	XML
+TrivialFTP
+	Id
+UpdateSQL
+	IB
+View
+	List
+		Shell
+	Tree
+		IW
+		Shell
+Watch
+	IdIP
+Whois
+	Id
+Workbook
+	Excel
+Worksheet
+	Excel

@@ -1,0 +1,9 @@
+Align
+Cursor
+Height
+HelpKeyword
+Hint
+Shape
+ShowHint
+Style
+Width

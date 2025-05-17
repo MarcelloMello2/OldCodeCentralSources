@@ -1,0 +1,345 @@
+=================================================================
+Simple One Liner
+=================================================================
+unit Test;
+
+interface
+
+uses One, Two, Three, Four;
+
+implementation
+
+uses Five, Six, Seven, Eight, Nine, Ten;
+
+end.
+==================================
+One
+Two
+Three
+Four
+==================================
+Five
+Six
+Seven
+Eight
+Nine
+Ten
+
+
+=================================================================
+No Spaces Between Commas
+=================================================================
+unit Test;
+
+interface
+
+uses One,Two,Three,Four;
+
+implementation
+
+uses Five,Six,Seven,Eight,Nine,Ten;
+
+end.
+==================================
+One
+Two
+Three
+Four
+==================================
+Five
+Six
+Seven
+Eight
+Nine
+Ten
+
+
+
+=================================================================
+Multi-Line
+=================================================================
+unit Test;
+
+interface
+
+uses 
+  One, Two, 
+  Three, Four;
+
+implementation
+
+uses 
+  Five, Six, Seven, 
+  Eight, Nine, Ten;
+
+end.
+==================================
+One
+Two
+Three
+Four
+==================================
+Five
+Six
+Seven
+Eight
+Nine
+Ten
+
+
+
+=================================================================
+Comments All Around Uses Clauses
+=================================================================
+unit Test;
+
+interface  // This is the interface
+
+{$D Random Compiler Directive}
+
+uses One, Two, Three, Four;
+
+implementation
+
+{$R *.DFM}
+
+uses Five, Six, Seven, Eight, Nine, Ten;
+
+end.
+==================================
+One
+Two
+Three
+Four
+==================================
+Five
+Six
+Seven
+Eight
+Nine
+Ten
+
+
+
+
+=================================================================
+Comments Inside Uses Clauses
+=================================================================
+unit Test;
+
+interface
+
+uses One, Two, {Two And One Half} Three, Four;
+
+implementation
+
+{$R *.DFM}
+
+uses Five, Six, Seven, {Eight,} Nine, Ten;
+
+end.
+==================================
+One
+Two
+Three
+Four
+==================================
+Five
+Six
+Seven
+Nine
+Ten
+
+
+=================================================================
+One Unit Per Line
+=================================================================
+unit Test;
+
+interface
+
+uses 
+  One, 
+  Two, 
+  Three, 
+  Four;
+
+implementation
+
+{$R *.DFM}
+
+uses 
+  Five, 
+  Six, 
+  Seven, 
+  Eight,
+  Nine, 
+  Ten;
+
+end.
+==================================
+One
+Two
+Three
+Four
+==================================
+Five
+Six
+Seven
+Eight
+Nine
+Ten
+
+
+
+
+=================================================================
+Spaces before Implementation and Interface
+=================================================================
+unit Test;
+
+ interface
+
+uses 
+  One, 
+  Two, 
+  Three, 
+  Four;
+
+            implementation
+
+{$R *.DFM}
+
+uses 
+  Five, 
+  Six, 
+  Seven, 
+  Eight,
+  Nine, 
+  Ten;
+
+end.
+==================================
+One
+Two
+Three
+Four
+==================================
+Five
+Six
+Seven
+Eight
+Nine
+Ten
+
+
+
+
+=================================================================
+Insane Comments
+=================================================================
+(*WOW These comments are insane.*)
+unit Test; // How About This!!! { // (*
+{{{{{{This is a tricky one!}
+interface //This goes here
+
+{Here is a uses clause:}uses One, (*Huh!?!?!?*) Two, Three, {(*trying to trick the system}Four;// Cool
+
+implementation //massive trick
+{
+multi-line comment here
+with lots
+of useless stuff
+to say!!!} //And furthermore
+uses Five, {5}Six,{6} Seven{7},{8}Eight,{9}Nine,{10!
+
+where is the ten?
+
+oh right here} Ten;//that should do it.
+end.
+==================================
+One
+Two
+Three
+Four
+==================================
+Five
+Six
+Seven
+Eight
+Nine
+Ten
+
+=================================================================
+Real World Test 1
+=================================================================
+unit ffDateFilterCriterian;
+
+interface
+
+uses
+  SysUtils, DateUtils, Classes, Controls, Forms, ffFrame, ffFilterCriterian,
+  ffStandardFilterCriterian, ffDBDateEdit, DB, Menus;
+
+type
+  TffDateFilterCriterian = class(TffStandardFilterCriterian)
+  private
+    FCriterianDateEdit: TffDBDateEdit;
+    FCustomPopupMenu: TPopupMenu;
+    FRangeToCriterianDateEdit: TffDBDateEdit;
+    procedure AddRangeMenuItems;
+    procedure TodayExecute(Sender: TObject);
+    procedure ThisWeekExecute(Sender: TObject);
+    procedure YesterdayExecute(Sender: TObject);
+    procedure LastWeekExecute(Sender: TObject);
+    procedure LastMonthExecute(Sender: TObject);
+    procedure LastQuarterExecute(Sender: TObject);
+    procedure LastYearExecute(Sender: TObject);
+    procedure MonthToDateExecute(Sender: TObject);
+    procedure QuarterToDateExecute(Sender: TObject);
+    procedure YearBeforeLastExecute(Sender: TObject);
+    procedure YearToDateExecute(Sender: TObject);
+    function GetCriterianAsDate: TDateTime;
+    function GetRangeToCriterianAsDate: TDateTime;
+    procedure SetCriterianAsDate(const Value: TDateTime);
+    procedure SetRangeToCriterianAsDate(const Value: TDateTime);
+  protected
+    function GetCriterianCharacterWidth: Integer; override;
+    procedure SetCriterianCharacterWidth(Value: Integer); override;
+    procedure UpdateGUI; override;
+  public
+    procedure LastWeek;
+    procedure LastYear;
+    procedure ThisWeek;
+    procedure YearToDate;
+    constructor Create(AOwner:TComponent); override;
+    property CriterianAsDate:TDateTime read GetCriterianAsDate write SetCriterianAsDate;
+    property RangeToCriterianAsDate:TDateTime read GetRangeToCriterianAsDate write SetRangeToCriterianAsDate;
+  end;
+  
+procedure Register;
+
+implementation
+uses
+  ffFontSupport,
+  ffMenuSupport;
+
+procedure Register;
+begin
+  RegisterComponents('Fairlane DB', [TffDateFilterCriterian]);
+end;
+==================================
+SysUtils
+DateUtils
+Classes
+Controls
+Forms
+ffFrame
+ffFilterCriterian
+ffStandardFilterCriterian
+ffDBDateEdit
+DB
+Menus
+==================================
+ffFontSupport
+ffMenuSupport

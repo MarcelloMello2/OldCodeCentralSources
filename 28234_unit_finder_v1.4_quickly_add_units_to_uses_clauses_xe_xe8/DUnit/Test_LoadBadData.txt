@@ -1,0 +1,58 @@
+=================================================================
+Bad Implementation Clause
+=================================================================
+unit Test;
+
+interface
+
+uses One, Two, Three, Four;
+
+implementation
+
+uses Five, Six, Seven, Eight, Nine, Ten
+
+end.
+
+=================================================================
+Missing Implementation Token
+=================================================================
+unit Test;
+
+interface
+
+uses One, Two, Three, Four;
+
+
+uses Five, Six, Seven, Eight, Nine, Ten;
+
+end.
+
+=================================================================
+Missing Interface Token
+=================================================================
+unit Test;
+
+interfice
+
+uses One, Two, Three, Four;
+
+implementation
+
+uses Five, Six, Seven, Eight, Nine, Ten;
+
+end.
+
+=================================================================
+Missing Interface Token
+=================================================================
+unit Test;
+
+interfice
+
+uses One, Two, Three, Four;
+
+implementation
+
+uses Five, Six, Seven, Eight, Nine, Ten;
+
+end.

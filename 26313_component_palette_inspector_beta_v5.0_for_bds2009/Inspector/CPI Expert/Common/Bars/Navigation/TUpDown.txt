@@ -1,0 +1,9 @@
+Max
+Min
+Position
+Orientation
+ShowHint
+PopupMenu
+OnClick
+HelpKeyword
+Hint

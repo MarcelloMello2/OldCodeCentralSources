@@ -1,0 +1,8 @@
+D:\Document Files\Delphi\Open Tools API\Method Expert\*.pas
+D:\Document Files\Delphi\Open Tools API\Method Expert\*.dfm
+D:\Document Files\Delphi\Open Tools API\Method Expert\*.dpk
+D:\Document Files\Delphi\Open Tools API\Method Expert\*.dpl
+D:\Document Files\Delphi\Open Tools API\Method Expert\*.dcp
+D:\Document Files\Delphi\Open Tools API\Method Expert\*.txt
+D:\Document Files\Delphi\Open Tools API\Method Expert\*.res
+D:\Document Files\Delphi\Open Tools API\Method Expert\*.bmp

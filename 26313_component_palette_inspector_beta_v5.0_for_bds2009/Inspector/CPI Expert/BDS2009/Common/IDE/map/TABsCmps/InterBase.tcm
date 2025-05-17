@@ -1,0 +1,17 @@
+TIBConnectionBroker
+TIBDatabase
+TIBDatabaseInfo
+TIBDatabaseINI
+TIBDataSet
+TIBEvents
+TIBExtract
+TIBFilterDialog
+TIBQuery
+TIBScript
+TIBSQL
+TIBSQLMonitor
+TIBSQLParser
+TIBStoredProc
+TIBTable
+TIBTransaction
+TIBUpdateSQL

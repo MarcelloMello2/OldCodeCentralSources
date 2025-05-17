@@ -1,0 +1,130 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{c1d44ef3-186e-4fc2-92b8-c7d05d1cba49}</ProjectGuid>
+    <MainSource>KeyValueHashDemo.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>KeyValueHashDemo.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_IntegerOverflowCheck>True</DCC_IntegerOverflowCheck>
+    <DCC_RangeChecking>True</DCC_RangeChecking>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_DcuOutput>C:\Daten\PROJECTS\D2006\bin</DCC_DcuOutput>
+    <DCC_ObjOutput>C:\Daten\PROJECTS\D2006\bin</DCC_ObjOutput>
+    <DCC_HppOutput>C:\Daten\PROJECTS\D2006\bin</DCC_HppOutput>
+    <DCC_BplOutput>C:\Daten\PROJECTS\LibMan\bin</DCC_BplOutput>
+    <DCC_DcpOutput>C:\Daten\PROJECTS\LibMan\bin</DCC_DcpOutput>
+    <DCC_UnitSearchPath>C:\Daten\PROJECTS\COMMON;C:\Daten\PROJECTS\COMPS;C:\Daten\PROJECTS\COMMON\DOM;C:\Daten\PROJECTS\COMMON\DOA_DOM;C:\Daten\PROJECTS\3rdparty\JediAPI</DCC_UnitSearchPath>
+    <DCC_ResourcePath>C:\Daten\PROJECTS\COMMON;C:\Daten\PROJECTS\COMPS;C:\Daten\PROJECTS\COMMON\DOM;C:\Daten\PROJECTS\COMMON\DOA_DOM;C:\Daten\PROJECTS\3rdparty\JediAPI</DCC_ResourcePath>
+    <DCC_ObjPath>C:\Daten\PROJECTS\COMMON;C:\Daten\PROJECTS\COMPS;C:\Daten\PROJECTS\COMMON\DOM;C:\Daten\PROJECTS\COMMON\DOA_DOM;C:\Daten\PROJECTS\3rdparty\JediAPI</DCC_ObjPath>
+    <DCC_IncludePath>C:\Daten\PROJECTS\COMMON;C:\Daten\PROJECTS\COMPS;C:\Daten\PROJECTS\COMMON\DOM;C:\Daten\PROJECTS\COMMON\DOA_DOM;C:\Daten\PROJECTS\3rdparty\JediAPI</DCC_IncludePath>
+    <DCC_Define>RELEASE</DCC_Define>
+    <DCC_SYMBOL_PLATFORM>False</DCC_SYMBOL_PLATFORM>
+    <DCC_UNIT_PLATFORM>False</DCC_UNIT_PLATFORM>
+    <DCC_GARBAGE>False</DCC_GARBAGE>
+    <DCC_TYPEINFO_IMPLICITLY_ADDED>False</DCC_TYPEINFO_IMPLICITLY_ADDED>
+    <DCC_Description>Shared units package für LibManagerService project</DCC_Description>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_IntegerOverflowCheck>True</DCC_IntegerOverflowCheck>
+    <DCC_RangeChecking>True</DCC_RangeChecking>
+    <DCC_DcuOutput>C:\Daten\PROJECTS\D2006\bin</DCC_DcuOutput>
+    <DCC_ObjOutput>C:\Daten\PROJECTS\D2006\bin</DCC_ObjOutput>
+    <DCC_HppOutput>C:\Daten\PROJECTS\D2006\bin</DCC_HppOutput>
+    <DCC_BplOutput>C:\Daten\PROJECTS\LibMan\bin</DCC_BplOutput>
+    <DCC_DcpOutput>C:\Daten\PROJECTS\LibMan\bin</DCC_DcpOutput>
+    <DCC_UnitSearchPath>..\common</DCC_UnitSearchPath>
+    <DCC_ResourcePath>..\common</DCC_ResourcePath>
+    <DCC_ObjPath>..\common</DCC_ObjPath>
+    <DCC_IncludePath>..\common</DCC_IncludePath>
+    <DCC_Define>DEBUG</DCC_Define>
+    <DCC_SYMBOL_PLATFORM>False</DCC_SYMBOL_PLATFORM>
+    <DCC_UNIT_PLATFORM>False</DCC_UNIT_PLATFORM>
+    <DCC_GARBAGE>False</DCC_GARBAGE>
+    <DCC_TYPEINFO_IMPLICITLY_ADDED>False</DCC_TYPEINFO_IMPLICITLY_ADDED>
+    <DCC_Description>Shared units package für LibManagerService project</DCC_Description>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject xmlns=""> <Delphi.Personality>   <Parameters>
+      <Parameters Name="UseLauncher">False</Parameters>
+      <Parameters Name="LoadAllSymbols">True</Parameters>
+      <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+    </Parameters>
+    <VersionInfo>
+      <VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+      <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+      <VersionInfo Name="MajorVer">1</VersionInfo>
+      <VersionInfo Name="MinorVer">0</VersionInfo>
+      <VersionInfo Name="Release">0</VersionInfo>
+      <VersionInfo Name="Build">0</VersionInfo>
+      <VersionInfo Name="Debug">False</VersionInfo>
+      <VersionInfo Name="PreRelease">False</VersionInfo>
+      <VersionInfo Name="Special">False</VersionInfo>
+      <VersionInfo Name="Private">False</VersionInfo>
+      <VersionInfo Name="DLL">False</VersionInfo>
+      <VersionInfo Name="Locale">1031</VersionInfo>
+      <VersionInfo Name="CodePage">1252</VersionInfo>
+    </VersionInfo>
+    <VersionInfoKeys>
+      <VersionInfoKeys Name="CompanyName">sanofi-aventis</VersionInfoKeys>
+      <VersionInfoKeys Name="FileDescription">LibManager shared units package</VersionInfoKeys>
+      <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="InternalName">LMShared</VersionInfoKeys>
+      <VersionInfoKeys Name="LegalCopyright">2008 by sanofi-aventis und Peter Below</VersionInfoKeys>
+      <VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
+      <VersionInfoKeys Name="OriginalFilename">LMShared100.bpl</VersionInfoKeys>
+      <VersionInfoKeys Name="ProductName">LibManagerService</VersionInfoKeys>
+      <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="Comments"></VersionInfoKeys>
+    </VersionInfoKeys>
+    <Excluded_Packages>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <Excluded_Packages Name="$(BDS)\bin\dclofficexp100.bpl">Microsoft Office XP Beispiele für gekapselte Komponenten für Automation Server</Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\dcloffice2k100.bpl">Microsoft Office 2000 Beispiele für gekapselte Komponenten für Automation Server</Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\bcboffice2k100.bpl">CodeGear C++Builder Office 2000 Servers Package</Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\bcbofficexp100.bpl">CodeGear C++Builder Office XP Servers Package</Excluded_Packages>
+    </Excluded_Packages>
+    <Source>
+      <Source Name="MainSource">KeyValueHashDemo.dpr</Source>
+    </Source>
+  </Delphi.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <ItemGroup />
+  <ItemGroup>
+    <DelphiCompile Include="KeyValueHashDemo.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="KVH_MainformU.pas">
+      <Form>Mainform</Form>
+    </DCCReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+</Project>

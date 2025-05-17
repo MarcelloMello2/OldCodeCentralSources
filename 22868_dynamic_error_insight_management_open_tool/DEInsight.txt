@@ -1,0 +1,52 @@
+DEInsight V 2.2
+Error insight is great to flag errors. Unfortunately, while typing
+it keeps signalling errors due to the partially entered text. This
+is both annoying and taxing for the CPU.
+DEInsight enables and disables error insight dinamically to improve
+programmer's experience.
+
+Installation
+To install DEInsight add DEInsight.dll path to the IDE
+'Known IDE Assemblies' registry key. DEInsight.reg gives a sample.
+
+Usage
+DEInsight adds a item named 'Dynamic Error Insight' before the
+'Compile...' item in the 'Project' menu. This item has two subitems.
+- 'Check'
+  It toggles error insight between on and off without having to
+  search for it in options dialog.
+- 'Dynamic Mode Enable'
+  It toggles the dynamic error insight mode between on and off.
+  When in dynamic mode DEInsight enables error insight after a
+  user invoked compilation with errors and disables it after a
+  compilation without error*.
+
+*The compilation can be user invoked or run in background by the IDE.
+
+Configuration
+DEInsight configuration is kept in file DEInsight.xml that has to be in the
+same directory of DEInsight.dll The default for it is
+
+<?xml version="1.0"?>
+<TOptions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <DynamicEnabledDefault>true</DynamicEnabledDefault>
+  <ItemCheckShortcut>Control Alt E</ItemCheckShortcut>
+  <TrayAreaInjector>false</TrayAreaInjector>
+</TOptions>
+
+DynamicEnabledDefault
+  Startup value for 'Dynamic Mode Enable'.
+ItemCheckShortcut
+  Keyboard shortcut for 'Check'.
+TrayAreaInjector
+  If true a status feedback is provided inside the Windows Task Bar.
+  If true TrayAreaInjector is to be installed. It can be found at
+  http://cc.borland.com/codecentral/ccWeb.exe/listing?id=22893
+
+The configuration file is loaded on IDE start/restart only.
+
+This application was generated and tested using Borland Developer
+Studio V9.0.1761.24408 Update 1 (Delhi 2005.1) under Windows 2000 SP4,
+.NET 1.1 SP1
+
+

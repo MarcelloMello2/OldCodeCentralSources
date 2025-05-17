@@ -1,0 +1,88 @@
+{
+  The code in this example was written by Dan Donoghue and may
+  be freely distributed provided the author remains credited.
+
+  This example demonstrates a procedure for iterating through
+  any set and calling a procedure for each element found in it.
+
+  The procedure, ForEach, is defined as follows..
+
+    procedure ForEach(const SetVar; DoProc: TForEachMethod);
+
+
+  Your callback method/procedure, DoProc, must have the
+  following parameter list..
+
+    procedure(Element: Integer; var Continue: Boolean);
+
+
+  <Element> is the integer representation of the option which
+  is currently active in your set.  You can typecast this member
+  so that u can use it like your option enumeration type.  For
+  example..
+
+    TOption(Element)
+
+
+  <Continue> specifies if you want to continue iterating through
+  the set.  This member is defaulted to True.
+
+
+  This is not a complete example.  It merely shows snippits of
+  code to demonstrate how to use the ForEach function to iterate
+  the members of a set.
+
+
+  Please Note; the typinfo unit is here only for use within the 
+  ForEach callback procedure to quickly look up the name of the
+  option that is in the set for display purposes.
+}
+
+
+// Example Snippit //
+
+uses			// additional units required for this example
+  typinfo;
+
+type			// Types used by example and ForEach procedure
+  TOption = (opt1, opt2, opt3, opt4, opt5);
+  TOptionSet = set of TOption;
+  TForEachMethod = procedure(Element: Integer; var Continue: Boolean);
+
+// The foreach procedure
+procedure ForEach(const SetVar; DoProc: TForEachMethod);
+var
+  FContinue: Boolean;
+  FSet, i: Byte;
+
+begin
+  FSet := Byte(SetVar);
+  FContinue := True;
+  for i := low(FSet) to high(fset) do
+  begin
+    if (FSet and 1) = 1 then
+    begin
+      if Assigned(DoProc) then DoProc(i,FContinue);
+      if not FContinue then break;
+    end;
+    FSet := FSet shr 1;
+  end;
+end;
+
+// example callback procedure for ForEach
+procedure MyTestProc(Element: Integer; var Continue: Boolean);
+begin
+  Continue := (Element < 2);
+  ShowMessage(IntToStr(Element) +': ' + GetEnumName(TypeInfo(TOption),Element));
+end;
+
+// procedure showing how to initiate ForEach
+procedure SomeTestProc;
+var
+  FOptionSet: TOptionSet;
+begin
+  FOptionSet := [opt2, opt3, opt4];
+  foreach(FOptionSet,MyTestProc);
+end;
+
+

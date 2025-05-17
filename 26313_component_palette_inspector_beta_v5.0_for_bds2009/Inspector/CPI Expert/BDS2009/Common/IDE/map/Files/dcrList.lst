@@ -1,0 +1,11 @@
+C:\LMD70SE\LIB\D10\LMDCPCore.dcr
+$(BDS)source\Indy10\Core\IdCoreRegister.dcr
+$(BDS)source\Indy10\Protocols\IdRegister.dcr
+$(BDS)source\Indy10\Protocols\IdRegisterCool.dcr
+$(BDS)source\Win32\Indy9\IdRegisterCool.dcr
+$(BDS)source\Win32\xtab\mxreg.dcr
+d:\delphi2007\delfi\winlock2007\Winlock2007.dcr
+d:\inspector\code\common\cpicommon\CPIExpert.dcr
+d:\inspector\code\common\pascommon\PASColorSetupListBox.dcr
+d:\inspector\code\common\pascommon\PASTImageStringList.dcr
+d:\inspector\code\common\pascommon\PASImageListViewer.dcr

@@ -1,0 +1,1 @@
+bcc32 -c -u- -O1 imath.c iprime.c imrat.c rsamath.c

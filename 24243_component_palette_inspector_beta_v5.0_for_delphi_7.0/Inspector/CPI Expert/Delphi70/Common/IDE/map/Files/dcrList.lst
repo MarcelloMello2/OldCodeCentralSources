@@ -1,0 +1,17 @@
+$(Delphi)Demos\Db\SQLClientDataset\DBLRegB.dcr
+$(Delphi)Demos\Db\SQLClientDataset\DBLRegS.dcr
+$(Delphi)Demos\Db\TextData\textdata.dcr
+$(Delphi)Demos\Midas\Activefm\empe_tlb.dcr
+$(Delphi)Demos\Midas\InternetExpress\CustomerList\midas_tlb.dcr
+$(Delphi)Demos\Midas\InternetExpress\InetXCenter\inetxcenterprod.dcr
+$(Delphi)Demos\Midas\InternetExpress\InetXCenter\readfileclientdataset.dcr
+$(Delphi)Demos\Midas\InternetExpress\InetXCustom\inetxcustomreg.dcr
+$(Delphi)Demos\PropEdit\piereg.dcr
+$(Delphi)Demos\ShellControls\dclshlctrls.dcr
+$(Delphi)Imports\AColorPickerAX_TLB.dcr
+$(Delphi)Lib\IWRegisterApplication.dcr
+$(Delphi)Lib\IWRegisterControl.dcr
+$(Delphi)Lib\IWRegisterRaw.dcr
+$(Delphi)Lib\qreport.dcr
+$(Delphi)Source\Decision Cube\mxreg.dcr
+$(Delphi)Source\Indy\IdRegisterCool.dcr

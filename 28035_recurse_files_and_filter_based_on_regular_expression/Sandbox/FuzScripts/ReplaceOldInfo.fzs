@@ -1,0 +1,21 @@
+Folder(s):  {RootFolder}
+File(s):    *.pas
+
+Find:       (uses\s([^;]+))(\bwebinifl),
+Replace:    $1{}
+
+Find:       (uses\s([^;]+))(\btpMenu),
+Replace:    $1{}
+
+Find:       (uses\s([^;]+))(,\stpMenu);
+Replace:    $1;
+
+Folder(s):  {RootFolder}
+File(s):    *.dfm
+
+Find:       TWebShopApp
+Replace:    ThtShopApplication
+
+Find:       (object\s*[^:]+:\s*TWebAction.*?)tpOptions(\s=.*?\s*end)
+Replace:    $1tpComponentOptions$2
+

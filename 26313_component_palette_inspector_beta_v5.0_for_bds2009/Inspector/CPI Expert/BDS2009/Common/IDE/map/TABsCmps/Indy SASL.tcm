@@ -1,0 +1,8 @@
+TIdSASLAnonymous
+TIdSASLCRAMMD5
+TIdSASLExternal
+TIdSASLLogin
+TIdSASLOTP
+TIdSASLPlain
+TIdSASLSKey
+TIdUserPassProvider

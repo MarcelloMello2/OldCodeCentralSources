@@ -1,0 +1,11 @@
+﻿<Window x:Class="FormsDsg.TForm1Dsg"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Form1" Height="183" Width="393" BorderThickness="1">
+    <Grid>
+        <Button x:FieldModifier="public" Height="23" HorizontalAlignment="Left" Name="BtnClickMe"  VerticalAlignment="Top" Width="75" Padding="0,0,1,1" Margin="2,4,0,0">Click Me!</Button>
+        <Button x:FieldModifier="public" Height="23" HorizontalAlignment="Right" Margin="0,4,215,0" Name="BtnClear" VerticalAlignment="Top" Width="75" Padding="0,0,1,1">Clear</Button>
+        <Button x:FieldModifier="public" Height="23" HorizontalAlignment="Right" Margin="0,4,2,0" Name="BtnClose" VerticalAlignment="Top" Width="75">Close</Button>
+        <ListBox x:FieldModifier="public" Margin="2,30,2,2" Name="ListEvents" BorderThickness="1" />
+    </Grid> 
+</Window>

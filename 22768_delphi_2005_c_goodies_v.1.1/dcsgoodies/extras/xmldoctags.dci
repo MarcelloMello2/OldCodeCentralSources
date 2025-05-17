@@ -1,0 +1,69 @@
+[c | C XML doc tag  | Borland.EditOptions.C#]
+<c>|</c>
+[code | Code XML doc tag  | Borland.EditOptions.C#]
+/// <code>
+/// |
+/// </code>
+[example | Example XML doc tag  | Borland.EditOptions.C#]
+/// <example>
+/// |
+/// </example>
+[exception | Exception XML doc tag  | Borland.EditOptions.C#]
+/// <exception cref="|">Description</exception>
+[item | Item XML doc tag  | Borland.EditOptions.C#]
+/// <item>
+/// |
+/// </item>
+[list | List XML doc tag  | Borland.EditOptions.C#]
+/// <list type="bullet" | "number" | "table">
+///	  <listheader>
+///		  <term>term</term>
+///		  <description>description</description>
+///	  </listheader>
+///	  <item>
+///		  <term>term</term>
+///		  <description>description</description>
+///	  </item>
+///	  <item>
+///		  <term>term</term>
+///		  <description>description</description>
+///	  </item>
+/// </list>
+[listheader | Listheader XML doc tag  | Borland.EditOptions.C#]
+/// <listheader>
+/// |
+/// </listheader>
+[para | Para XML doc tag  | Borland.EditOptions.C#]
+<para>|</para>
+[param | Param name XML doc tag  | Borland.EditOptions.C#]
+/// <param name="|">Description</param>
+[paramref | Paramref XML doc tag  | Borland.EditOptions.C#]
+/// <paramref name="|"/>
+[permission | Permission XML doc tag  | Borland.EditOptions.C#]
+/// <permission cref="|">Description</permission>
+[remarks | Remarks XML doc tag  | Borland.EditOptions.C#]
+/// <remarks>
+/// |
+/// </remarks>
+[returns | Returns XML doc tag  | Borland.EditOptions.C#]
+/// <returns>
+/// |
+/// </returns>
+[see | See XML doc tag  | Borland.EditOptions.C#]
+/// <see cref="|"/>
+[seealso | Seealso XML doc tag  | Borland.EditOptions.C#]
+/// <seealso cref="|"/>
+[summary | Summary XML doc tag  | Borland.EditOptions.C#]
+/// <summary>
+/// |
+/// </summary>
+[term | Term XML doc tag  | Borland.EditOptions.C#]
+/// <term>
+/// |
+/// </term>
+[value | Value XML doc tag  | Borland.EditOptions.C#]
+/// <value>
+/// |
+/// </value>
+[/// | /// XML doc tag  | Borland.EditOptions.C#]
+///|

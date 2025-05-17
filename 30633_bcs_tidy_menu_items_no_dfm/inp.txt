@@ -1,0 +1,82 @@
+{*-----------------------------------------------------------------------------
+ Procedure: OnMenuClick
+ Author:    Mr. Arch Brooks, Software Engineer, Brooks Computing Systems, LLC
+ Date:      04-May-2016
+ @Param     Sender: TObject
+ @Return    None
+ -----------------------------------------------------------------------------}
+procedure TBCSMenu.OnMenuClick(Sender: TObject);
+var
+  buf: string;
+  x: Integer;
+begin
+  With Sender as TMenuItem do
+  begin
+    buf := name;
+    buf := buf;
+  end;
+  if buf = 'muiExit' then
+  begin
+    BCSMenuc.Close;
+  end;
+  if buf = 'muiGenMenuItem' then
+  begin
+    cgeMenuItem;
+    buf := buf;
+  end;
+  if buf = 'muiGenMenuClick' then
+  begin
+    cgeMenuXqt;
+    buf := buf;
+  end;
+  if buf = 'muiPutExeToClipboard' then
+  begin
+    cgeGenXQT;
+  end;
+  if buf = 'muiCallProcedure' then
+  begin
+    cgeCallProc;
+    buf := buf;
+  end;
+  if buf = 'muiProcedureDefinition' then
+  begin
+    cgeProcDef;
+    buf := buf;
+  end;
+  if buf = 'muiProcedureBlock' then
+  begin
+    cgeProcBlock;
+    buf := buf;
+  end;
+
+  if buf = 'muiFonts' then
+  begin
+    dlgFont.Execute(BCSMenuc.Handle);
+    defFont := dlgFont.Font;
+    for x := 0 to (BCSMenuc.ComponentCount - 1) do
+    begin
+      if (BCSMenuc.Components[x] is TDBEdit) or
+        (BCSMenuc.Components[x] is TDBGrid) or (BCSMenuc.Components[x] is TDBMemo)
+        or (BCSMenuc.Components[x] is TDBText) or
+        (BCSMenuc.Components[x] is TComboBox) or (BCSMenuc.Components[x] is TEdit)
+        or (BCSMenuc.Components[x] is TLabel) or
+        (BCSMenuc.Components[x] is TListBox) or (BCSMenuc.Components[x] is TMemo)
+      then
+        TButton(BCSMenuc.Components[x]).Font := defFont;
+    end;
+  end;
+  if buf = 'muiColors' then
+  begin
+    dlgColors.Execute(BCSMenuc.Handle);
+    defColor := dlgColors.Color;
+  end;
+  if buf = 'muiHelp' then
+  begin
+    XQT('http://bcsjava.com/doc/app/BCS%20BCSMenu%20Base%20Dialog.htm', '', '');
+  end;
+  if buf = 'muiStyles' then
+  begin
+    frm001c.frmShowModal
+  end;
+end;
+

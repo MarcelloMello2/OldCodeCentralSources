@@ -1,0 +1,4 @@
+Event      - COM+ event
+Publisher  - Publisher of COM+ event
+SubFileLog - Event Subscriber as File logger
+SubWinLog  - Event Subscriber as Event logger

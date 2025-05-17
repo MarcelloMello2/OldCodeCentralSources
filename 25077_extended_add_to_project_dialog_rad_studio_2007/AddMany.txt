@@ -1,0 +1,53 @@
+AddMany V5.2
+
+When a project has many files the IDE Project Manager dialogs may be quite cumbersome. AddMany introduces multiselection dialogs that make adding and opening units very fast and easy.
+
+
+Installation
+
+To install AddMany copy AddMany.dll and AddMany.xml (from the merged directory) to a directory in your PC and add the complete path to the IDE 'Known IDE Assemblies' registry key. AddMany.reg gives a sample.
+
+
+Usage
+
+AddMany adds 3 items* to the 'Project' menu after the 'Add to Project...' item
+- 'Add Many to Project...' (Delphi and Delphi.NET personalities only)
+Open a directory selection dialog, the selected directory is used as a search starting point for *.pas files. The found files are shown in a multiselection tree. Clicking Ok adds the selected files to the active project**.
+- 'Add Project Files to Project...' (Delphi and Delphi.NET personalities only)
+Open file open dialog that asks for a RAD Studio project whose files are then shown in a multiselection tree. Clicking Ok adds the selected files to the active project**.
+- 'Open Project Files...' (Delphi, Delphi.NET and C# personalities)
+Open a multiselection dialog with all the units/files of the active project. Clicking Ok opens the selected unit.
+
+* What items are effectively present depends on project personality.
+
+** The project file window may not correctely reflect the additions until the project is closed and reopen.
+
+
+Adding multifile modules, aka forms.
+
+For a multifile module the multiselection tree shows the parent file, that is the .pas file, and the child files, that is the .dfm, .nfm, aspx or resx file, as dependent nodes but only the .pas file can be selected. When a .pas file is added to the project the .dfm, .nfm or aspx** file is always added too.
+On the other hand, an resx file can be considered attached to the .pas file or detached from it*. Only in the first case the .resx file is added to the project**. When the .resx file is attached the icon for the .pas file is the one normally used for forms, when the .resx file is detached the icon is the one normally used for simple unit.
+To toggle between attached and detached status double click the .pas file node. To toggle the status of all the shown multifile modules use the 'Add dependent files' check box.
+
+* RAD Studio 2007 does not has a WinForms designer but does compile correctely a WinForms project provided that the .dpr file is correct. Therefore, there are case when the .resx file should not be added to the project (see for example at at http://cc.codegear.com/Item/24692).
+
+** To correctely add a .resx or .aspx file to the project AddMany has to modify the .dpr file after adding the selected multifile modules to the project.
+
+
+Configuration
+
+AddMany configuration is kept in file AddMany.xml that has to be in the same directory of AddMany.dll The default for it is
+
+<?xml version="1.0"?>
+<TOptions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OpenFilesShortcut>Control Alt A</OpenFilesShortcut>
+</TOptions>
+
+OpenFilesShortcut
+  Keyboard shortcut for 'Open Project Files...'.
+
+
+AddMany was developed and tested using CodeGear™ RAD Studio 2007 Version 11.0.2804.9245 under Windows XP SP2 and .NET 2.0.50727
+This application uses Coder's Lab multi-selection TreeView. It can be downlaoded at http://sourceforge.net/projects/mstreeview
+The different assemblies were merged using DILMerge V5.0.2. DILMerge can be found at http://cc.codegear.com/Item/23227
+

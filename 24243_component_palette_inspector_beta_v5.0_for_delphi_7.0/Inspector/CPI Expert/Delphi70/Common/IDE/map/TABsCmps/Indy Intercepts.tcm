@@ -1,0 +1,7 @@
+TIdBlockCipherIntercept
+TIdCompressionIntercept
+TIdConnectionIntercept
+TIdLogDebug
+TIdLogEvent
+TIdLogFile
+TIdLogStream

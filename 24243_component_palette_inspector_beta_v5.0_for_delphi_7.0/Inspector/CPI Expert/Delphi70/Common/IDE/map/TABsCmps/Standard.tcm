@@ -1,0 +1,15 @@
+TActionList
+TButton
+TCheckBox
+TComboBox
+TEdit
+TGroupBox
+TLabel
+TListBox
+TMainMenu
+TMemo
+TPanel
+TPopupMenu
+TRadioButton
+TRadioGroup
+TScrollBar

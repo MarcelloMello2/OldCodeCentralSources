@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<TOptions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <DynamicEnabledDefault>true</DynamicEnabledDefault>
+  <ItemCheckShortcut>Control Alt E</ItemCheckShortcut>
+  <TrayAreaInjector>false</TrayAreaInjector>
+</TOptions>

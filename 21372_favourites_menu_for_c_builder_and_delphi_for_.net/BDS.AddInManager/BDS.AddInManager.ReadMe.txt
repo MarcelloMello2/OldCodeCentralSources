@@ -1,0 +1,49 @@
+MarcRohloff.BSD.AddInManager Read Me
+---------------------------------------
+
+This set of classes is designed to aid in managing BDS Add-Ins (Experts).
+It can read and update the list of add-ins and can be used either by a
+management GUI or to self-install applications.
+
+It also provides functionality to track different load-types for an add-in
+Currently implemented load types are :
+  AutoBDS    : Loaded automatically by the BDS
+  AutoExpert : Loaded automatically by the Add-In Expert
+  Manual     : Loaded manually upon user request
+
+
+The main classes are:
+AddIn          : Detail about a single add-in and it's installation mode
+AddInStorage   : Retrieves and saves add-in configurations
+AddInInstaller : Provides functions for installing and uninstalling add-ins.
+
+
+Design goals:
+-------------
+1) To allow add-ins to automatically install and uninstall themselves.
+
+2) To allow management applications to manage loaded Add-Ins
+
+
+Future
+----------
+* Allow add-ins to be unloaded
+  As far as I know this is a limitation of the .NET framework. Although the
+  BDS could stop using an add-in the framework will stil hold keep the
+  assembly file open.
+
+* Possibly allow add-in groups to be created which can be enabled,
+  disabled and loaded together.
+
+* Possibly add the capability to control the order in which add-ins are
+  loaded. (This is probbaly only possible for expert loaded add-ins)
+
+* Show image in path column to indicate if file is valid (file exists)
+  - This is not supported by current (MS) listview
+
+Bugs
+-----
+None that I know of
+
+Marc Rohloff
+MarcRohloff@BigFoot.com

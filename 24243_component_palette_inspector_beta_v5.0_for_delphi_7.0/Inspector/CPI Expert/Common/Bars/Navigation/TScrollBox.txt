@@ -1,0 +1,9 @@
+Align
+Color
+HelpKeyword
+Hint
+HorzScrollBar
+OnClick
+PopupMenu
+ShowHint
+VertScrollBar

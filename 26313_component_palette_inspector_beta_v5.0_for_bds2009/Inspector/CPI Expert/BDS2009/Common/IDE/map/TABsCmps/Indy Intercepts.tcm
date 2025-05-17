@@ -1,0 +1,9 @@
+TIdConnectionIntercept
+TIdInterceptSimLog
+TIdInterceptThrottler
+TIdLogDebug
+TIdLogEvent
+TIdLogFile
+TIdLogStream
+TIdServerInterceptLogEvent
+TIdServerInterceptLogFile

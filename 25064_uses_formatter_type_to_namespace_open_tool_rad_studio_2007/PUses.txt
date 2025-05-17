@@ -1,0 +1,115 @@
+PUses V6.0
+
+PUses implements orderly reformatting of uses clauses and search
+for namespaces that implement a given type.
+The reformatting includes:
+- rewriting the unit/namespace names one per line and sorting them;
+- optionally adding the prefix unit (generated using PrefiIt!) names.
+This makes extremely easy the use of prefix units generate by PrefixIt!
+PrefixIt! can be found at http://cc.codegear.com/Item/22872
+
+
+Installation
+
+To install PUses copy PUses.dll and PUses.xml (from the merged
+directory) to a directory in your PC and add the complete path
+to the IDE 'Known IDE Assemblies' registry key. PUses.reg
+gives a sample.
+Moreover also copy TypeList.xml and put its full path inside
+PUses.xml, TypeListPath field.
+For full namespaces and prefixes support unzip T.zip to a
+directory in your PC and put its full path inside PUses.xml,
+PrefixUnitPath field.
+
+
+Usage
+
+PUses adds a item named 'Uses Reformat' at the end of the IDE Edit menu.
+This item has these subitems.
+- 'Reload Options'
+  Reload options from PUses.xml (see below).
+- 'Prefix Units Insertion'
+  Toggle between add prefix units / do not add prefix units modes.
+- 'Non Prefix Units Removal' (only in add prefix units mode)
+  Toggle between remove / do not remove non prefix units mode.
+- 'Reformat Interface Uses' (in add prefix units mode) or
+  'Reformat Uses' (in do not add prefix units mode)
+  Execute (interface) uses clause reformatting.
+- 'Reformat Implementation Uses' (only in add prefix units mode)
+  Execute implementation uses clause reformatting.
+- 'Find Namespaces'
+  Open the namespace search dialog.
+To execute reformatting
+1 - Select the 'uses' clause including or excluding the uses keyword
+    and including the closing ';'.
+2 - Select the menu item.
+To execute namespace search
+1 - Optionally select the type name.
+2 - Select the menu item to open the namespace search dialog. This
+    dialog has an edit box where the type name can be typed or pasted
+    and a cambo box where the founded namespace names go. The Cancel
+    button close the dialog, the Copy button copy the selected
+    namespace name (if any) to the clipboard and then close the dialog.
+
+
+Configuration
+
+PUses configuration is kept in file PUses.xml that has to be in the
+same directory of PUses.dll  The default for it is
+
+<?xml version="1.0"?>
+<TOptions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ClassPrefix>T</ClassPrefix>
+  <Indent>2</Indent>
+  <AddPrefixDefault>true</AddPrefixDefault>
+  <RemoveUnprefixedDefault>false</RemoveUnprefixedDefault>
+  <PrefixUnitPath></PrefixUnitPath>
+  <TypeListPath></TypeListPath>
+  <ItemInterfaceShortcut>Control Alt U</ItemInterfaceShortcut>
+  <ItemImplementationShortcut>Control Alt Y</ItemImplementationShortcut>
+  <ItemRemoveNonPrefixShortCut>Control Alt P</ItemRemoveNonPrefixShortCut>
+  <ItemFindNamespacesShortCut>Control Alt T</ItemFindNamespacesShortCut>
+  <TrayAreaInjector>false</TrayAreaInjector>
+  <TrayAreaPersonality>false</TrayAreaPersonality>
+</TOptions>
+
+ClassPrefix
+  The prefix unit postfix char.
+Indent
+  The indent of namespace list.
+AddPrefixDefault
+  Starting value for 'Prefix Units Insertion' option.
+RemoveUnprefixedDefault
+  Starting value for 'Non Prefix Units Removal' option.
+PrefixUnitPath
+  Full path of the directory that contains prefix units.
+TypeListPath
+  Full path of the file that contains the type list.
+ItemInterfaceShortcut
+  Keyboard shortcut for 'Reformat Interface Uses'.
+ItemImplementationShortcut
+  Keyboard shortcut for 'Reformat Implementation Uses' or 'Reformat Uses'.
+ItemRemoveNonPrefixShortCut
+  Keyboard shortcut for 'Non Prefix Units Removal'.
+ItemFindNamespacesShortCut
+  Keyboard shortcut for 'Find Namespaces'.
+TrayAreaInjector
+  If true a status feedback is provided inside the Windows Task Bar.
+  If true TrayAreaInjector is to be installed. It can be found at
+  http://cc.codegear.com/Item/22893
+TrayAreaPersonality
+  If true and TrayAreaInjector is true too PUses keeps
+  updated the personality icon inside the Windows Task Bar.
+
+On options reload shortcuts are not updated. To update them it is
+necessary to restart the IDE.
+
+
+PUses was developed and tested using CodeGear™ RAD Studio
+2007 Version 11.0.2804.9245 under Windows XP SP2 and .NET 2.0.50727
+The different assemblies were merged using DILMerge V5.0.2. DILMerge
+can be found at http://cc.codegear.com/Item/23227
+The eclosed TypeList.xml and T.zip content were generated using
+PrefixIt! V7.0 to merge all the .NET 2 assemblies. PrefixIt! can be
+found at http://cc.codegear.com/Item/22872
+

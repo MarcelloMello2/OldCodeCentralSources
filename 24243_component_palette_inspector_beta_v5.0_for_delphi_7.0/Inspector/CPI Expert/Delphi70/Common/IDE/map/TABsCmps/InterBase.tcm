@@ -1,0 +1,13 @@
+TIBClientDataSet
+TIBDatabase
+TIBDatabaseInfo
+TIBDataSet
+TIBEvents
+TIBExtract
+TIBQuery
+TIBSQL
+TIBSQLMonitor
+TIBStoredProc
+TIBTable
+TIBTransaction
+TIBUpdateSQL

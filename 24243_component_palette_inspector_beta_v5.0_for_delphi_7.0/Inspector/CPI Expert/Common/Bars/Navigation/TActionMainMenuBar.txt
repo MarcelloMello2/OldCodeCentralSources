@@ -1,0 +1,9 @@
+Align
+Caption
+Color
+HelpKeyword
+Hint
+OnClick
+OnExit
+OnResize
+ShowHint

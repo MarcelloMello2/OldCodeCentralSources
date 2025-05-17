@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{4197B887-11DF-4A7D-A0EC-38E56818598E}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="testdll\testdll.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="test\test.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="testdll">
+			<MSBuild Projects="testdll\testdll.dproj"/>
+		</Target>
+		<Target Name="testdll:Clean">
+			<MSBuild Projects="testdll\testdll.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="testdll:Make">
+			<MSBuild Projects="testdll\testdll.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="test">
+			<MSBuild Projects="test\test.dproj"/>
+		</Target>
+		<Target Name="test:Clean">
+			<MSBuild Projects="test\test.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="test:Make">
+			<MSBuild Projects="test\test.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="testdll;test"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="testdll:Clean;test:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="testdll:Make;test:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

@@ -1,0 +1,27 @@
+object FormSplash: TFormSplash
+  Left = 0
+  Top = 0
+  Caption = 'FormSplash'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Button1: TButton
+    Align = alClient
+    Font.Size = 26.000000000000000000
+    StyledSettings = [ssFamily, ssStyle, ssFontColor]
+    Height = 567.000000000000000000
+    TabOrder = 0
+    Text = 'Welcome! Touch to begin!'
+    Trimming = ttCharacter
+    Width = 384.000000000000000000
+    OnClick = Button1Click
+  end
+end

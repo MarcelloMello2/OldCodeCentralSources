@@ -1,0 +1,94 @@
+MarcRohloff.AddInExpert Read Me
+------------------------------------
+
+This is an add-in which allows BDS add-ins (experts). It allows them to be
+added and removed from the BDS Add-Ins list and to be manually loaded.
+
+There are 3 ways in which add-ins can be loaded:
+1) Auto-BDS    : The BDS loads these automatically on start-up
+2) Auto-Expert : The expert loads the add-ins automatically on start-up
+                 (The expert must obviously be installed to do this)
+3) Manual      : The Add-In can be loaded manually at any time by opening
+                 the expert.
+
+Notes
+------
+This expert is built upon the abstractions provided by two assemblies:
+BDS.Utilities     : This assembly abstracts much of the functionality
+                    required to interact with the BDS and to create BDS
+                    Add-Ins
+
+BDS.AddInManager : This assembly supplies all the logic required to load,
+                   modify and update configurations of the BDS Add-Ins.
+
+Building
+---------
+
+You don't NEED to build the code. You can install the files in the 'bin' directory. This being .NET they will install in C# Builder 1 and Delphi 8.
+
+Open the project group from C# Builder and perform a build all.
+
+Note:
+You may need to update the reference path to Borland.Studio.ToolsAPI
+assembly before you can build. (You can do this by removing and readding it.
+right click on the reference and make sure that 'Copy Local' is not
+checked)
+
+Installation
+-------------
+Run the executable created during building. If you have more than one version
+of the BDS installed, choose the version you want to modify in the combo-box.
+From the 'Options' menu choose install and then click 'OK'.
+
+Uninstallation can be achieved in the same way.
+
+Usage:
+------
+The expert is an executable which can be run in two modes.
+
+1) It can be run by starting the executable outside of the BDS.
+   In this mode it will check which versions of the BDS are installed.
+   If there is more than one installed version a combo-box will be available
+   to select the version of the BDS you want to configure.
+
+2) It can be installed into a BDS where it will appear as a menu option
+   'Add-Ins expert' under the 'Components' menu.
+
+Individual add-ins can be configure, removed or loaded by right-clicking
+on the item in the list view.
+
+The list view can also be sorted by clicking
+on the headings. The icons indicate the mode in which the add-in
+will be added as well as wether it is currently loaded.
+
+Double clicking on an item causes it to load immediately
+
+Clicking on the options button brings up a menu which allows you to
+add an item to the list or load an arbitrary add-in. There are also
+options to clean the add-in list (remove non-existant items) as well
+as to install or uninstall the add-in expert.
+
+Future
+----------
+* Allow add-ins to be unloaded
+  As far as I know this is a limitation of the .NET framework. Although the
+  BDS could stop using an add-in the framework will stil hold keep the
+  assembly file open.
+
+* Possibly allow add-in groups to be created which can be enabled,
+  disabled and loaded together.
+
+* Possibly add the capability to control the order in which add-ins are
+  loaded. (This is probbaly only possible for expert loaded add-ins)
+
+* Show image in path column to indicate if file is valid (file exists)
+  - This is not supported by current (MS) listview
+
+(This functionality will need to be created in the BDSAddInManager assembly first)
+
+Bugs
+-----
+None that I know of
+
+Marc Rohloff
+MarcRohloff@BigFoot.com

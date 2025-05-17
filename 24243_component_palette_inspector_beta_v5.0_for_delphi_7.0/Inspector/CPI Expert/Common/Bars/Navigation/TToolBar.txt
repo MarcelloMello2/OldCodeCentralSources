@@ -1,0 +1,9 @@
+Align
+AutoSize
+Caption
+Color
+Flat
+Images
+OnMouseMove
+PopupMenu
+ShowHint

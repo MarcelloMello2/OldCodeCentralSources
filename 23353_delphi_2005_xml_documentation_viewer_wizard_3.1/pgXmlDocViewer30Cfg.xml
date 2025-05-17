@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlDocViewerCfg xmlns="BDS.XmlDocViewer.30">
+<Coords>
+  <Left>60</Left>
+  <Top>80</Top>
+  <Width>500</Width>
+  <Height>400</Height>
+</Coords>
+<XmlDocXsls>
+  <XmlDocXsl>XmlDocDelphi_Namespaces_Simple.xsl</XmlDocXsl>
+  <XmlDocXsl>XmlDocCs_TypesOnly.xsl</XmlDocXsl>
+  <XmlDocXsl>XmlDocCs_TypeMembers.xsl</XmlDocXsl>
+  <XmlDocXsl>XmlDocCs_TypeMembersList.xsl</XmlDocXsl>
+  <XmlDocXsl>XmlDocCs_Types.xsl</XmlDocXsl>
+</XmlDocXsls>
+</XmlDocViewerCfg>

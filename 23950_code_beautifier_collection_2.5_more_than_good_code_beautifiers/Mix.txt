@@ -1,0 +1,7 @@
+These bat files use technique mentioned in this artical.
+
+Delphi Startup Times and the Kitchen Sink
+
+Mark Edington
+
+Delphi Quality Architect

@@ -1,0 +1,11 @@
+TOpenDialog
+TSaveDialog
+TOpenPictureDialog
+TSavePictureDialog
+TFontDialog
+TColorDialog
+TPrintDialog
+TPrinterSetupDialog
+TFindDialog
+TReplaceDialog
+TPageSetupDialog

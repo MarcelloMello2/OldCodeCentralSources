@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{bff49e0b-5bf1-4edc-8134-6da34ad1e22a}</ProjectGuid>
+    <MainSource>AddMany.dpk</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCCIL</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>release\AddMany.dll</DCC_DependencyCheckOutputName>
+    <DCC_UsePackage>"C:\Program Files\Delphi11\bin\Borland.Studio.ToolsAPI.dll";C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.XML.dll;R:\.NET.2\SmallApps\AddMany\CodersLab.Windows.Controls.TreeView.dll;Visibles;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll;Borland.Delphi</DCC_UsePackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Alignment>4</DCC_Alignment>
+    <DCC_AssertionsAtRuntime>False</DCC_AssertionsAtRuntime>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_DcuOutput>dcuil</DCC_DcuOutput>
+    <DCC_ObjOutput>dcuil</DCC_ObjOutput>
+    <DCC_HppOutput>dcuil</DCC_HppOutput>
+    <DCC_BplOutput>release</DCC_BplOutput>
+    <DCC_DcpOutput>dcuil</DCC_DcpOutput>
+    <DCC_Define>RELEASE</DCC_Define>
+    <DCC_WriteableConstants>True</DCC_WriteableConstants>
+    <DCC_Platform>x86</DCC_Platform>
+    <DCC_UnitSearchPath>C:\Program Files\Common Files\CodeGear Shared\Rad Studio\Shared Assemblies\5.0;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727;R:\.NET.2\Visibles\dcuil;R:\.NET.2\SmallApps\AddMany;C:\Program Files\Delphi11\bin</DCC_UnitSearchPath>
+    <DCC_ResourcePath>C:\Program Files\Common Files\CodeGear Shared\Rad Studio\Shared Assemblies\5.0;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727;R:\.NET.2\Visibles\dcuil;R:\.NET.2\SmallApps\AddMany;C:\Program Files\Delphi11\bin</DCC_ResourcePath>
+    <DCC_IncludePath>C:\Program Files\Common Files\CodeGear Shared\Rad Studio\Shared Assemblies\5.0;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727;R:\.NET.2\Visibles\dcuil;R:\.NET.2\SmallApps\AddMany;C:\Program Files\Delphi11\bin</DCC_IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Alignment>4</DCC_Alignment>
+    <DCC_AssertionsAtRuntime>False</DCC_AssertionsAtRuntime>
+    <DCC_RangeChecking>True</DCC_RangeChecking>
+    <DCC_DebugInfoInExe>True</DCC_DebugInfoInExe>
+    <DCC_DebugVN>True</DCC_DebugVN>
+    <DCC_DcuOutput>dcuil</DCC_DcuOutput>
+    <DCC_ObjOutput>dcuil</DCC_ObjOutput>
+    <DCC_HppOutput>dcuil</DCC_HppOutput>
+    <DCC_DcpOutput>dcuil</DCC_DcpOutput>
+    <DCC_UnitSearchPath>C:\Program Files\Common Files\CodeGear Shared\Rad Studio\Shared Assemblies\5.0;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727;R:\.NET.2\Visibles\dcuil;R:\.NET.2\SmallApps\AddMany;C:\Program Files\Delphi11\bin</DCC_UnitSearchPath>
+    <DCC_ResourcePath>C:\Program Files\Common Files\CodeGear Shared\Rad Studio\Shared Assemblies\5.0;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727;R:\.NET.2\Visibles\dcuil;R:\.NET.2\SmallApps\AddMany;C:\Program Files\Delphi11\bin</DCC_ResourcePath>
+    <DCC_IncludePath>C:\Program Files\Common Files\CodeGear Shared\Rad Studio\Shared Assemblies\5.0;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727;R:\.NET.2\Visibles\dcuil;R:\.NET.2\SmallApps\AddMany;C:\Program Files\Delphi11\bin</DCC_IncludePath>
+    <DCC_Define>DEBUG</DCC_Define>
+    <DCC_Platform>x86</DCC_Platform>
+    <DCC_WriteableConstants>True</DCC_WriteableConstants>
+    <DCC_Optimize>False</DCC_Optimize>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>DelphiDotNet.Personality</Borland.Personality>
+    <Borland.ProjectType>Package</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><DelphiDotNet.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters><Parameters Name="HostApplication">C:\Program Files\Delphi11\bin\bds.exe</Parameters><Parameters Name="RunParams">-pDelphiDotNet;CSharp</Parameters></Parameters><Package_Options><Package_Options Name="ImplicitBuild">False</Package_Options><Package_Options Name="DesigntimeOnly">False</Package_Options><Package_Options Name="RuntimeOnly">False</Package_Options></Package_Options><VersionInfo><VersionInfo Name="IncludeVerInfo">True</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1033</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName"></VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">AddMany.dpk</Source></Source></DelphiDotNet.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <ItemGroup>
+    <Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.dll">
+      <AssemblyName>System</AssemblyName>
+      <Version>2.0.0.0</Version>
+      <HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.dll</HintPath>
+      <AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll">
+      <AssemblyName>System.Drawing</AssemblyName>
+      <Version>2.0.0.0</Version>
+      <HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll</HintPath>
+      <AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll">
+      <AssemblyName>System.Windows.Forms</AssemblyName>
+      <Version>2.0.0.0</Version>
+      <HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll</HintPath>
+      <AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.XML.dll">
+      <AssemblyName>System.XML</AssemblyName>
+      <Version>2.0.0.0</Version>
+      <HintPath>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.XML.dll</HintPath>
+      <AssemblyTag>$(SystemRoot)\Microsoft.NET\Framework\v2.0.50727\System.XML.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="..\..\Visibles\dcuil\Visibles.dll">
+      <AssemblyName>Visibles</AssemblyName>
+      <Version>2.0.2828.40692</Version>
+      <HintPath>..\..\Visibles\dcuil\Visibles.dll</HintPath>
+      <AssemblyTag>..\..\Visibles\dcuil\Visibles.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="C:\Program Files\Common Files\CodeGear Shared\Rad Studio\Shared Assemblies\5.0\Borland.Delphi.dll">
+      <AssemblyName>Borland.Delphi</AssemblyName>
+      <Version>11.0.5000.9245</Version>
+      <HintPath>C:\Program Files\Common Files\CodeGear Shared\Rad Studio\Shared Assemblies\5.0\Borland.Delphi.dll</HintPath>
+      <AssemblyTag>C:\Program Files\Common Files\CodeGear Shared\Rad Studio\Shared Assemblies\5.0\Borland.Delphi.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="C:\Program Files\Delphi11\bin\Borland.Studio.ToolsAPI.dll">
+      <AssemblyName>Borland.Studio.ToolsAPI</AssemblyName>
+      <Version>11.0.5000.9245</Version>
+      <HintPath>C:\Program Files\Delphi11\bin\Borland.Studio.ToolsAPI.dll</HintPath>
+      <AssemblyTag>C:\Program Files\Delphi11\bin\Borland.Studio.ToolsAPI.dll</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+    <Reference Include="CodersLab.Windows.Controls.TreeView.dll">
+      <AssemblyName>CodersLab.Windows.Controls.TreeView</AssemblyName>
+      <Version>1.0.1.23525</Version>
+      <HintPath>CodersLab.Windows.Controls.TreeView.dll</HintPath>
+      <AssemblyTag>CodersLab.Windows.Controls.TreeView</AssemblyTag>
+      <LinkUnits>False</LinkUnits>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <DelphiCompile Include="AddMany.dpk">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <EmbeddedResource Include="AddNewDialog\AddNewDialog.resx">
+      <DependentUpon>AddNewDialog\AddNewDialog.pas</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IDEPlugin\IDEPlugin.resx">
+      <DependentUpon>IDEPlugin\IDEPlugin.pas</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenDialog\OpenDialog.resx">
+      <DependentUpon>OpenDialog\OpenDialog.pas</DependentUpon>
+    </EmbeddedResource>
+    <DCCReference Include="..\..\Commons\Settings\Commons.Settings.pas" />
+    <DCCReference Include="AddNewDialog\AddNewDialog.pas">
+      <Form>AddNewDialog.TAddNewDialog</Form>
+      <DesignClass>System.Windows.Forms.Form</DesignClass>
+    </DCCReference>
+    <DCCReference Include="IDEPlugin\IDEPlugin.pas">
+      <Form>IDEPlugin.TIDEPlugin</Form>
+      <DesignClass>System.ComponentModel.Component</DesignClass>
+    </DCCReference>
+    <DCCReference Include="OpenDialog\OpenDialog.pas">
+      <Form>OpenDialog.TOpenDialog</Form>
+      <DesignClass>System.Windows.Forms.Form</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Options\Options.pas" />
+    <DCCReference Include="RADStudioProject\RADStudioProject.pas" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+</Project>

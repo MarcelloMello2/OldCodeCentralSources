@@ -1,0 +1,7 @@
+TConnectionBroker
+TDCOMConnection
+TLocalConnection
+TSharedConnection
+TSimpleObjectBroker
+TSocketConnection
+TWebConnection

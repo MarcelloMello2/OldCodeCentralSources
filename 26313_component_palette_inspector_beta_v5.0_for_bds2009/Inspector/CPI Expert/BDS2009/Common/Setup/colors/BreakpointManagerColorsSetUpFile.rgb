@@ -1,0 +1,198 @@
+1@ListView1@00FFF9F9@ListView1:TListView
+1@TreeView1@00E8F6FF@TreeView1:TTreeView
+1@ListBox1@00E6F8F8@ListBox1:TCheckListBox
+1@RichEdit1@00F1EEFF@RichEdit1:TRichEdit
+1@StackListBox@00DEF6F5@StackListBox:TCheckListBox
+1@StrComboBox@FF000005@StrComboBox:TComboBox
+1@BoolChkBox@FF00000F@BoolChkBox (BoolChkBox:TCheckBox)
+1@LeftPanel@FF00000F@LeftPanel (LeftPanel:TPanel)
+1@Label4@FF00000F@Loaded Breakpoints (Label4:TLabel)
+1@LeftLV@00F3F8FD@LeftLV:TListView
+1@ToolBar3@00D8E9EC@LeftToolBar (ToolBar3:TToolBar)
+1@RightPanel@FF00000F@RightPanel (RightPanel:TPanel)
+1@Label5@FF00000F@Current Project (Label5:TLabel)
+1@RightLV@00EEFAFA@RightLV:TListView
+1@LeftToolBar@00D8E9EC@LeftToolBar (LeftToolBar:TToolBar)
+1@Panel1@FF00000F@Panel1 (Panel1:TPanel)
+1@SerResultsListBox@00F3F8FD@SerResultsListBox:TCheckListBox
+1@ToolBar2@FF00000F@ToolBar2 (ToolBar2:TToolBar)
+1@isEdit@FF00000F@Edit (isEdit:TCheckBox)
+1@isROF@FF00000F@ROF (isROF:TCheckBox)
+1@Label2@FF00000F@FileName (Label2:TLabel)
+1@Label3@FF00000F@Line Number (Label3:TLabel)
+1@Label8@FF00000F@Current pass count (Label8:TLabel)
+1@Label15@FF00000F@Path (Label15:TLabel)
+1@Label16@FF00000F@Line Text (Label16:TLabel)
+1@Label17@FF00000F@Hint (Label17:TLabel)
+1@Label18@FF00000F@Tag (Label18:TLabel)
+1@Label19@FF00000F@Integer tag (Label19:TLabel)
+1@Label20@FF00000F@ID (Label20:TLabel)
+1@ccHint@00FBFBFF@ccHint:TComboBox
+1@ccTag@00F4F4FF@ccTag:TComboBox
+1@ccTagi@00FBFBFF@ccTagi:TComboBox
+1@ccFileName@00FBFBFF@ccFileName:TComboBox
+1@ccLineNumber@00F4F4FF@ccLineNumber:TComboBox
+1@ccCurPassCount@00FBFBFF@ccCurPassCount:TComboBox
+1@ccPath@00F4F4FF@ccPath:TComboBox
+1@ccLineText@00FBFBFF@ccLineText:TComboBox
+1@ccID@00F4F4FF@ccID:TComboBox
+1@Label11@FF00000F@Enable Group (Label11:TLabel)
+1@Label12@FF00000F@Disable Group (Label12:TLabel)
+1@Label13@FF00000F@Group Name (Label13:TLabel)
+1@Label14@FF00000F@Stack Frames To Log (Label14:TLabel)
+1@Label6@FF00000F@Expression (Label6:TLabel)
+1@Label7@FF00000F@Pass count (Label7:TLabel)
+1@Label9@FF00000F@Log message (Label9:TLabel)
+1@Label10@FF00000F@Evaluate Expression (Label10:TLabel)
+1@Label32@FF00000F@IBP index (Label32:TLabel)
+1@ccEvalExpression@00F4F4FF@ccEvalExpression:TComboBox
+1@ccLogMessage@00FBFBFF@ccLogMessage:TComboBox
+1@ccPassCount@00F4F4FF@ccPassCount:TComboBox
+1@ccExpression@00FBFBFF@ccExpression:TComboBox
+1@ccStackFramesToLog@00F4F4FF@ccStackFramesToLog:TComboBox
+1@ccGroupName@00FBFBFF@ccGroupName:TComboBox
+1@ccDisableGroup@00F4F4FF@ccDisableGroup:TComboBox
+1@ccEnableGroup@00FBFBFF@ccEnableGroup:TComboBox
+1@ccIBPindex@00F4F4FF@ccIBPindex:TComboBox
+1@ccInstalled@00D8E9EC@Installed (ccInstalled:TCheckBox)
+1@ccChecked@00D8E9EC@Checked (ccChecked:TCheckBox)
+1@ccDoBreak@00D8E9EC@Do break (ccDoBreak:TCheckBox)
+1@ccLogresult@00D8E9EC@Log result (ccLogresult:TCheckBox)
+1@ccEnabled@00D8E9EC@Enabled (ccEnabled:TCheckBox)
+1@ccDoHandleExceptions@00D8E9EC@Handle Exception (ccDoHandleExceptions:TCheckBox)
+1@ccDoIgnoreExceptions@00D8E9EC@Ignore Exception (ccDoIgnoreExceptions:TCheckBox)
+1@ToolBar6@FF00000F@ToolBar2 (ToolBar6:TToolBar)
+1@SerComboBox@FF000005@SerComboBox:TComboBox
+1@FieldCheckListBox@FF000005@FieldCheckListBox:TCheckListBox
+1@Panel6@FF00000F@Panel6 (Panel6:TPanel)
+1@Label21@FF00000F@FileName (Label21:TLabel)
+1@Label22@FF00000F@Line Number (Label22:TLabel)
+1@Label23@FF00000F@Current pass count (Label23:TLabel)
+1@Label24@FF00000F@Path (Label24:TLabel)
+1@Label25@FF00000F@Line Text (Label25:TLabel)
+1@Label26@FF00000F@Hint (Label26:TLabel)
+1@Label27@FF00000F@String tag (Label27:TLabel)
+1@Label28@FF00000F@Integer tag (Label28:TLabel)
+1@Label29@FF00000F@ID (Label29:TLabel)
+1@rrHint@00FFFCF9@rrHint:TComboBox
+1@rrTags@00FFF8F0@rrTags:TComboBox
+1@rrTagi@00FFFCF9@rrTagi:TComboBox
+1@uuLineNumber@00D8E9EC@uuLineNumber:TCheckBox
+1@uuCurPassCOunt@00D8E9EC@uuCurPassCOunt:TCheckBox
+1@uuPath@00D8E9EC@uuPath:TCheckBox
+1@uuLineText@00D8E9EC@uuLineText:TCheckBox
+1@uuID@00D8E9EC@uuID:TCheckBox
+1@uuHint@00D8E9EC@uuHint:TCheckBox
+1@uuTags@00D8E9EC@uuTags:TCheckBox
+1@uuTagi@00D8E9EC@uuTagi:TCheckBox
+1@uuFileName@00D8E9EC@uuFileName:TCheckBox
+1@rrFileName@00FFFCF9@rrFileName:TComboBox
+1@rrLineNumber@00FFF8F0@rrLineNumber:TComboBox
+1@rrCurPassCount@00FFFCF9@rrCurPassCount:TComboBox
+1@rrPath@00FFF8F0@rrPath:TComboBox
+1@rrLineText@00FFFCF9@rrLineText:TComboBox
+1@rrID@00FFF8F0@rrID:TComboBox
+1@Label62@FF00000F@Enable Group (Label62:TLabel)
+1@Label63@FF00000F@Disable Group (Label63:TLabel)
+1@Label64@FF00000F@Group Name (Label64:TLabel)
+1@Label65@FF00000F@Stack Frames ToLog (Label65:TLabel)
+1@Label66@FF00000F@Expression (Label66:TLabel)
+1@Label67@FF00000F@Pass count (Label67:TLabel)
+1@Label68@FF00000F@Log message (Label68:TLabel)
+1@Label69@FF00000F@Evaluate Expression (Label69:TLabel)
+1@Label33@FF00000F@IBP index (Label33:TLabel)
+1@rrEvalExpression@00FFF8F0@rrEvalExpression:TComboBox
+1@rrLogMessage@00FFFCF9@rrLogMessage:TComboBox
+1@rrPassCount@00FFF8F0@rrPassCount:TComboBox
+1@rrExpression@00FFFCF9@rrExpression:TComboBox
+1@rrStackFramesToLog@00FFF8F0@rrStackFramesToLog:TComboBox
+1@rrGroupName@00FFFCF9@rrGroupName:TComboBox
+1@rrEnableGroup@00FFFCF9@rrEnableGroup:TComboBox
+1@uuEnableGroup@00D8E9EC@uuEnableGroup:TCheckBox
+1@uuDisableGroup@00D8E9EC@uuDisableGroup:TCheckBox
+1@uuGroupName@00D8E9EC@uuGroupName:TCheckBox
+1@uuStackFramesToLog@00D8E9EC@uuStackFramesToLog:TCheckBox
+1@uuExpression@00D8E9EC@uuExpression:TCheckBox
+1@uuPassCount@00D8E9EC@uuPassCount:TCheckBox
+1@uuLogMessage@00D8E9EC@uuLogMessage:TCheckBox
+1@uuEvalExpression@00D8E9EC@uuEvalExpression:TCheckBox
+1@rrDisableGroup@00FFF8F0@rrDisableGroup:TComboBox
+1@rrIBPindex@00FFFCF9@rrIBPindex:TComboBox
+1@uuIBPindex@00D8E9EC@uuIBPindex:TCheckBox
+1@rrInstalled@00D8E9EC@Installed (rrInstalled:TCheckBox)
+1@rrChecked@00D8E9EC@Checked (rrChecked:TCheckBox)
+1@rrDoBreak@00D8E9EC@Do break (rrDoBreak:TCheckBox)
+1@rrLogResult@00D8E9EC@Log result (rrLogResult:TCheckBox)
+1@rrEnabled@00D8E9EC@Enabled (rrEnabled:TCheckBox)
+1@rrDoIgnoreExceptions@00D8E9EC@Ignore Exception (rrDoIgnoreExceptions:TCheckBox)
+1@uuInstalled@00D8E9EC@uuInstalled:TCheckBox
+1@uuChecked@00D8E9EC@uuChecked:TCheckBox
+1@uuDoBreak@00D8E9EC@uuDoBreak:TCheckBox
+1@uuLogResult@00D8E9EC@uuLogResult:TCheckBox
+1@uuEnabled@00D8E9EC@uuEnabled:TCheckBox
+1@uuDoHandleExceptions@00D8E9EC@uuDoHandleExceptions:TCheckBox
+1@uuDoIgnoreExceptions@00D8E9EC@uuDoIgnoreExceptions:TCheckBox
+1@rrDoHandleExceptions@00D8E9EC@Handle Exception (rrDoHandleExceptions:TCheckBox)
+1@ToolBar8@FF00000F@ToolBar7 (ToolBar8:TToolBar)
+1@Panel8@FF00000F@Panel3 (Panel8:TPanel)
+1@srfLabel@FF00000F@Files (srfLabel:TLabel)
+1@srfFileListBox@00FFFFF9@srfFileListBox:TFileListBox
+1@RadioGroup1@FF00000F@RadioGroup1:TRadioGroup
+1@ReportLV@FF000005@ReportLV:TListView
+1@ListBox2@FF000005@ListBox2:TListBox
+1@ImportModeSel@FF00000F@Types (ImportModeSel:TRadioGroup)
+1@Panel2@FF00000F@Panel3 (Panel2:TPanel)
+1@Label31@FF00000F@BP Fields order in List Views (Label31:TLabel)
+1@OrderListBox@00C9EFEF@OrderListBox:TCheckListBox
+1@Panel4@FF00000F@Panel3 (Panel4:TPanel)
+1@Label1@FF00000F@View Styles (Label1:TLabel)
+1@VLStylesListBox@00FFFFF9@VLStylesListBox:TFileListBox
+1@Panel5@FF00000F@Panel3 (Panel5:TPanel)
+1@Label34@FF00000F@BP Fields order without use of IDs (Label34:TLabel)
+1@NoneIDCheckListBox@00E8F5FF@NoneIDCheckListBox:TCheckListBox
+1@BPflags@00E6F8F8@BPflags:TCheckListBox
+1@Panel3@FF00000F@Panel3 (Panel3:TPanel)
+1@Label30@FF00000F@BP Block fields (Label30:TLabel)
+1@BPIDBlockFields@00E8F5FF@BPIDBlockFields:TCheckListBox
+1@ProListView@FF000005@ProListView:TListView
+1@StatusBar1@FF00000F@StatusBar1:TStatusBar
+1@ControlBar1@FF00000F@ControlBar1:TControlBar
+1@ToolBar5@FF00000F@ToolBar5 (ToolBar5:TToolBar)
+1@ToolBar1@FF00000F@ToolBar1 (ToolBar1:TToolBar)
+1@ToolBar4@FF00000F@ToolBar4 (ToolBar4:TToolBar)
+1@ExtToolBar@FF00000F@ExtToolBar (ExtToolBar:TToolBar)
+1@ColorsSetUpListBox@FF00000F@ColorsSetUpListBox (ColorsSetUpListBox:TColorSetupListBox)
+3@bpCheckedColor@00ECECFF@bpCheckedColor
+3@bpCurPassCountColor@00E2F3FE@bpCurPassCountColor
+3@bpDisableGroupColor@00F0FFF0@bpDisableGroupColor
+3@bpDoBreakColor@00E2F3FE@bpDoBreakColor
+3@bpDoHandleExceptionsColor@00E2F3FE@bpDoHandleExceptionsColor
+3@bpDoIgnoreExceptionsColor@00F0FFF0@bpDoIgnoreExceptionsColor
+3@bpEnabledColor@00EAFFFF@bpEnabledColor
+3@bpEnableGroupColor@00E2F3FE@bpEnableGroupColor
+3@bpEvalExpressionColor@00F0FFF0@bpEvalExpressionColor
+3@bpExpressionColor@00F0FFF0@bpExpressionColor
+3@bpFileNameColor@00ECECFF@bpFileNameColor
+3@bpGroupNameColor@00EAFFFF@bpGroupNameColor
+3@bpHintColor@00F0FFF0@bpHintColor
+3@bpIBPindexColor@00E2F3FE@bpIBPindexColor
+3@bpIDcolor@00E2F3FE@bpIDcolor
+3@bpInstalledColor@00F0FFF0@bpInstalledColor
+3@bpLineNumberColor@00E2F3FE@bpLineNumberColor
+3@bpLineTextColor@00F0FFF0@bpLineTextColor
+3@bpLogMessageColor@00ECECFF@bpLogMessageColor
+3@bpLogResultColor@00ECECFF@bpLogResultColor
+3@bpPassCountColor@00ECECFF@bpPassCountColor
+3@bpPathColor@00E2F3FE@bpPathColor
+3@BPRightLVCommonBPHighLightColor@00FFFFDD@BPRightLVCommonBPHighLightColor
+3@bpStackFramesToLogColor@00F0FFF0@bpStackFramesToLogColor
+3@bpTagColor@00ECECFF@bpTagColor
+3@bpTagiColor@00ECECFF@bpTagiColor
+3@Color@FF00000F@Color
+3@LeftLVcommonColor@00FFFFDD@LeftLVcommonColor
+3@LeftLVfocusColor@00FF0000@LeftLVfocusColor
+3@RightLVDimColor@00B4B4B4@RightLVDimColor
+3@TextViewFocusColor@00FFFFDD@TextViewFocusColor
+3@TransparentColorValue@00000000@TransparentColorValue
+3@TreeFocusColor@00FFFFDD@TreeFocusColor
+3@ViewCommonColor@00FFFFDD@ViewCommonColor

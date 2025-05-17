@@ -1,0 +1,95 @@
+1@BothPanel@FF00000F@BothPanel (BothPanel:TPanel)
+1@RightPanel@FF00000F@RightPanel (RightPanel:TPanel)
+1@Label21@FF00000F@Label21 (Label21:TLabel)
+1@CmpShipPanel@FF00000F@CmpShipPanel (CmpShipPanel:TPanel)
+1@ScrollBox1@00DCF5F5@ScrollBox1:TScrollBox
+1@fCPIPalettePanel@00DCF5F5@fCPIPalettePanel:TPanel
+1@CmpListView@00DCF5F5@CmpListView:TListView
+1@ToolBar3@FF00000F@ToolBar3 (ToolBar3:TToolBar)
+1@HistoryComboBox@00DCF5F5@HistoryComboBox:TComboBox
+1@ToolBar18@FF00000F@ToolBar18 (ToolBar18:TToolBar)
+1@SerComboBox@00F0FBFF@SerComboBox:TComboBox
+1@ANDsearchCheckBox@FF00000F@And (ANDsearchCheckBox:TCheckBox)
+1@TabsToolBar@FF00000F@tabsToolBar (TabsToolBar:TToolBar)
+1@TabComboBox@00DCF5F5@TabComboBox:TComboBox
+1@grpComboBox@00DCF5F5@grpComboBox:TComboBox
+1@catComboBox@00DCF5F5@catComboBox:TComboBox
+1@colComboBox@00DCF5F5@colComboBox:TComboBox
+1@ToolBar29@FF00000F@ToolBar29 (ToolBar29:TToolBar)
+1@cmpComboBox@00DCF5F5@cmpComboBox:TComboBox
+1@UntComboBox@00DCF5F5@UntComboBox:TComboBox
+1@PkgComboBox@00DCF5F5@PkgComboBox:TComboBox
+1@CmpsToolBar@FF00000F@ToolBar3 (CmpsToolBar:TToolBar)
+1@AutoReselectCmp@FF00000F@AutoReselectCmp:TCheckBox
+1@RightDockPanel@FF00000F@CPI right pan Dock area "Drag docable forms here" (RightDockPanel:TPanel)
+1@LeftPanel@FF00000F@LeftPanel (LeftPanel:TPanel)
+1@CPIUpdateLabel@00FFFFFF@Last update  (CPIUpdateLabel:TLabel)
+1@Panel_TabSheet_Dock@FF00000F@CPI Left-pand Dock area "Drag docable forms here" (Panel_TabSheet_Dock:TPanel)
+1@Label15@FF00000F@Top (Label15:TLabel)
+1@Label17@FF00000F@Left (Label17:TLabel)
+1@Label18@FF00000F@Right (Label18:TLabel)
+1@Label22@FF00000F@Bottom (Label22:TLabel)
+1@BDStop@FF000005@BDStop:TSpinEdit
+1@BDSLeft@FF000005@BDSLeft:TSpinEdit
+1@BDSRight@FF000005@BDSRight:TSpinEdit
+1@BDSBottom@FF000005@BDSBottom:TSpinEdit
+1@Panel5@FF00000F@Panel5 (Panel5:TPanel)
+1@CheckBox10@FF00000F@All (CheckBox10:TCheckBox)
+1@ResetCheckListBox@FF000005@ResetCheckListBox:TCheckListBox
+1@Label26@FF00000F@Home (Label26:TLabel)
+1@Label1@FF00000F@Domain (Label1:TLabel)
+1@Label5@FF00000F@Start up (Label5:TLabel)
+1@HomeSiteComboBox@FF000005@HomeSiteComboBox:TComboBox
+1@SourceCodeMode@FF00000F@Source Code (SourceCodeMode:TRadioGroup)
+1@DisplayMode@FF00000F@Panels display mode (DisplayMode:TRadioGroup)
+1@StartUpDomainComboBox@FF000005@StartUpDomainComboBox:TComboBox
+1@AlwaysPasteCheckBox@FF00000F@Always Paste (AlwaysPasteCheckBox:TCheckBox)
+1@BitmapMode@FF00000F@Components Bitmap Size (BitmapMode:TRadioGroup)
+1@Label16@FF00000F@Inspector Palette (Label16:TLabel)
+1@Label3@FF00000F@Style (Label3:TLabel)
+1@Label2@FF00000F@Positions (Label2:TLabel)
+1@InspectorTabsPos@FF000013@InspectorTabsPos:TComboBox
+1@InspectorTabsStyle@FF000013@InspectorTabsStyle:TComboBox
+1@OutOfDateFlag@FF00000F@Need to update components registration (OutOfDateFlag:TLabel)
+1@SeeAlsoTreeView@FF000018@SeeAlsoTreeView:TTreeView
+1@Panel7@FF00000F@Panel7 (Panel7:TPanel)
+1@KeywordsBox@00DCF5F5@KeywordsBox:TCheckListBox
+1@RelatedKeys@00D7EBFA@RelatedKeys:TCheckListBox
+1@AllPropCheckListBox@00EEF9F9@AllPropCheckListBox:TCheckListBox
+1@ToolBar21@FF00000F@ToolBar21 (ToolBar21:TToolBar)
+1@ToolBar5@FF00000F@ToolBar31 (ToolBar5:TToolBar)
+1@tkTypesComboBox@FF000005@tkTypesComboBox:TComboBox
+1@tkClassesListBox@00DCF5F5@tkClassesListBox:TCheckListBox
+1@ToolBar28@FF00000F@ToolBar28 (ToolBar28:TToolBar)
+1@StatusBar1@FF00000F@StatusBar1 (StatusBar1:TPanel)
+1@RightToolBar@FF00000F@ToolBar24 (RightToolBar:TToolBar)
+1@LeftToolBar@00D8E9EC@LeftToolBar (LeftToolBar:TToolBar)
+1@ColorDialog1@00000000@ColorDialog1:TColorDialog
+1@ColorsSetUpListBox@FF00000F@ColorsSetUpListBox (ColorsSetUpListBox:TColorSetupListBox)
+1@SetupGrid@00ECFFEC@SetupGrid:TSetupDataGrid
+3@catColor@00DCF5F5@catColor
+3@cmpColor@00DCF5F5@cmpColor
+3@colColor@00DCF5F5@colColor
+3@Color@00DCF5F5@Color
+3@DefaulOddColor@00DCF5F5@DefaulOddColor
+3@DefaultEvenColor@00DCF5F5@DefaultEvenColor
+3@DefaultFocusedColor@00DCF5F5@DefaultFocusedColor
+3@defColor@00DCF5F5@defColor
+3@EditingControlColor@00DCF5F5@EditingControlColor
+3@flgColor@00DCF5F5@flgColor
+3@grpColor@00DCF5F5@grpColor
+3@infColor@00DCF5F5@infColor
+3@lstColor@00DCF5F5@lstColor
+3@NoSourceColor@00DCF5F5@NoSourceColor
+3@numColor@00DCF5F5@numColor
+3@pkgColor@00DCF5F5@pkgColor
+3@remColor@00DCF5F5@remColor
+3@SelectionframeColor@00DCF5F5@SelectionframeColor
+3@serColor@00DCF5F5@serColor
+3@StatusBarColorInNoBorder@00DCF5F5@StatusBarColorInNoBorder
+3@StatusBarFontColorWithBorder@00DCF5F5@StatusBarFontColorWithBorder
+3@StatusBarFontColorWithOutBorder@00DCF5F5@StatusBarFontColorWithOutBorder
+3@tabColor@00DCF5F5@tabColor
+3@TransparentColorValue@00DCF5F5@TransparentColorValue
+3@untColor@00DCF5F5@untColor
+3@visColor@00DCF5F5@visColor

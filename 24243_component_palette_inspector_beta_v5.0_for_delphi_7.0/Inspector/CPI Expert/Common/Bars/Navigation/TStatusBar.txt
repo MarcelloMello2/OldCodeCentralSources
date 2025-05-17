@@ -1,0 +1,9 @@
+Align
+Color
+Font
+HelpKeyword
+Hint
+OnClick
+OnMouseMove
+PopupMenu
+ShowHint

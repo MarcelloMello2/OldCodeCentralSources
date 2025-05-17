@@ -1,0 +1,10 @@
+a@microsoft.com
+bill@msn.com
+chief@embarcadero.com
+something else
+a street address
+san jose, california
+info@webcompany.co.nz
+info@bigpond.com.au
+first.last@bigcompany.com
+a@microsoft.com

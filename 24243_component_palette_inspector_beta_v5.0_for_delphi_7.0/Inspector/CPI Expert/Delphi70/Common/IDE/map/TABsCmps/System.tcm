@@ -1,0 +1,13 @@
+TDdeClientConv
+TDdeClientItem
+TDdeServerConv
+TDdeServerItem
+TDirectoryTreeView
+TFileEdit
+TFileHistoryComboBox
+TFileIconView
+TFileListView
+TMediaPlayer
+TOleContainer
+TPaintBox
+TTimer

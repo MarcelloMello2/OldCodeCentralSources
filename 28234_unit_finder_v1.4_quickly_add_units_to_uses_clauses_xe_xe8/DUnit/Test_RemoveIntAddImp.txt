@@ -1,0 +1,126 @@
+=================================================================
+Foreign Characters
+=================================================================
+unit Test;
+interface
+uses One, Twö, Three, Foür;
+implementation
+uses Seven, Six, Five;
+end.
+==================================
+Twö
+==================================
+unit Test;
+interface
+uses One, Three, Foür;
+implementation
+uses Seven, Six, Five, Twö;
+end.
+
+
+=================================================================
+Middle Delete
+=================================================================
+unit Test;
+interface
+uses One, Two, Three, Four;
+implementation
+uses Seven, Six, Five;
+end.
+==================================
+Two
+==================================
+unit Test;
+interface
+uses One, Three, Four;
+implementation
+uses Seven, Six, Five, Two;
+end.
+
+
+=================================================================
+End Delete
+=================================================================
+unit Test;
+interface
+uses One, Two, Three, Four;
+implementation
+uses Seven, Six, Five;
+end.
+==================================
+Four
+==================================
+unit Test;
+interface
+uses One, Two, Three;
+implementation
+uses Seven, Six, Five, Four;
+end.
+
+
+=================================================================
+End Delete with Comments
+=================================================================
+unit Test;
+interface
+uses One, Two, Three, Four;
+implementation
+uses Seven, Six, {Six,} Five;
+end.
+==================================
+Four
+==================================
+unit Test;
+interface
+uses One, Two, Three;
+implementation
+uses Seven, Six, {Six,} Five, Four;
+end.
+
+
+=================================================================
+Word Wrap
+=================================================================
+unit Test;
+interface
+uses Thirteen;
+implementation
+//234567890123456789012345678901234567890123456789012345678901234567890123456789|
+//        (10)      (20)      (30)      (40)      (50)      (60)      (70)      (80)
+uses 
+  One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Eleven, Twelve;
+end.
+==================================
+Thirteen
+==================================
+unit Test;
+interface
+
+implementation
+//234567890123456789012345678901234567890123456789012345678901234567890123456789|
+//        (10)      (20)      (30)      (40)      (50)      (60)      (70)      (80)
+uses 
+  One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Eleven, Twelve,
+  Thirteen;
+end.
+
+
+=================================================================
+Duplicate Names
+=================================================================
+unit Test;
+interface
+uses One, One, One, One, One;
+implementation
+uses Two;
+end.
+==================================
+One
+==================================
+unit Test;
+interface
+uses One, One, One, One;
+implementation
+uses Two, One;
+end.
+

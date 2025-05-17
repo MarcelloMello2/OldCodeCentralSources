@@ -1,0 +1,9 @@
+Align
+HelpKeyword
+Hint
+LargeChange
+Max
+Name
+PopupMenu
+ShowHint
+SmallChange

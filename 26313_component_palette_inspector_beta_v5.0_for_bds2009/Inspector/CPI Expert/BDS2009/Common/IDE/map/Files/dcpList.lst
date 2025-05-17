@@ -1,0 +1,82 @@
+C:\CPI Expert\BDS2007\CPIV40\Package Files\CPIExpertPackageV40BDS2007.dcp
+c:\cpi expert\common\base package\CPIComponentsPackage.dcp
+$(BDS)lib\adortl.dcp
+$(BDS)lib\bdertl.dcp
+$(BDS)lib\dbexpress.dcp
+$(BDS)lib\dbrtl.dcp
+$(BDS)lib\dbx.dcp
+$(BDS)lib\dbxcds.dcp
+$(BDS)lib\DbxCommonDriver.dcp
+$(BDS)lib\dcl31w.dcp
+$(BDS)lib\dclact.dcp
+$(BDS)lib\dclado.dcp
+$(BDS)lib\dclbde.dcp
+$(BDS)lib\dcldb.dcp
+$(BDS)lib\dcldbx.dcp
+$(BDS)lib\dcldbxcds.dcp
+$(BDS)lib\dclib.dcp
+$(BDS)lib\dclie.dcp
+$(BDS)lib\dclIntraweb_90_100.dcp
+$(BDS)lib\dclisp.dcp
+$(BDS)lib\dclmcn.dcp
+$(BDS)lib\dclmid.dcp
+$(BDS)lib\dclMLWiz.dcp
+$(BDS)lib\dclnet.dcp
+$(BDS)lib\dclOffice2k.dcp
+$(BDS)lib\dclOfficeXP.dcp
+$(BDS)lib\dclsoap.dcp
+$(BDS)lib\dclstd.dcp
+$(BDS)lib\dcltee.dcp
+$(BDS)lib\dclwbm.dcp
+$(BDS)lib\dclwebsnap.dcp
+$(BDS)lib\deployapi.dcp
+$(BDS)lib\designdgm.dcp
+$(BDS)lib\designide.dcp
+$(BDS)lib\dsnap.dcp
+$(BDS)lib\dsnapcon.dcp
+$(BDS)lib\dsnapent.dcp
+$(BDS)lib\Ibevnt.dcp
+$(BDS)lib\ibxpress.dcp
+$(BDS)lib\inet.dcp
+$(BDS)lib\inetdb.dcp
+$(BDS)lib\inetdbbde.dcp
+$(BDS)lib\inetdbxpress.dcp
+$(BDS)lib\IntrawebDB_90_100.dcp
+$(BDS)lib\Intraweb_90_100.dcp
+$(BDS)lib\rtl.dcp
+$(BDS)lib\soaprtl.dcp
+$(BDS)lib\tee.dcp
+$(BDS)lib\teedb.dcp
+$(BDS)lib\teeui.dcp
+$(BDS)lib\vcl.dcp
+$(BDS)lib\vclactnband.dcp
+$(BDS)lib\vcldb.dcp
+$(BDS)lib\vcldbx.dcp
+$(BDS)lib\vcldesigner.dcp
+$(BDS)lib\vclhie.dcp
+$(BDS)lib\vclib.dcp
+$(BDS)lib\vclie.dcp
+$(BDS)lib\vclimg.dcp
+$(BDS)lib\vcljpg.dcp
+$(BDS)lib\vclshlctrls.dcp
+$(BDS)lib\VclSmp.dcp
+$(BDS)lib\vclx.dcp
+$(BDS)lib\webdsnap.dcp
+$(BDS)lib\websnap.dcp
+$(BDS)lib\xmlrtl.dcp
+$(BDS)lib\Indy10\dclIndyCore.dcp
+$(BDS)lib\Indy10\dclIndyProtocols.dcp
+$(BDS)lib\Indy10\IndyCore.dcp
+$(BDS)lib\Indy10\IndyProtocols.dcp
+$(BDS)lib\Indy10\IndySystem.dcp
+$(BDS)lib\Indy9\dclindy.dcp
+$(BDS)lib\Indy9\indy.dcp
+C:\Program Files\madCollection\madBasic\DeXter\madBasic_.dcp
+C:\Program Files\madCollection\madCodeHook\DeXter\madCodeHook_.dcp
+C:\Program Files\madCollection\madDisAsm\DeXter\madDisAsm_.dcp
+C:\Program Files\madCollection\madExcept\DeXter\madExceptVcl_.dcp
+C:\Program Files\madCollection\madExcept\DeXter\madExcept_.dcp
+C:\Program Files\madCollection\madKernel\DeXter\madKernel_.dcp
+C:\Program Files\madCollection\madRemote\DeXter\madRemote_.dcp
+C:\Program Files\madCollection\madSecurity\DeXter\madSecurity_.dcp
+C:\Program Files\madCollection\madShell\DeXter\madShell_.dcp

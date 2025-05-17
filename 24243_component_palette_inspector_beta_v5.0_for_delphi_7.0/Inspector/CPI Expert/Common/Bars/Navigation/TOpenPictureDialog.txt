@@ -1,0 +1,9 @@
+DefaultExt
+FileName
+Filter
+FilterIndex
+HelpContext
+InitialDir
+OnClose
+Options
+OptionsEx

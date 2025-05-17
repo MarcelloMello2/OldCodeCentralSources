@@ -1,0 +1,9 @@
+Caption
+Color
+HelpFile
+OnActivate
+OnClick
+OnCreate
+OnDestroy
+OnClose
+OnResize

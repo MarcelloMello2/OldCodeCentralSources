@@ -1,0 +1,9 @@
+Align
+BevelEdges
+BevelInner
+BevelKind
+BevelOuter
+BorderStyle
+Caption
+Color
+OnResize

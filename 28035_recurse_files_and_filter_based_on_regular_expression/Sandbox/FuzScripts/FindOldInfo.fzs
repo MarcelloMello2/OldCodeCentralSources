@@ -1,0 +1,14 @@
+Folder(s):  {RootFolder}
+File(s):    *.pas
+
+Find:       webinifl,
+
+Find:       webinifl;
+
+Folder(s):  {RootFolder}
+File(s):    *.dfm
+
+Find:       TWebShopApp
+
+Find:       (object\s*[^:]+:\s*TWebAction.*?)tpOptions(\s=.*?\s*end)
+

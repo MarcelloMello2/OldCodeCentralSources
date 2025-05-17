@@ -1,0 +1,9 @@
+Align
+Alignment
+Caption
+Color
+Cursor
+Hint
+OnClick
+PopupMenu
+ShowHint

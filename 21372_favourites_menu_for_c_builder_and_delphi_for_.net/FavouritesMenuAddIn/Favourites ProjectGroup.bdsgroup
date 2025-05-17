@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality" Type="String">Default.Personality</Option>
+			<Option Name="ProjectType" Type="String"></Option>
+			<Option Name="Version" Type="String">1.0</Option>
+			<Option Name="GUID" Type="String">{D2B22E33-723A-4DF4-BF60-4235E51F2A11}</Option>
+		</Option>
+	</PersonalityInfo>
+	<Default.Personality>  
+    
+    
+    
+    <Projects>
+      <Projects Name="MarcRohloff.BDSUtilities.dll" Type="String">..\BDSUtilities\MarcRohloff.BDSUtilities.bdsproj</Projects>
+      <Projects Name="MarcRohloff.BDSAddInManager.dll" Type="String">..\BDSAddInManager\MarcRohloff.BDSAddInManager.bdsproj</Projects>
+      <Projects Name="MarcRohloff.FavouritesExpert.exe" Type="String">MarcRohloff.FavouritesExpert.bdsproj</Projects>
+      <Projects Name="Targets" Type="String">MarcRohloff.BDSUtilities.dll MarcRohloff.BDSAddInManager.dll MarcRohloff.FavouritesExpert.exe</Projects>
+    </Projects>
+    <Dependencies>
+      <Dependency GUID="{60BEB7BC-E215-4DD3-B250-1555ABAAE31B}">
+        <Dependency GUID="{BB1C0A43-B254-4D1A-B6B6-533BD1CE6B13}"/>
+        <Dependency GUID="{DA35609F-A6EE-4704-A59C-230A664B4DA4}"/>
+      </Dependency>
+      <Dependency GUID="{DA35609F-A6EE-4704-A59C-230A664B4DA4}">
+        <Dependency GUID="{BB1C0A43-B254-4D1A-B6B6-533BD1CE6B13}"/>
+      </Dependency>
+    </Dependencies>
+  </Default.Personality>
+</BorlandProject>

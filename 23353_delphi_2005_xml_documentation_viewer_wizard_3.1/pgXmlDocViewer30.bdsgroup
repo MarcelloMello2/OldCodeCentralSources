@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality">Default.Personality</Option>
+      <Option Name="ProjectType"></Option>
+      <Option Name="Version">1.0</Option>
+      <Option Name="GUID">{EA5DE3B4-7FD4-402F-BA7A-DE34171EAAB2}</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    
+    
+    
+    <Projects>
+      <Projects Name="pgXmlDocViewer30App.exe">pgXmlDocViewer30App.bdsproj</Projects>
+      <Projects Name="pgXmlDocViewer30.dll">pgXmlDocViewer30.bdsproj</Projects>
+      <Projects Name="Targets">pgXmlDocViewer30App.exe pgXmlDocViewer30.dll</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

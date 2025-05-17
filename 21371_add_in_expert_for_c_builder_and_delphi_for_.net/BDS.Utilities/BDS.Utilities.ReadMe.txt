@@ -1,0 +1,52 @@
+MarcRohloff.BSD.Utiliities Read Me
+------------------------------------
+
+This is a set of utilities to facilitate working with BDS Add-Ins.
+There are function groups for managing the following:
+* General BDS functions
+* BDS Services
+* Files and Assemblies
+* Extra Forms functionality
+* Graphics management
+* Menus
+* Modules in the editor
+* BDS Versions (current and installed)
+
+* There is also a base class (BDSAddInBase) which is designed to
+  provide much of the functionality required to build a BDS Add-In (Expert)
+  and to manage the resources automatically (For example it automatically
+  deletes menu items you created).
+
+
+Design goals:
+-------------
+1) To abstract the BDS functionality as much as possible and to work
+    around bugs.
+    For example the bug where shortcuts are reset when loading files
+    and also avoiding the necessity to remember the IDs which the
+    BDS frequently returns.
+
+2)  To enable applications to be written with a minimum reliance (or in
+    some cases no reliance at all) on the Borland.ToolsAPI.
+    
+3)  To enable a subset of the functions to be called when running outside
+    of the BDS. This is so that some program can be run on it's own or
+    self-install.
+    To this extent there is a property BDS.StandAlone (which detects the
+    presence of the Borland.Studio.ToolsAPI assembly)
+
+Future
+----------
+This is very much a work in progress. I have defined the feature set that I
+have used so far and refine it as I use it.
+
+The one area which has been left out is working out the capabilites of
+an installed BDS Version (SKU, Supprot for ECO, etc). I am still deciding
+how best to achieve this.
+
+Bugs
+-----
+None that I know of
+
+Marc Rohloff
+MarcRohloff@BigFoot.com

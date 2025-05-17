@@ -1,0 +1,9 @@
+Color
+OnClick
+PopupMenu
+ReadOnly
+RowSelect
+ShowHint
+SmallImages
+StateImages
+ViewStyle

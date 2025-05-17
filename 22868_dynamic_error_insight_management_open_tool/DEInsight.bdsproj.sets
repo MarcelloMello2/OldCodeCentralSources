@@ -1,0 +1,1927 @@
+<?xml version="1.0"?>
+<TProjectOptionsSets xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LastActivated>Debug</LastActivated>
+  <Item>
+    <anyType xsi:type="TProjectOptionsSet">
+      <Name>Debug</Name>
+      <Values>
+        <anyType xsi:type="TProjectOption">
+          <Name>HostApplication</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>RunParams</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>EnvVars</Name>
+          <Value xsi:type="xsd:int">249424128</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>SysVars</Name>
+          <Value xsi:type="xsd:int">249424188</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Launcher</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>UseLauncher</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>DebugCWD</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>RemoteHost</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>RemotePath</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>RemoteLauncher</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>RemoteCWD</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>RemoteDebug</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Align</Name>
+          <Value xsi:type="xsd:int">4</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>BoolEval</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Assertions</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>UnitDebugInfo</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ImportedData</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LongStrings</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>IOChecks</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WriteableConst</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LocalSymbols</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TypeInfo</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Optimization</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>OpenStrings</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>OverflowChecks</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>RangeChecks</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>StackChecks</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TypedAddress</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>SafeDivide</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>VarStringChecks</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>StackFrames</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ExtendedSyntax</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ReferenceInfo</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MinEnumSize</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>DebugInfo</Name>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>RemoteSymbols</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>OutputObj</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>HintFlag</Name>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnFlag</Name>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>StackSize</Name>
+          <Value xsi:type="xsd:int">4096</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MaxStackSize</Name>
+          <Value xsi:type="xsd:int">1048576</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ResourceReserve</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ImageBase</Name>
+          <Value xsi:type="xsd:int">4194304</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Target</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MapFile</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>GenDRC</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>GenDOC</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CompileName</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Defines</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>SysDefines</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>OutputDir</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>UnitOutputDir</Name>
+          <Value xsi:type="xsd:string">dcuil</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>UnitDir</Name>
+          <Value xsi:type="xsd:string">d:\winnt\microsoft.net\framework\v1.1.4322;d:\program files\common files\borland shared\bds\shared assemblies\3.0;d:\program files\delphi.009\bin;r:\32\smallapps\trayareainjector</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ObjDir</Name>
+          <Value xsi:type="xsd:string">d:\winnt\microsoft.net\framework\v1.1.4322;d:\program files\common files\borland shared\bds\shared assemblies\3.0;d:\program files\delphi.009\bin;r:\32\smallapps\trayareainjector</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>SrcDir</Name>
+          <Value xsi:type="xsd:string">d:\winnt\microsoft.net\framework\v1.1.4322;d:\program files\common files\borland shared\bds\shared assemblies\3.0;d:\program files\delphi.009\bin;r:\32\smallapps\trayareainjector</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ResDir</Name>
+          <Value xsi:type="xsd:string">d:\winnt\microsoft.net\framework\v1.1.4322;d:\program files\common files\borland shared\bds\shared assemblies\3.0;d:\program files\delphi.009\bin;r:\32\smallapps\trayareainjector</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>NamespacePrefix</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>PkgDllDir</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>OptionsString</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>SOName</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>SOPrefix</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>SOPrefixDefined</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>SOSuffix</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>SOVersion</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>DynamicLoader</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnSymbolDeprecated</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnSymbolLibrary</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnSymbolPlatform</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnSymbolExperimental</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUnitLibrary</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUnitPlatform</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUnitDeprecated</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUnitExperimental</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnHresultCompat</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnHidingMember</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnHiddenVirtual</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnGarbage</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnBoundsError</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnZeroNilCompat</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnStringConstTrunced</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnForLoopVarVarpar</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnTypedConstVarpar</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnAsgToTypedConst</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnCaseLabelRange</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnForVariable</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnConstructingAbstract</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnComparisonFalse</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnComparisonTrue</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnComparingSignedUnsigned</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnCombiningSignedUnsigned</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUnsupportedConstruct</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnFileOpen</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnFileOpenUnitsrc</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnBadGlobalSymbol</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnDuplicateCtorDtor</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnInvalidDirective</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnPackageNoLink</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnPackagedThreadvar</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnImplicitImport</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnHppemitIgnored</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnNoRetval</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUseBeforeDef</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnForLoopVarUndef</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUnitNameMismatch</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnNoCfgFileFound</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnMessageDirective</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnImplicitVariants</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUnicodeToLocale</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnLocaleToUnicode</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnImagebaseMultiple</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnSuspiciousTypecast</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnPrivatePropaccessor</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUnsafeType</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUnsafeCode</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUnsafeCast</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>PkgDcpDir</Name>
+          <Value xsi:type="xsd:string">dcuil</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>UsePackages</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Packages</Name>
+          <Value xsi:type="xsd:string">r:\32\smallapps\trayareainjector\Interop.TrayAreaInjector.dll;d:\winnt\microsoft.net\framework\v1.1.4322\System.Windows.Forms.dll;d:\winnt\microsoft.net\framework\v1.1.4322\System.Drawing.dll;d:\winnt\microsoft.net\framework\v1.1.4322\System.dll;d:\program files\delphi.009\bin\Borland.Studio.ToolsAPI.dll;d:\winnt\microsoft.net\framework\v1.1.4322\System.XML.dll;Borland.Delphi</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>UnitAliases</Name>
+          <Value xsi:type="xsd:string">WinTypes=Borland.Vcl.Windows;WinProcs=Borland.Vcl.Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ExeDescription</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ImplicitBuild</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>RuntimeOnly</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>DesigntimeOnly</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>DebugSourcePath</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ImageDebugInfo</Name>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>HeapSize</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MaxHeapSize</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkMaxErrors</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkShowMangle</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkGenImportLib</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkGenLib</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkNoStateFiles</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkSubsysMajor</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkSubsysMinor</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkCaseSensitiveLink</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkCalculateChecksum</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkFastTLS</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkReplaceResources</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkUserMajor</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkUserMinor</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkImageComment</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkDelayLoad</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CppDebugInfo</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LineNumbers</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>AutoRegVars</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MergeDupStrs</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>EnableInLines</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ShowWarnings</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>StdStackFrame</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TreatEnumsAsInts</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>PCH</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ShowInfoMsgs</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ShowExtendedMsgs</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>GenDll</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>GenConsoleApp</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>GenPackage</Name>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>GenStaticLibrary</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ShowLinkerWarnings</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkDebugVcl</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>InstructionSet</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Alignment</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CallingConvention</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>RegisterVars</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Ansi</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>AutoDep</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Underscore</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>PICCodeGen</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>FastFloat</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>PentiumFloat</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>NestedComments</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MFCCompat</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>IdentLen</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MemberPrecision</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ForLoops</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TwoChar</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CodeModifiers</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>EnableRTTI</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>EnableExceptions</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>EHLocalInfo</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>EHDtor</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>EHPrologs</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ZeroBaseClass</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ZeroClassFunction</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ForceCppCompile</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MemberPointer</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>VTables</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Templates</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>PchPath</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>PchStopAfter</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>UseDynamicRtl</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MultiThreaded</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ATLMultiUse</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ATLDebugQI</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ATLCoinitMultiThreaded</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ATLAutoRegisterInproc</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ATLDebugRefCount</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ATLDebug</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ATLThreading</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CodeOpt</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>FloatSupport</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>IncludePath</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LibPath</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>DebugPath</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ReleasePath</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LibraryList</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmViaCppOpts</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ClearPackageCache</Name>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ClearUnitCache</Name>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MarkModified</Name>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CaseSensitive</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ExtendedDictionary</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>PurgeComment</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>PageSize</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ListFile</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmCrossReference</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmSymbolTables</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmGenerateListing</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmIncludeConditionals</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmIncludeErrors</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmExpanded</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmCaseCheckingOn</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmAllCase</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmDebugOn</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmFullDebug</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmWarningsOn</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmWarningsLevel1</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmHashTable</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmPasses</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmSymbolLength</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmDirective</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>NoAskLibs</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CGGlobalStackAccesses</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CGThisPointer</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CGInlinePointer</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CGLinkCGLib</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>DefaultNamespace</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>AutoRegisterTLB</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>AutoGenImportAssembly</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>AutoIncBuildNum</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Build</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CodePage</Name>
+          <Value xsi:type="xsd:int">1252</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>IncludeVersionInfo</Name>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Keys</Name>
+          <Value xsi:type="xsd:int">249423580</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Locale</Name>
+          <Value xsi:type="xsd:int">1033</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MajorVersion</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MinorVersion</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ModuleAttribs</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Release</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+      </Values>
+    </anyType>
+    <anyType xsi:type="TProjectOptionsSet">
+      <Name>Release</Name>
+      <Values>
+        <anyType xsi:type="TProjectOption">
+          <Name>HostApplication</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>RunParams</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>EnvVars</Name>
+          <Value xsi:type="xsd:int">249555200</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>SysVars</Name>
+          <Value xsi:type="xsd:int">249555260</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Launcher</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>UseLauncher</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>DebugCWD</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>RemoteHost</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>RemotePath</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>RemoteLauncher</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>RemoteCWD</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>RemoteDebug</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Align</Name>
+          <Value xsi:type="xsd:int">4</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>BoolEval</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Assertions</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>UnitDebugInfo</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ImportedData</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LongStrings</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>IOChecks</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WriteableConst</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LocalSymbols</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TypeInfo</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Optimization</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>OpenStrings</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>OverflowChecks</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>RangeChecks</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>StackChecks</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TypedAddress</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>SafeDivide</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>VarStringChecks</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>StackFrames</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ExtendedSyntax</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ReferenceInfo</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MinEnumSize</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>DebugInfo</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>RemoteSymbols</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>OutputObj</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>HintFlag</Name>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnFlag</Name>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>StackSize</Name>
+          <Value xsi:type="xsd:int">4096</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MaxStackSize</Name>
+          <Value xsi:type="xsd:int">1048576</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ResourceReserve</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ImageBase</Name>
+          <Value xsi:type="xsd:int">4194304</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Target</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MapFile</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>GenDRC</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>GenDOC</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CompileName</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Defines</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>SysDefines</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>OutputDir</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>UnitOutputDir</Name>
+          <Value xsi:type="xsd:string">dcuil</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>UnitDir</Name>
+          <Value xsi:type="xsd:string">d:\winnt\microsoft.net\framework\v1.1.4322;d:\program files\common files\borland shared\bds\shared assemblies\3.0;d:\program files\delphi.009\bin;r:\32\smallapps\trayareainjector</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ObjDir</Name>
+          <Value xsi:type="xsd:string">d:\winnt\microsoft.net\framework\v1.1.4322;d:\program files\common files\borland shared\bds\shared assemblies\3.0;d:\program files\delphi.009\bin;r:\32\smallapps\trayareainjector</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>SrcDir</Name>
+          <Value xsi:type="xsd:string">d:\winnt\microsoft.net\framework\v1.1.4322;d:\program files\common files\borland shared\bds\shared assemblies\3.0;d:\program files\delphi.009\bin;r:\32\smallapps\trayareainjector</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ResDir</Name>
+          <Value xsi:type="xsd:string">d:\winnt\microsoft.net\framework\v1.1.4322;d:\program files\common files\borland shared\bds\shared assemblies\3.0;d:\program files\delphi.009\bin;r:\32\smallapps\trayareainjector</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>NamespacePrefix</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>PkgDllDir</Name>
+          <Value xsi:type="xsd:string">release</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>OptionsString</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>SOName</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>SOPrefix</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>SOPrefixDefined</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>SOSuffix</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>SOVersion</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>DynamicLoader</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnSymbolDeprecated</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnSymbolLibrary</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnSymbolPlatform</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnSymbolExperimental</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUnitLibrary</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUnitPlatform</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUnitDeprecated</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUnitExperimental</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnHresultCompat</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnHidingMember</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnHiddenVirtual</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnGarbage</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnBoundsError</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnZeroNilCompat</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnStringConstTrunced</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnForLoopVarVarpar</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnTypedConstVarpar</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnAsgToTypedConst</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnCaseLabelRange</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnForVariable</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnConstructingAbstract</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnComparisonFalse</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnComparisonTrue</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnComparingSignedUnsigned</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnCombiningSignedUnsigned</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUnsupportedConstruct</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnFileOpen</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnFileOpenUnitsrc</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnBadGlobalSymbol</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnDuplicateCtorDtor</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnInvalidDirective</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnPackageNoLink</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnPackagedThreadvar</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnImplicitImport</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnHppemitIgnored</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnNoRetval</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUseBeforeDef</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnForLoopVarUndef</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUnitNameMismatch</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnNoCfgFileFound</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnMessageDirective</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnImplicitVariants</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUnicodeToLocale</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnLocaleToUnicode</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnImagebaseMultiple</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnSuspiciousTypecast</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnPrivatePropaccessor</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUnsafeType</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUnsafeCode</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>WarnUnsafeCast</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>PkgDcpDir</Name>
+          <Value xsi:type="xsd:string">dcuil</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>UsePackages</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Packages</Name>
+          <Value xsi:type="xsd:string">r:\32\smallapps\trayareainjector\Interop.TrayAreaInjector.dll;d:\winnt\microsoft.net\framework\v1.1.4322\System.Windows.Forms.dll;d:\winnt\microsoft.net\framework\v1.1.4322\System.Drawing.dll;d:\winnt\microsoft.net\framework\v1.1.4322\System.dll;d:\program files\delphi.009\bin\Borland.Studio.ToolsAPI.dll;d:\winnt\microsoft.net\framework\v1.1.4322\System.XML.dll;Borland.Delphi</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>UnitAliases</Name>
+          <Value xsi:type="xsd:string">WinTypes=Borland.Vcl.Windows;WinProcs=Borland.Vcl.Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ExeDescription</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ImplicitBuild</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>RuntimeOnly</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>DesigntimeOnly</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>DebugSourcePath</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ImageDebugInfo</Name>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>HeapSize</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MaxHeapSize</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkMaxErrors</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkShowMangle</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkGenImportLib</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkGenLib</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkNoStateFiles</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkSubsysMajor</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkSubsysMinor</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkCaseSensitiveLink</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkCalculateChecksum</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkFastTLS</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkReplaceResources</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkUserMajor</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkUserMinor</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkImageComment</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkDelayLoad</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CppDebugInfo</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LineNumbers</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>AutoRegVars</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MergeDupStrs</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>EnableInLines</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ShowWarnings</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>StdStackFrame</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TreatEnumsAsInts</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>PCH</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ShowInfoMsgs</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ShowExtendedMsgs</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>GenDll</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>GenConsoleApp</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>GenPackage</Name>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>GenStaticLibrary</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ShowLinkerWarnings</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LinkDebugVcl</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>InstructionSet</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Alignment</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CallingConvention</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>RegisterVars</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Ansi</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>AutoDep</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Underscore</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>PICCodeGen</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>FastFloat</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>PentiumFloat</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>NestedComments</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MFCCompat</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>IdentLen</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MemberPrecision</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ForLoops</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TwoChar</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CodeModifiers</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>EnableRTTI</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>EnableExceptions</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>EHLocalInfo</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>EHDtor</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>EHPrologs</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ZeroBaseClass</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ZeroClassFunction</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ForceCppCompile</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MemberPointer</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>VTables</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Templates</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>PchPath</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>PchStopAfter</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>UseDynamicRtl</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MultiThreaded</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ATLMultiUse</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ATLDebugQI</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ATLCoinitMultiThreaded</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ATLAutoRegisterInproc</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ATLDebugRefCount</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ATLDebug</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ATLThreading</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CodeOpt</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>FloatSupport</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>IncludePath</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LibPath</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>DebugPath</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ReleasePath</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>LibraryList</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmViaCppOpts</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ClearPackageCache</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ClearUnitCache</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MarkModified</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CaseSensitive</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ExtendedDictionary</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>PurgeComment</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>PageSize</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ListFile</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmCrossReference</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmSymbolTables</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmGenerateListing</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmIncludeConditionals</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmIncludeErrors</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmExpanded</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmCaseCheckingOn</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmAllCase</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmDebugOn</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmFullDebug</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmWarningsOn</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmWarningsLevel1</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmHashTable</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmPasses</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmSymbolLength</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>TasmDirective</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>NoAskLibs</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CGGlobalStackAccesses</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CGThisPointer</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CGInlinePointer</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CGLinkCGLib</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>DefaultNamespace</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>AutoRegisterTLB</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>AutoGenImportAssembly</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>AutoIncBuildNum</Name>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Build</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>CodePage</Name>
+          <Value xsi:type="xsd:int">1252</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>IncludeVersionInfo</Name>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Keys</Name>
+          <Value xsi:type="xsd:int">249554652</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Locale</Name>
+          <Value xsi:type="xsd:int">1033</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MajorVersion</Name>
+          <Value xsi:type="xsd:int">1</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>MinorVersion</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>ModuleAttribs</Name>
+        </anyType>
+        <anyType xsi:type="TProjectOption">
+          <Name>Release</Name>
+          <Value xsi:type="xsd:int">0</Value>
+        </anyType>
+      </Values>
+    </anyType>
+  </Item>
+</TProjectOptionsSets>

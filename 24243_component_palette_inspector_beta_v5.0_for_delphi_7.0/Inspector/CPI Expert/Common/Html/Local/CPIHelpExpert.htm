@@ -1,0 +1,238 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1256">
+<title>New Page 0</title>
+<!--mstheme--><link rel="stylesheet" type="text/css" href="_themes/cpitheme/cpit1011-1256.css"><meta name="Microsoft Theme" content="cpitheme 1011, default">
+</head>
+
+<body>
+
+<p style="text-align: center"><font size="7">CPI Help Expert<br>
+</font>HE expert is not complete yet and it is far beyond my expectations. 
+Irregardless of its complexity, the final goal to be achieved, is to have HE 
+scans form under design and generates a complete help file with automatically 
+generated images. All what users have to do is to open generated help file and 
+enter needed text and a few images. </p>
+<p style="text-align: center"><b><i><font color="#0000ff" size="2"><br>
+In regard to </font></i>ECHMRCI4.DLL</b>
+<b><i><font color="#0000ff" size="2">file, download </font>
+<font color="#ff00ff" size="2"><a href="http://www.helpandmanual.com/">Help and 
+Manual </a></font><font color="#0000ff" size="2">software and install, the unit 
+should be found in system32 subdirectory<br>
+CPI now checks for &quot;</font></i>ECHMRCI4.DLL<i><font color="#0000ff" size="2">&quot; and 
+enable/disable related features in Help Expert&nbsp; accordingly </font><font color="#ff00ff" size="2"><br>
+&nbsp;</font></i></b></p>
+	<div align="left">
+	<table border="1" width="96%" id="table1">
+		<tr>
+			<td width="464" valign="top">
+			<p dir="ltr" style="text-align: justify"><b>List-View</b></p>
+			<p dir="ltr" style="text-align: justify"><font size="2">CPI help expert 
+			(HE) acts as an interface between form 
+			designer and&nbsp; &quot;Help and Manual (HAM)&quot; authoring tool.&nbsp; 
+			Some screen shuts are shown on right.<br>
+			<br>
+			<b>HE Expected Basic Features</b></font></p>
+			<ol dir="ltr">
+				<li dir="ltr">
+				<p dir="ltr" style="text-align: left"><font size="2">HE expert will synchronize form under design with its help file.</font></p>
+				</li>
+				<li dir="ltr">
+				<p dir="ltr" style="text-align: justify"><font size="2">All help keywords and help contexts are 
+				managed by&nbsp; expert.&nbsp; </font></p></li>
+				<li dir="ltr">
+				<p dir="ltr" style="text-align: justify"><font size="2">Users do 
+				not have to worry about burden of managing help contexts numbers 
+				or help keywords. </font></p></li>
+				<li dir="ltr">
+				<p dir="ltr" style="text-align: justify"><font size="2">Users do 
+				not have to keep track of which component has help and which one is not.&nbsp;
+				</font></p></li>
+			</ol>
+			<p dir="ltr" style="text-align: left"><font size="2">More functions 
+			will be applied to HE.&nbsp; Current work is in its preliminary stages, 
+			so more 
+			information and details concerning this expert will follow.</font></p>
+			&nbsp;</td>
+			<td width="463" valign="top">
+			<img border="0" src="_images/NextVe14.jpg"></td>
+		</tr>
+		<tr>
+			<td width="380" valign="top"><b>Topics View</b><p><font size="2">HE scans form under 
+			design and builds up a complete TOC of topics for all form components 
+			in a tree structure as shown in right figure.&nbsp; The tree has 
+			three root nodes which are:</font></p>
+			<ol>
+				<li>
+				<p dir="ltr"><b><font size="2">Visual</font></b><ol>
+					<li dir="ltr">
+					<p dir="ltr"><font size="2">Visual node contains all topics related to form 
+					visual component.&nbsp; </font> </li>
+					<li dir="ltr">
+					<p dir="ltr"><font size="2">Topics are organized based on <i><b>component 
+					parent-ship hierarchy</b></i>.&nbsp; The node also includes 
+					topics of components used by visual components properties 
+					like popup menus, drop down menus&nbsp; etc.</font></li>
+					<li dir="ltr">
+					<p dir="ltr"><font size="2">Each node lists its component bitmap as defined 
+					by IDE.&nbsp; Components that do not have bitmaps defined by 
+					IDE are supplied by bitmaps from CPI like TTabSheet, 
+					TToolButton, TComponent ...etc&nbsp; </font> </li>
+					<li dir="ltr">
+					<p dir="ltr"><font size="2">HE uses
+					<img border="0" src="_images/NextVe7.gif"> bitmap for all 
+					components which do not have bitmaps defined by IDE or CPI.
+					<br>
+&nbsp;</font></li>
+				</ol>
+				</li>
+				<li><b><font size="2">None visual</font></b><ol>
+					<li><font size="2">None visual node contains all topics related to form 
+					none visual components </font> </li>
+					<li><font size="2">Topics are organized by their components types.&nbsp; 
+					For example, all topics concerning image list components are 
+					listed under &quot;TImageList&quot; sub-node.</font></li>
+				</ol>
+				</li>
+				<li><b><font size="2">Support</font></b><ol>
+					<li><font size="2">This node contains all help topics that are not related 
+					to components.</font></li>
+				</ol>
+				</li>
+			</ol>
+			</td>
+			<td width="550" valign="top">
+			<img border="0" src="_images/NextVe25.jpg"><p>This view also uses 
+			colors for different topics as follows</p>
+			<ol>
+				<li>Red for New topics</li>
+				<li>Light green for support topics</li>
+				<li>Gray for selected topics</li>
+				<li></li>
+			</ol>
+			</td>
+		</tr>
+		<tr>
+			<td width="380" valign="top"><b>Hints-View</b><p ALIGN="JUSTIFY">
+			<font size="2">When you work with large forms, at the start you 
+			focus on code and avoids setting hints while programming because you 
+			feel that the hints work will distract you from concentrating on 
+			sole of your form function. As your form builds up and about to 
+			finish coding the hints problem force itself. Now, you need to go 
+			back to each component in form and set its hint through object 
+			inspector. The process of going back to each component is difficult 
+			specially if your form is a complex one like CPI form where hundreds 
+			of components scattered through a lot of tab sheet pages.</font></p>
+			<p ALIGN="JUSTIFY"></p>
+			<p ALIGN="JUSTIFY"><font size="2">To solve this problem and reduce 
+			its effects, CPI provides a simple mechanism to help in this regard. 
+			CPI execute a search cycle on all components found in form editor 
+			and does the followings during this cycle:</font></p>
+			<ol>
+				<li><font size="2">Checks if each component supports &quot;hint&quot; 
+				property</font></li>
+				<li><font size="2">If the component supports the &quot;hint&quot; 
+				property, CPI retrieves from component the following data </font>
+				<ol>
+					<li><font size="2">component name and type and place as 
+					second column in grid as shown below.</font></li>
+					<li><font size="2">Show hint status</font></li>
+					<li><font size="2">hint content</font></li>
+					<li><font size="2">caption property if implemented by 
+					component<br>
+					It is listed to remind you of the component function in your 
+					form</font></li>
+				</ol>
+				</li>
+			</ol>
+			</td>
+			<td width="550" valign="top">
+			<img border="0" src="_images/NextVe28.jpg"><p ALIGN="JUSTIFY">
+			<font size="2">After the cycle finishes, CPI organizes collected 
+			data in an editing table as shown below. In the table, CPI allows 
+			you to edit properties hint status in &quot;show hint&quot; column and &quot;hint 
+			content&quot; in hint column. CPI also allows you to save all changes 
+			made in table back to your form and to a hint status file in disk. 
+			To make your task simple, CPI provides different controls tools and 
+			flags to have full control. </font>
+			</td>
+		</tr>
+		<tr>
+			<td width="380" valign="top"><b>Help-view</b><p>Help view shown to 
+			the right lists all form components with their help context number 
+			and help keywords.</td>
+			<td width="550" valign="top">
+			<img border="0" src="_images/NextVe30.jpg"></td>
+		</tr>
+		<tr>
+			<td width="380" valign="top">
+			<p dir="ltr"><b>Synchronization help-view</b></p>
+			<p>Help view shown to 
+			the right lists all form components with their help context numbers 
+			and help keywords in left side and in right side it lists all help 
+			topics in help file.</p>
+			<p>&nbsp;</td>
+			<td width="550" valign="top">
+			<img border="0" src="_images/NextVe29.jpg"></td>
+		</tr>
+		<tr>
+			<td width="380" valign="top"><b>Language View</b><p ALIGN="LEFT">
+			This page is designed to provide a customizing editor to translate 
+			form from English to a second language.</p>
+			<p>HE generates a procedure through which users can switch between 
+			two languages.</p>
+			<p>Multiple languages can also be done by this view<p dir="ltr">
+			(Still un constuction)</td>
+			<td width="550" valign="top">
+			<img border="0" src="_images/NextVe31.jpg"></td>
+		</tr>
+		<tr>
+			<td width="380" valign="top"><b>Help-Files</b><p>HE can scan BDS 
+			and Delphi directories and collect all files and loads them in list 
+			as shown below.&nbsp; A double click activate any selected help file</td>
+			<td width="550" valign="top">
+			<img border="0" src="_images/NextVe32.jpg"></td>
+		</tr>
+		<tr>
+			<td width="380" valign="top"><b>Setup-View</b><p>Figure to the right 
+			shows setup-view for HE.</td>
+			<td width="550" valign="top">
+			<img border="0" src="_images/NextVe33.jpg"></td>
+		</tr>
+		<tr>
+			<td width="380" valign="top">Figure to the right shows help file 
+			table of content (TOC) scanned by HE for HE main form.&nbsp;&nbsp; 
+			Root node starts with scanned form name as '[HelpExpert] as shown.<p dir="ltr">
+			HE builds up this table of content in Help And Manual (HAM) 
+			software.&nbsp; It sets up header, context help number and help 
+			topic ID.&nbsp; All a what a user will do, is just enter help text 
+			in help file.&nbsp; Table built up by HE saves users about 
+			80% of needed time to constructing help files.</p>
+			<p>Figure below shows help file TOC built by HE in HAM</p>
+			<p style="text-align: center">
+			<img border="0" src="_images/NextVe10.gif"><br>
+			<br>
+			<img border="0" src="_images/NextVe9.gif"></p>
+			<p><b><u>Important</u></b></p>
+			<p>HE will also take a snap shut for very component with its parent 
+			and place it in help file.&nbsp; This is a MAJOR step and is still 
+			under process.</p>
+			<p>Adding or removing components to form does not affect TOC.&nbsp; 
+			HE will move help topics to their right place in final TOC.&nbsp; 
+			Topic related to delete components are moved to &quot;Support&quot; node for 
+			users to review.</p>
+			<p>&nbsp;</td>
+			<td width="550" valign="top" bgcolor="#FDF8F3">
+			<img border="0" src="_images/NextVe8.gif"></td>
+		</tr>
+	</table>
+		
+</div>
+		
+</body>
+
+</html>

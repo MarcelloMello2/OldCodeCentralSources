@@ -1,0 +1,169 @@
+=================================================================
+Simple Add
+=================================================================
+unit Test;
+
+interface
+
+uses One, Two.System, Three, Four;
+implementation
+==================================
+Five
+==================================
+unit Test;
+
+interface
+
+uses One, Two.System, Three, Four, Five;
+implementation
+
+
+=================================================================
+Add with comments
+=================================================================
+unit Test;
+
+interface
+
+uses One, Two, Three, Four{,Five};
+implementation
+==================================
+Five
+==================================
+unit Test;
+
+interface
+
+uses One, Two, Three, Four{,Five}, Five;
+implementation
+
+=================================================================
+Multi-Line
+=================================================================
+unit Test;
+
+interface
+
+uses 
+  One, Two, Three, 
+  Four;
+implementation
+end.
+==================================
+Five
+==================================
+unit Test;
+
+interface
+
+uses 
+  One, Two, Three, 
+  Four, Five;
+implementation
+end.
+
+
+=================================================================
+Strange semicolon placement
+=================================================================
+unit Test;
+
+interface
+
+uses 
+  One, Two, Three // This will be hard
+  ;
+implementation
+end.
+==================================
+Five
+==================================
+unit Test;
+
+interface
+
+uses 
+  One, Two, Three // This will be hard
+  , Five;
+implementation
+end.
+
+
+
+=================================================================
+One Per Line
+=================================================================
+unit Test;
+
+interface
+
+uses
+  One, // This will be hard
+  Two,
+  Three,
+  Four;
+implementation
+end.
+==================================
+Five
+==================================
+unit Test;
+
+interface
+
+uses
+  One, // This will be hard
+  Two,
+  Three,
+  Four,
+  Five;
+implementation
+end.
+
+
+
+=================================================================
+One Unit Only
+=================================================================
+unit Test;
+
+interface
+implementation
+end.
+==================================
+One
+==================================
+unit Test;
+
+interface
+
+uses
+  One;
+implementation
+end.
+
+
+=================================================================
+Only One Unit, Assume Horizontal
+=================================================================
+unit Test;
+
+interface
+
+uses
+  One;
+
+implementation
+end.
+==================================
+Two
+==================================
+unit Test;
+
+interface
+
+uses
+  One, Two;
+
+implementation
+end.

@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{90475F8B-43BC-470B-B59B-CA2D4BD75B45}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="KeyValueHashTests.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="KeyValueHashDemo.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="KeyValueHashTests">
+			<MSBuild Projects="KeyValueHashTests.dproj"/>
+		</Target>
+		<Target Name="KeyValueHashTests:Clean">
+			<MSBuild Targets="Clean" Projects="KeyValueHashTests.dproj"/>
+		</Target>
+		<Target Name="KeyValueHashTests:Make">
+			<MSBuild Targets="Make" Projects="KeyValueHashTests.dproj"/>
+		</Target>
+		<Target Name="KeyValueHashDemo">
+			<MSBuild Projects="KeyValueHashDemo.dproj"/>
+		</Target>
+		<Target Name="KeyValueHashDemo:Clean">
+			<MSBuild Targets="Clean" Projects="KeyValueHashDemo.dproj"/>
+		</Target>
+		<Target Name="KeyValueHashDemo:Make">
+			<MSBuild Targets="Make" Projects="KeyValueHashDemo.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="KeyValueHashTests;KeyValueHashDemo"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="KeyValueHashTests:Clean;KeyValueHashDemo:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="KeyValueHashTests:Make;KeyValueHashDemo:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

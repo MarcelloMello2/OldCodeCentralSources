@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!-- ============================================================================== -->
+<!-- File name:      OTAMenuProject.xml                                             -->
+<!-- Last updated:   1/2/04                                                         -->
+<!-- Author:         Sergey Mishkovskiy                                             -->
+<!-- Company:        USysWare, Inc.                                                 -->
+<!-- Contact info:   usysware@comcast.net                                           -->
+<!-- Description:    OTA Menu Project Template configuration file.                  -->
+<!--                                                                                -->
+<!--                 Note that Delphi has to be restarted for <addin> tag           -->
+<!--                 attributes changes to take effect. No restart is necessary for -->
+<!--                 changes made to <units> and/or <references> tags.              -->
+<!--                                                                                -->
+<!-- Note that <dialog> tag is optional.                                            -->
+<!--                                                                                -->
+<!-- You can provide your own categories, separating sub-categories using '\' char. -->
+<!-- Some of the standard BDS menu categories for 'menuCategory' attribute:         -->
+<!-- 'Borland.Root'                                                                 -->
+<!-- 'Borland.Galileo.Other'                                                        -->
+<!-- 'Borland.Delphi.New'                                                           -->
+<!-- 'Borland.Delphi.NewFiles'                                                      -->
+<!-- 'Borland.Delphi.NET.New'                                                       -->
+<!-- 'Borland.Delphi.NET.NewFiles'                                                  -->
+<!--                                                                                -->
+<!-- Some of the valid 'unit' attribute types:                                      -->
+<!-- 'application' or 'console'                                                     -->
+<!-- 'library', 'package' or 'assembly'                                             -->
+<!-- 'form' or 'winform'                                                            -->
+<!-- 'class' or 'unit' (default value)                                              -->
+<!-- 'text' (considered pass-through type, i.e. simply copied)                      -->
+<!--                                                                                -->
+<!-- References may include full path.                                              -->
+<!-- References may include $(BDS) const to resolve Borland's assembly path.        -->
+<!-- ============================================================================== -->
+<configuration>
+  <addins>
+    <addin name="OTA Menu Project" version="1.0" company="USysWare" companyLong="USysWare, Inc." menuCategory="Other Projects" imageFile="">
+      <dialog title="OTA Menu Add-In Defaults" enabled="true">
+        <group name="names" caption="Menu Information" enabled="true"/>
+        <group name="classes" caption="Class Information" enabled="true"/>
+      </dialog>
+      <units>
+        <unit name="MenuProject" template="MenuProjectTemplate.dpr" type="library"/>
+        <unit name="MenuProjectMain" template="MenuProjectMainTemplate.pas">
+          <expressions>
+            <expression replace="[!DependantUnitName]" value="BDSOTAUtils"/>
+            <expression replace="[!ClassName]" value="EventHandler">
+              <groupItem group="classes" caption="Event Handler Class Name"/>
+            </expression>
+            <expression replace="[!AddInName]" value="Menu add-in">
+              <groupItem group="names" caption="Add-in Display Name"/>
+            </expression>
+            <expression replace="[!AddInMenuText]" value="My add-in...">
+              <groupItem group="names" caption="Add-in Menu Text"/>
+            </expression>
+          </expressions>
+        </unit>
+        <unit name="BDSOTAUtils" template="BDSOTAUtilsTemplate.pas"/>
+      </units>
+      <references>
+        <reference name="System.dll"/>
+        <reference name="System.Drawing.dll"/>
+        <reference name="System.Windows.Forms.dll"/>
+        <reference name="System.XML.dll"/>
+        <reference name="$(BDS)\Borland.Globalization.dll"/>
+        <reference name="$(BDS)\Borland.SCI.dll"/>
+        <reference name="$(BDS)\Borland.Studio.Host.dll"/>
+        <reference name="$(BDS)\Borland.Studio.ToolsAPI.dll"/>
+        <reference name="$(BDS)\Borland.Studio.TypeMappings.dll"/>
+      </references>
+    </addin>
+  </addins>
+</configuration>

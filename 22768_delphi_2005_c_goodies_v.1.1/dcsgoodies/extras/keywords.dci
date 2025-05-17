@@ -1,0 +1,154 @@
+[abstract | abstract C# keyword  | Borland.EditOptions.C#]
+abstract |
+[as | as C# keyword  | Borland.EditOptions.C#]
+as |
+[base | base C# keyword  | Borland.EditOptions.C#]
+base |
+[bool | bool C# keyword  | Borland.EditOptions.C#]
+bool |
+[break | break C# keyword  | Borland.EditOptions.C#]
+break |
+[byte | byte C# keyword  | Borland.EditOptions.C#]
+byte |
+[case | case C# keyword  | Borland.EditOptions.C#]
+case |
+[catch | catch C# keyword  | Borland.EditOptions.C#]
+catch |
+[char | char C# keyword  | Borland.EditOptions.C#]
+char |
+[checked | checked C# keyword  | Borland.EditOptions.C#]
+checked |
+[class | class C# keyword  | Borland.EditOptions.C#]
+class |
+[const | const C# keyword  | Borland.EditOptions.C#]
+const |
+[continue | continue C# keyword  | Borland.EditOptions.C#]
+continue |
+[decimal | decimal C# keyword  | Borland.EditOptions.C#]
+decimal |
+[default | default C# keyword  | Borland.EditOptions.C#]
+default |
+[delegate | delegate C# keyword  | Borland.EditOptions.C#]
+delegate |
+[do | do C# keyword  | Borland.EditOptions.C#]
+do |
+[double | double C# keyword  | Borland.EditOptions.C#]
+double |
+[else | else C# keyword  | Borland.EditOptions.C#]
+else |
+[enum | enum C# keyword  | Borland.EditOptions.C#]
+enum |
+[event | event C# keyword  | Borland.EditOptions.C#]
+event |
+[explicit | explicit C# keyword  | Borland.EditOptions.C#]
+explicit |
+[extern | extern C# keyword  | Borland.EditOptions.C#]
+extern |
+[false | false C# keyword  | Borland.EditOptions.C#]
+false |
+[finally | finally C# keyword  | Borland.EditOptions.C#]
+finally |
+[fixed | fixed C# keyword  | Borland.EditOptions.C#]
+fixed |
+[float | float C# keyword  | Borland.EditOptions.C#]
+float |
+[for | for C# keyword  | Borland.EditOptions.C#]
+for |
+[foreach | foreach C# keyword  | Borland.EditOptions.C#]
+foreach |
+[goto | goto C# keyword  | Borland.EditOptions.C#]
+goto |
+[if | if C# keyword  | Borland.EditOptions.C#]
+if |
+[implicit | implicit C# keyword  | Borland.EditOptions.C#]
+implicit |
+[in | in C# keyword  | Borland.EditOptions.C#]
+in |
+[int | int C# keyword  | Borland.EditOptions.C#]
+int |
+[interface | interface C# keyword  | Borland.EditOptions.C#]
+interface |
+[internal | internal C# keyword  | Borland.EditOptions.C#]
+internal |
+[is | is C# keyword  | Borland.EditOptions.C#]
+is |
+[lock | lock C# keyword  | Borland.EditOptions.C#]
+lock |
+[long | long C# keyword  | Borland.EditOptions.C#]
+long |
+[namespace | namespace C# keyword  | Borland.EditOptions.C#]
+namespace |
+[new | new C# keyword  | Borland.EditOptions.C#]
+new |
+[null | null C# keyword  | Borland.EditOptions.C#]
+null |
+[object | object C# keyword  | Borland.EditOptions.C#]
+object |
+[operator | operator C# keyword  | Borland.EditOptions.C#]
+operator |
+[out | out C# keyword  | Borland.EditOptions.C#]
+out |
+[override | override C# keyword  | Borland.EditOptions.C#]
+override |
+[params | params C# keyword  | Borland.EditOptions.C#]
+params |
+[private | private C# keyword  | Borland.EditOptions.C#]
+private |
+[protected | protected C# keyword  | Borland.EditOptions.C#]
+protected |
+[public | public C# keyword  | Borland.EditOptions.C#]
+public |
+[readonly | readonly C# keyword  | Borland.EditOptions.C#]
+readonly |
+[ref | ref C# keyword  | Borland.EditOptions.C#]
+ref |
+[return | return C# keyword  | Borland.EditOptions.C#]
+return |
+[sbyte | sbyte C# keyword  | Borland.EditOptions.C#]
+sbyte |
+[sealed | sealed C# keyword  | Borland.EditOptions.C#]
+sealed |
+[short | short C# keyword  | Borland.EditOptions.C#]
+short |
+[sizeof | sizeof C# keyword  | Borland.EditOptions.C#]
+sizeof |
+[stackalloc | stackalloc C# keyword  | Borland.EditOptions.C#]
+stackalloc |
+[static | static C# keyword  | Borland.EditOptions.C#]
+static |
+[string | string C# keyword  | Borland.EditOptions.C#]
+string |
+[struct | struct C# keyword  | Borland.EditOptions.C#]
+struct |
+[switch | switch C# keyword  | Borland.EditOptions.C#]
+switch |
+[this | this C# keyword  | Borland.EditOptions.C#]
+this |
+[throw | throw C# keyword  | Borland.EditOptions.C#]
+throw |
+[true | true C# keyword  | Borland.EditOptions.C#]
+true |
+[try | try C# keyword  | Borland.EditOptions.C#]
+try |
+[typeof | typeof C# keyword  | Borland.EditOptions.C#]
+typeof |
+[uint | uint C# keyword  | Borland.EditOptions.C#]
+uint |
+[ulong | ulong C# keyword  | Borland.EditOptions.C#]
+ulong |
+[unchecked | unchecked C# keyword  | Borland.EditOptions.C#]
+unchecked |
+[unsafe | unsafe C# keyword  | Borland.EditOptions.C#]
+unsafe |
+[ushort | ushort C# keyword  | Borland.EditOptions.C#]
+ushort |
+[using | using C# keyword  | Borland.EditOptions.C#]
+using |
+[virtual | virtual C# keyword  | Borland.EditOptions.C#]
+virtual |
+[void | void C# keyword  | Borland.EditOptions.C#]
+void |
+[volatile | volatile C# keyword  | Borland.EditOptions.C#]
+volatile |
+[while | while C# keyword  | Borland.EditOptions.C#]
+while |

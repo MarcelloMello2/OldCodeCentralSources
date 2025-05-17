@@ -1,0 +1,9 @@
+Caption
+Color
+HelpKeyword
+Hint
+ItemIndex
+Items
+OnClick
+PopupMenu
+ShowHint

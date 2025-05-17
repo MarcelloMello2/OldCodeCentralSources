@@ -1,0 +1,9 @@
+Color
+Locked
+ShowHint
+PopupMenu
+OnClick
+OnDblClick
+Caption
+HelpKeyword
+Hint
